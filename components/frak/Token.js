@@ -1,0 +1,60 @@
+import React, { Component } from 'react';
+import Link from 'next/link';
+import * as Icon from 'react-feather';
+
+class WhyChoose extends Component {
+    render() {
+        return (
+            <section className="repair-why-choose-us">
+                <div className="container">
+                    <div className="section-title">
+                        <h2>FRAK Economic Layer</h2>
+                    </div>
+
+                    <div className="row">
+                        <div className="col-lg-4 col-md-6">
+                            <div className="single-repair-box">
+                                <div className="single-repair-box__img">
+                                    {/* img */}
+                                </div>
+                                <div className="single-repair-box__content">
+                                    <h3>Staking</h3>
+                                    <p>The number of tokens deposited with each validator determines staking weight which influences decision making power and rewards.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-4 col-md-6">
+                            <div className="single-repair-box">
+                            <div className="single-repair-box__img">
+                                    {/* img */}
+                                </div>
+                                <div className="single-repair-box__content">
+                                    <h3>Governance</h3>
+                                    <p>Each staked token equates to 1 vote on network proposals and other governance decisions which impact the Fraktal Ecosystem..</p>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+
+                        <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
+                            <div className="single-repair-box">
+                            <div className="single-repair-box__img">
+                                    {/* img */}
+                                </div>
+                                <div className="single-repair-box__content">
+                                    <h3>Network Fees</h3>
+                                    <p>To deploy contracts and transact on the Fraktal Network fees are required which are paid out to the staking validators.</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        );
+    }
+}
+
+export default WhyChoose;

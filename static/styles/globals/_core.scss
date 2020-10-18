@@ -1,0 +1,72 @@
+$shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+.container {
+    max-width: 77.2%; //1040px
+    &--header {
+        max-width: 86.1%; //1240px;
+        margin: 0 auto;
+    }
+}
+
+.row-grid {
+    display: grid;
+
+    
+    &.main-banner-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+    }
+    &.intro-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+    }
+
+    &.why-choose-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 49px;
+        
+    }
+}
+
+h1 {
+    font-size: 75px;
+    line-height: 112px;
+    font-weight: 700;
+}
+
+h2 {
+    line-height: 64.5px;
+    font-weight: 700;
+    font-size: 43px;
+}
+
+.btn-secondary-green,  .btn-secondary-purple {
+    color: $light-color;
+    margin-top: 15px;
+    font-weight: 700;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.btn-secondary-green {
+    background-color: $second-color;
+    transition: all ease-in-out .2s;
+    &:hover {
+        background-color: $primary-dark-color;
+        color: $back-main-color;
+    }
+}
+
+.btn-secondary-purple {
+    background-color: $primary-dark-color;
+}
+
+.odometer.odometer-auto-theme, .odometer.odometer-theme-default {
+    line-height: normal;
+}
+
+.iot-features-area, .iot-main-banner {
+    padding-bottom: 125px;
+}
+.row {
+    align-items: flex-start;
+}

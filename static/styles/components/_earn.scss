@@ -1,0 +1,39 @@
+.earn-area {
+    position: relative;
+    overflow: hidden;
+    background-color: $primary-color;
+    padding: {
+        top: 160px;
+        bottom: 250px;
+    }
+    &__content {
+        h2 {
+            color: $light-color;
+            margin-bottom: 48px;
+            max-width: 900px;
+        }
+        .btn-secondary-green {
+            margin: 0;
+        }
+    }
+    &__circle {
+        background-color: $light-color;
+        width: 684px;
+        height: 684px;
+        border-radius: 50%;
+        position: absolute;
+        right: -261px;
+        top: 263px;
+    }
+    &__text {
+        position: absolute;
+        color: $primary-dark-color;
+        font-size: 48px;
+        line-height: 72px;
+        font-weight: 700;
+        max-width: 233px;
+        top: 416px;
+        right: 61px;
+        // transform: translate(50%);
+    }
+}
