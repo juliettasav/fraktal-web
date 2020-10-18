@@ -7,18 +7,15 @@ class Features extends Component {
         return (
             <React.Fragment>
 
-            <section className="iot-features-area ptb-80">
+            <section className="iot-features-area iot-features-area--partners">
                 <div className="container">
-                    <div className="row align-items-center">
-                        <div className="col-lg-6 iot-features-content">
-                            <h3>Fraktal is an open source community</h3>
+                    <div className="row align-items-flex-start justify-content-between">
+                        <div className=" col-5 iot-features-content">
+                            <h3>Open source community</h3>
                             <p>This means that no single company or person owns Fraktal. Both individuals and companies unite to bring the Fraktal mission to life and make the world a more equal and inclusive place.</p>
-
-
-
                         </div>
 
-                        <div className="col-lg-6 iot-features-image">
+                        <div className="col-7 iot-features-image">
                             <ReactWOW delay='0.6s' animation='fadeInUp'>
                                 <img
                                     src={require('../../static/images/graphics/3.png')}

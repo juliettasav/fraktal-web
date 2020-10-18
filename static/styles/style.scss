@@ -1705,7 +1705,30 @@ Features CSS
 }
 
 .hosting-features-area {
-    padding-bottom: 50px;
+    padding-top: 80px;
+    padding-bottom: 140px;
+    
+    h2 {
+        color: $primary-dark-color;
+        margin-bottom: 64px;
+    }
+
+    .single-features {
+        width: 329px;
+        height: 355px;
+        background-color: $primary-color;
+        .single-features-img {
+            height: 130px;
+        }
+        h3 {
+            margin-bottom: 20px;
+            color: $light-color;
+        }
+        p {
+            color: $light-color;
+        }
+    }
+
 }
 .single-hosting-features {
     position: relative;
@@ -5360,16 +5383,17 @@ Repair CTA CSS
     overflow: hidden;
     position: relative;
     z-index: 1;
+    background-color: $primary-color;
     padding: {
-        top: 10px;
-        bottom: 10px;
+        top: 80px;
+        bottom: 140px;
     };
 }
 .cta-repair-content {
     p {
-        color: $white-color;
-        opacity: .95;
-        margin-bottom: 25px;
+        color: $light-color;
+        margin-top: 18px;
+        margin-bottom: 48px;
     }
     h3 {
         color: $white-color;
@@ -5379,6 +5403,7 @@ Repair CTA CSS
 }
 .cta-repair-img {
     text-align: right;
+    max-width: 520px;
 }
 .circle-box {
     position: absolute;
@@ -5942,9 +5967,10 @@ IoT CTA CSS
 IoT Features CSS
 =================================================*/
 .iot-features-area {
-    &--fraktal-network, &--frak, &--top {
+    &--fraktal-network, &--frak, &--top, &--partners  {
         padding-top: 190px;
     }
+   
 }
 .iot-features-content {
     h3 {
@@ -5965,6 +5991,7 @@ IoT Features CSS
     text-align: center;
     width: 520px;
     height: 400px;
+    flex: none;
     background-color: #cdcdcd;
     img {
         
@@ -7962,5 +7989,25 @@ Agency CTA CSS
     background-color: #c4c4c4;
     img {
 
+    }
+}
+
+.products-info-area {
+    padding-top: 190px;
+    padding-bottom: 140px;
+    h2 {
+        color: $primary-dark-color;
+        margin-bottom: 64px;
+    }
+    .single-features {
+        background-color: $primary-color;
+        width: 329px;
+        height: 355px;
+        .single-features-img {
+            height: 130px;
+        }
+        h3, p {
+            color: $light-color;
+        }
     }
 }

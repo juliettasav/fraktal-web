@@ -1889,7 +1889,32 @@ Features CSS
 }
 
 .hosting-features-area {
-  padding-bottom: 50px;
+  padding-top: 80px;
+  padding-bottom: 140px;
+}
+
+.hosting-features-area h2 {
+  color: #5245AF;
+  margin-bottom: 64px;
+}
+
+.hosting-features-area .single-features {
+  width: 329px;
+  height: 355px;
+  background-color: #7766F6;
+}
+
+.hosting-features-area .single-features .single-features-img {
+  height: 130px;
+}
+
+.hosting-features-area .single-features h3 {
+  margin-bottom: 20px;
+  color: #F5F2F7;
+}
+
+.hosting-features-area .single-features p {
+  color: #F5F2F7;
 }
 
 .single-hosting-features {
@@ -5390,14 +5415,15 @@ Repair CTA CSS
   overflow: hidden;
   position: relative;
   z-index: 1;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  background-color: #7766F6;
+  padding-top: 80px;
+  padding-bottom: 140px;
 }
 
 .cta-repair-content p {
-  color: #ffffff;
-  opacity: .95;
-  margin-bottom: 25px;
+  color: #F5F2F7;
+  margin-top: 18px;
+  margin-bottom: 48px;
 }
 
 .cta-repair-content h3 {
@@ -5408,6 +5434,7 @@ Repair CTA CSS
 
 .cta-repair-img {
   text-align: right;
+  max-width: 520px;
 }
 
 .circle-box {
@@ -5969,7 +5996,7 @@ IoT CTA CSS
 /*================================================
 IoT Features CSS
 =================================================*/
-.iot-features-area--fraktal-network, .iot-features-area--frak, .iot-features-area--top {
+.iot-features-area--fraktal-network, .iot-features-area--frak, .iot-features-area--top, .iot-features-area--partners {
   padding-top: 190px;
 }
 
@@ -5992,6 +6019,9 @@ IoT Features CSS
   text-align: center;
   width: 520px;
   height: 400px;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
   background-color: #cdcdcd;
 }
 
@@ -8017,5 +8047,29 @@ Agency CTA CSS
   width: 520px;
   height: 490px;
   background-color: #c4c4c4;
+}
+
+.products-info-area {
+  padding-top: 190px;
+  padding-bottom: 140px;
+}
+
+.products-info-area h2 {
+  color: #5245AF;
+  margin-bottom: 64px;
+}
+
+.products-info-area .single-features {
+  background-color: #7766F6;
+  width: 329px;
+  height: 355px;
+}
+
+.products-info-area .single-features .single-features-img {
+  height: 130px;
+}
+
+.products-info-area .single-features h3, .products-info-area .single-features p {
+  color: #F5F2F7;
 }
 /*# sourceMappingURL=style.css.map */

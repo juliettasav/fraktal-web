@@ -29,9 +29,6 @@ export default class FraktalNetwork extends React.Component {
             </Placeholder>
             <Header />
 
-
-
-
             <Products />
 
             <Dev />
