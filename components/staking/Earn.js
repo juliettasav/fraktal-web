@@ -9,11 +9,11 @@ class Cta extends Component {
                     <div className="row">
                         <div className="cta-content">
 
-                            <h2>Rewards are paid out in real time 24/7 and typically range between 7% to 12% annually.</h2>
+                            <h2>Rewards are paid in real-time 24/7 and typically range between 7% to 12 % annually</h2>
     
                             <div className="buy-btn">
                                 <Link href="#">
-                                    <a className="btn btn-secondary-green">Get Started</a>
+                                    <a className="btn btn-secondary-green">Earn Today</a>
                                 </Link>
                             </div>
 

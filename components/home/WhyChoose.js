@@ -5,11 +5,11 @@ import * as Icon from 'react-feather';
 class WhyChoose extends Component {
     render() {
         return (
-            <section className="iot-why-choose-us">
+            <section className="iot-why-choose-us iot-why-choose-us--home">
                 <div className="container">
                     <div className="section-title">
                         <h2>Fraktal Leads DeFi</h2>
-                        <p>Every aspect of Fraktal is designed with DeFi in mind. </p>
+                        <p>Every aspect of fractal is designed with DeFi in mind</p>
                         <img src={require('../../static/images/logo-white.png')}/>
                     </div>
                     
@@ -20,7 +20,9 @@ class WhyChoose extends Component {
                             </div>
                             <div className="single-features__content">
                                 <h3>Infinitely Scalable</h3>
-                                <p>An unlimited amount of parallel chains can be deployed under 1 validator set to handle any magnitude of scale. This ensures transaction fees remain low without speed being affected.</p>
+                                <p>
+                                Each Fraktal based chain can handle 10,000 transactions per second and an infinite number of chains can run in parallel, making Fraktal the most scalable and powerful Blockchain to exist.
+                                </p>
                             </div>
                         </div>
 
@@ -30,7 +32,9 @@ class WhyChoose extends Component {
                             </div>
                             <div className="single-features__content">
                                 <h3>DeFi Optimised UX</h3>
-                                <p>The user experience of the Fraktal Network is designed for DeFi with near-instant transaction finality.</p>
+                                <p>
+                                From low transaction fees, zk-snarks, to near-instant transaction finality, every aspect of Fraktal is designed  with DeFi in mind.
+                                </p>
                             </div>
                         </div>
 
@@ -40,7 +44,9 @@ class WhyChoose extends Component {
                             </div>
                             <div className="single-features__content">
                                 <h3>Low Fees</h3>
-                                <p>Low transation fees create an inclusive environment where everyone can participate, and opens the door to a whole new range of Defi and Micropayment use cases which were never before possible.</p>
+                                <p>
+                                    Tap into hundreds of billions of dollars of untapped liquidity across different Blockchains such as BTC, ETH, USDT, BNB, XRP, ATOM, and DOT
+                                </p>
                             </div>
                         </div>
 

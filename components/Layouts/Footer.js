@@ -13,12 +13,14 @@ export default class Footer extends React.Component {
                             <div className="logo">
                                 <Link href="#">
                                     <a>
-                                        <img src={require("../../static/images/logo.png")} alt="logo" />
+                                        <img src={require("../../static/images/footer/logo-footer.svg")} alt="logo" />
                                     </a>
                                 </Link>
-
                             </div>
-                            <p>Fraktal is on a mission to enable DeFi to scale globally and transform the world. </p>
+                            <p></p>
+                            <p>
+                                Fraktal is on a mission to enable DeFI to scale globally and transform the world.
+                            </p>
                             </div>
                         </div>
                     
@@ -118,7 +120,8 @@ export default class Footer extends React.Component {
 
                     
                     <div className="copyright-area">
-                        <p>This website is maintained by the Fraktal Community.</p>
+                        <span className="copyright-area--black">Copyright 2020</span>
+                        <span>Infinite Chain Foundation</span>
                     </div>
                     
 

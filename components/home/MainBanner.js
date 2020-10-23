@@ -22,7 +22,7 @@ class MainBanner extends Component {
                     <div className="iot-banner-img">
                         <ReactWOW delay='0.8s' animation='fadeInUp'>
                             <img
-                                // src={require('../../static/images/graphics/1.png')}
+                                src={require('../../static/images/home/1.png')}
                                 className="wow fadeInUp"
                                 data-wow-delay="0.8s"
                                 alt="image"

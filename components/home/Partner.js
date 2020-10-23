@@ -28,9 +28,11 @@ class Partner extends Component {
             <section className="iot-partner-area bg-f9fafb">
                 <div className="container">
 
-                    <h2>Fraktal Works with <br/> Industry-Leading Technologies</h2>
+                    <h2>Fraktal Works with</h2>
                     <div className="bar"></div>
-                    <p>Fraktal Directly integrates with all other Cosmos Ecosystem projects by default, <br/> giving Fraktal powered DeFi apps unlimited potential to disrupt the financial world.</p>
+                    <p>
+                        Fraktal directly integrates with all other Comsos Ecosystem by default, giving Fraktal powered DeFi aoos unlimited potential to disrupt the financial world. 
+                    </p>
 
                     <div className="row">
                         <OwlCarousel

@@ -31,7 +31,9 @@ class WhyChoose extends Component {
                                 </div>
                                 <div className="single-repair-box__content">
                                     <h3>Governance</h3>
-                                    <p>Each staked token equates to 1 vote on network proposals and other governance decisions which impact the Fraktal Ecosystem..</p>
+                                    <p>
+                                        Each staked token equates to 1 vote on network proposals and other governance decisions which  impact the Fraktal Network
+                                    </p>
                                 </div>
                                 
                                 
@@ -45,7 +47,9 @@ class WhyChoose extends Component {
                                 </div>
                                 <div className="single-repair-box__content">
                                     <h3>Network Fees</h3>
-                                    <p>To deploy contracts and transact on the Fraktal Network fees are required which are paid out to the staking validators.</p>
+                                    <p>
+                                        To deploy contracts and transact on the Fraktal Network fees fees are required which are paid out to the asking validators.
+                                    </p>
                                 </div>
                                 
                             </div>

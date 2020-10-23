@@ -15,8 +15,8 @@ class Services extends Component {
                             <div className="single-features-img">
                             </div>
                             <div className="single-features__content">
-                                <h3>Band Protocol</h3>
-                                <p>Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                                <h3>Fraktal Network</h3>
+                                <p>An open financial system that enables anyone to build financial apps without relying on banking infrastructure.</p>
                             </div>
                         </div>
 
@@ -25,8 +25,8 @@ class Services extends Component {
                             
                             </div>
                             <div className="single-features__content">
-                                <h3>TokenWeb</h3>
-                                <p>Each staked token equates to 1 vote on network proposals and other governance decisions which impact the Fraktal Network</p>
+                                <h3>Fraktal TestNet</h3>
+                                <p>Fraktal TestNetwork for Developers, learning, and trying new things.</p>
                             </div>
                         </div>
 
@@ -35,8 +35,8 @@ class Services extends Component {
                             
                             </div>
                             <div className="single-features__content">
-                                <h3>Cosmos</h3>
-                                <p>Each staked token equates to 1 vote on network proposals and other governance decisions which  impact the Fraktal Network</p>
+                                <h3>Gabel.io</h3>
+                                <p>Your own personal bank. Safely store your assets and send money instantly, anywhere in the world without bank fees.</p>
                             </div>
                         </div>
                         <div className="single-features">
@@ -44,8 +44,8 @@ class Services extends Component {
                             
                             </div>
                             <div className="single-features__content">
-                                <h3>Tendermint</h3>
-                                <p>Each staked token equates to 1 vote on network proposals and other governance decisions which impact the Fraktal Network</p>
+                                <h3>FraktalScan by TokenWeb</h3>
+                                <p>A Block Explorer designed for multi-chain networks powered by IBC.</p>
                             </div>
                         </div>
                         <div className="single-features">
@@ -53,11 +53,11 @@ class Services extends Component {
                             
                             </div>
                             <div className="single-features__content">
-                                <h3>Kava</h3>
-                                <p>Each staked token equates to 1 vote on network proposals and other governance decisions which impact the Fraktal Network</p>
+                                <h3>FrakIt</h3>
+                                <p>A simplified interface for tokenising and managing assets across the Fraktal Network.</p>
                             </div>
                         </div>
-                        <div className="single-features">
+                        {/* <div className="single-features">
                             <div className="single-features-img">
                             
                             </div>
@@ -65,7 +65,7 @@ class Services extends Component {
                                 <h3>Enigma</h3>
                                 <p>Each staked token equates to 1 vote on network proposals and other governance decisions which impact the Fraktal Network</p>
                             </div>
-                        </div>
+                        </div> */}
 
                     
                     </div>

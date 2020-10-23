@@ -16,7 +16,9 @@ class Features extends Component {
                             </div>
                             <div className="single-features__content">
                                 <h3>Band Protocol</h3>
-                                <p>Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                                <p>
+                                Each staked token equates to 1 vote on network proposals and other governance decisions which  impact the Fraktal Network
+                                </p>
                             </div>
                         </div>
 
@@ -36,7 +38,9 @@ class Features extends Component {
                             </div>
                             <div className="single-features__content">
                                 <h3>Cosmos</h3>
-                                <p>Each staked token equates to 1 vote on network proposals and other governance decisions which  impact the Fraktal Network</p>
+                                <p>
+                                Each staked token equates to 1 vote on network proposals and other governance decisions which impact the Fraktal Network
+                                </p>
                             </div>
                         </div>
                         <div className="single-features">
@@ -54,7 +58,9 @@ class Features extends Component {
                             </div>
                             <div className="single-features__content">
                                 <h3>Kava</h3>
-                                <p>Each staked token equates to 1 vote on network proposals and other governance decisions which impact the Fraktal Network</p>
+                                <p>
+                                Each staked token equates to 1 vote on network proposals and other governance decisions which  impact the Fraktal Network
+                                </p>
                             </div>
                         </div>
                         <div className="single-features">

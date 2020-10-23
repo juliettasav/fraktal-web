@@ -76,16 +76,50 @@ Default CSS
   gap: 80px;
 }
 
+@media (max-width: 425px) {
+  .row-grid.intro-grid {
+    gap: 16px;
+  }
+}
+
 .row-grid.why-choose-grid {
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   gap: 49px;
 }
 
+@media (max-width: 425px) {
+  .row-grid.why-choose-grid {
+    gap: 28px;
+  }
+}
+
+@media (max-width: 425px) {
+  .row-grid {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+    gap: 0px;
+    justify-items: center;
+  }
+}
+
+span {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 200;
+}
+
 h1 {
   font-size: 75px;
   line-height: 112px;
   font-weight: 700;
+}
+
+@media (max-width: 425px) {
+  h1 {
+    font-size: 36px;
+    line-height: 54px;
+  }
 }
 
 h2 {
@@ -121,14 +155,33 @@ h2 {
   line-height: normal;
 }
 
-.iot-features-area, .iot-main-banner {
+.iot-features-area {
   padding-bottom: 125px;
+}
+
+@media (max-width: 425px) {
+  .iot-features-area {
+    padding-bottom: 54px;
+  }
+}
+
+.iot-features-area a.btn {
+  display: none;
 }
 
 .row {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+@media (max-width: 425px) {
+  button, .btn {
+    border-radius: 0px !important;
+    padding: 11px 35px !important;
+    font-size: 12px !important;
+    line-height: 18px !important;
+  }
 }
 
 .earn-area {
@@ -213,6 +266,13 @@ p {
 
 p:last-child {
   margin-bottom: 0;
+}
+
+@media (max-width: 425px) {
+  p {
+    font-size: 12px;
+    line-height: 24px;
+  }
 }
 
 .ptb-80 {
@@ -1868,7 +1928,6 @@ Features CSS
 .single-features .single-features-img {
   height: 190px;
   width: 100%;
-  background-color: #C4C4C4;
 }
 
 .single-features__content {
@@ -3068,6 +3127,12 @@ Blog CSS
   z-index: 1;
   padding-top: 80px;
   padding-bottom: 180px;
+}
+
+.blog-area--home {
+  background-image: url("../../static/images/home/bg-4.png");
+  background-repeat: no-repeat;
+  background-position-y: 30px;
 }
 
 .blog-area .pagination-area {
@@ -5026,7 +5091,8 @@ CTA CSS
 }
 
 .cta-area--fraktal-network .cta-fraktal-network h2 {
-  margin-bottom: 56px;
+  margin: 0 auto 56px;
+  max-width: 848px;
 }
 
 .cta-content h2 {
@@ -5661,6 +5727,8 @@ IoT Main Banner CSS
 .iot-main-banner {
   position: relative;
   z-index: 1;
+  background-image: url("../images/home/bg-1.png");
+  background-repeat: no-repeat;
   padding-top: 215px;
   padding-bottom: 170px;
 }
@@ -5669,8 +5737,22 @@ IoT Main Banner CSS
   min-width: 520px;
 }
 
+@media (max-width: 425px) {
+  .iot-main-banner {
+    padding-top: 153px;
+    padding-bottom: 154px;
+  }
+}
+
 .iot-banner-content {
   max-width: 445px;
+}
+
+@media (max-width: 425px) {
+  .iot-banner-content {
+    text-align: center;
+    max-width: auto;
+  }
 }
 
 .iot-banner-content span {
@@ -5679,6 +5761,14 @@ IoT Main Banner CSS
   line-height: 42px;
   font-weight: 300;
   display: block;
+}
+
+@media (max-width: 425px) {
+  .iot-banner-content span {
+    font-size: 24px;
+    line-height: 36px;
+    margin: 8px 0 32px;
+  }
 }
 
 .iot-banner-content h1 {
@@ -5690,6 +5780,14 @@ IoT Main Banner CSS
   margin: 28px 0;
   max-width: 296px;
   color: #5245AF;
+}
+
+@media (max-width: 425px) {
+  .iot-banner-content p {
+    margin: 0 0 32px;
+    padding: 0;
+    max-width: none;
+  }
 }
 
 .iot-banner-content .btn {
@@ -5973,6 +6071,26 @@ IoT CTA CSS
   padding-bottom: 145px;
 }
 
+.iot-cta-area--home {
+  background-image: url("../../static/images/home/bg-3.png");
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 425px) {
+  .iot-cta-area .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 425px) {
+  .iot-cta-area .cta-iot-img {
+    display: none;
+  }
+}
+
 .cta-iot-content h2 {
   color: #F5F2F7;
   font-size: 34px;
@@ -6014,6 +6132,12 @@ IoT Features CSS
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+@media (max-width: 425px) {
+  .iot-features-content {
+    text-align: center;
+  }
+}
+
 .iot-features-image {
   position: relative;
   text-align: center;
@@ -6022,7 +6146,13 @@ IoT Features CSS
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
-  background-color: #cdcdcd;
+}
+
+@media (max-width: 425px) {
+  .iot-features-image {
+    width: 208px;
+    height: 160px;
+  }
 }
 
 /*================================================
@@ -6048,9 +6178,29 @@ IoT Why Choose Us CSS
   padding-bottom: 154px;
 }
 
+.iot-why-choose-us--home {
+  background-image: url("../../static/images/home/bg-2.png");
+  background-size: cover;
+}
+
+@media (max-width: 425px) {
+  .iot-why-choose-us {
+    padding-top: 54px;
+    padding-bottom: 54px;
+  }
+}
+
 .iot-why-choose-us .section-title h2 {
   color: #F5F2F7;
   margin-bottom: 24px;
+  overflow: hidden;
+}
+
+@media (max-width: 425px) {
+  .iot-why-choose-us .section-title h2 {
+    height: 50px;
+    margin-bottom: 30px;
+  }
 }
 
 .iot-why-choose-us .section-title .bar::before {
@@ -6064,8 +6214,35 @@ IoT Why Choose Us CSS
   line-height: 24px;
 }
 
+@media (max-width: 425px) {
+  .iot-why-choose-us .section-title p {
+    margin-bottom: 24px;
+  }
+}
+
 .iot-why-choose-us .section-title img {
   margin: 62px 0;
+}
+
+@media (max-width: 425px) {
+  .iot-why-choose-us .section-title img {
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .iot-why-choose-us .single-features {
+    width: 100%;
+    height: auto;
+    padding-left: 0;
+    margin: 0;
+  }
+  .iot-why-choose-us .single-features p {
+    display: none;
+  }
+  .iot-why-choose-us .single-features .single-features__content {
+    text-align: center;
+  }
 }
 
 .single-iot-box {
@@ -6142,7 +6319,7 @@ IoT Why Choose Us CSS
 Footer CSS
 =================================================*/
 .footer-area {
-  padding-top: 80px;
+  padding-top: 54px;
   position: relative;
   z-index: 1;
 }
@@ -6154,8 +6331,21 @@ Footer CSS
       grid-template-columns: 1fr 1fr;
 }
 
+@media (max-width: 425px) {
+  .footer-area .row-grid-footer {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .footer-area .row-grid-footer__item:first-child {
   justify-self: flex-start;
+}
+
+@media (max-width: 425px) {
+  .footer-area .row-grid-footer__item:first-child {
+    display: none;
+  }
 }
 
 .footer-area .row-grid-footer__item:nth-child(2) {
@@ -6163,6 +6353,17 @@ Footer CSS
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 425px) {
+  .footer-area .row-grid-footer__item:nth-child(2) {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .footer-area .row-grid-footer__item:nth-child(2) .single-footer-widget {
+    text-align: center;
+    margin-bottom: 40px;
+  }
 }
 
 .single-footer-widget {
@@ -6209,7 +6410,7 @@ Footer CSS
 }
 
 .single-footer-widget ul.list li a {
-  color: #5245AF;
+  color: #000000;
 }
 
 .single-footer-widget ul.list li a:hover {
@@ -6243,11 +6444,22 @@ Footer CSS
 }
 
 .copyright-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: 80px;
-  border-top: 1px solid #d8ebfd;
   text-align: center;
+  color: #7766F6;
   padding-top: 25px;
   padding-bottom: 25px;
+}
+
+.copyright-area--black {
+  color: #000000;
 }
 
 /*=============================
@@ -7942,6 +8154,12 @@ Agency CTA CSS
   color: transparent;
 }
 
+@media (max-width: 425px) {
+  .agency-cta-content .free-trial-content form .input-newsletter {
+    width: 100%;
+  }
+}
+
 .agency-cta-content .free-trial-content form button {
   margin-top: 0;
   margin-left: 24px;
@@ -8046,7 +8264,12 @@ Agency CTA CSS
 .iot-banner-img {
   width: 520px;
   height: 490px;
-  background-color: #c4c4c4;
+}
+
+@media (max-width: 425px) {
+  .iot-banner-img {
+    display: none;
+  }
 }
 
 .products-info-area {

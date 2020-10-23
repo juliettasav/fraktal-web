@@ -7,8 +7,8 @@ class WhyChoose extends Component {
             <section className="why-choose-us why-choose-us--gov">
                 <div className="container">
                     <div className="section-title">
-                        <h2>Governance</h2>
-                        <p>Since Fraktal is community governed, participation is highly important for project success. </p>
+                        <h2>FRAK Economic Layer </h2>
+                        <p>Since Fraktal is community governed, participation is highly important for project success.</p>
                     </div>
                     <div className="row">
                         <div className="col-lg-4 col-md-6">
@@ -30,7 +30,7 @@ class WhyChoose extends Component {
                                 </div>
                                 <div className="single-repair-box__content">
                                     <h3>Propose</h3>
-                                    <p>Anyone is eligible to issue proposals</p>
+                                    <p>Anyone is eligible to issue <br /> proposals</p>
                                 </div>
 
                             </div>

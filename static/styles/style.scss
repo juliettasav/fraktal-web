@@ -100,6 +100,10 @@ p {
     &:last-child {
         margin-bottom: 0;
     }
+    @media (max-width: $mobile-max) {
+        font-size: 12px;
+        line-height: 24px;
+    }
 }
 
 .ptb-80 {
@@ -1685,7 +1689,7 @@ Features CSS
     .single-features-img {
         height: 190px;
         width: 100%;
-        background-color: #C4C4C4;
+        // background-color: #C4C4C4;
     }
     &__content {
         margin-top: 10px;
@@ -2942,6 +2946,12 @@ Blog CSS
     z-index: 1;
     padding-top: 80px;
     padding-bottom: 180px;
+
+    &--home {
+        background-image: url('../../static/images/home/bg-4.png');
+        background-repeat: no-repeat;
+        background-position-y: 30px;
+    }
 
     .pagination-area {
         margin-bottom: 30px;
@@ -4978,7 +4988,8 @@ CTA CSS
         .cta-fraktal-network {
             text-align: center;
             h2 {
-                margin-bottom: 56px;
+                margin: 0 auto 56px;
+                max-width: 848px;
             }
         }
     }
@@ -5639,6 +5650,8 @@ IoT Main Banner CSS
 .iot-main-banner {
     position: relative;
     z-index: 1;
+    background-image: url('../images/home/bg-1.png');
+    background-repeat: no-repeat;
     padding: {
         top: 215px;
         bottom: 170px;
@@ -5646,9 +5659,19 @@ IoT Main Banner CSS
     img {
         min-width: 520px;
     }
+    @media (max-width: $mobile-max) {
+        padding: {
+            top: 153px;
+            bottom: 154px;
+        };  
+    }
 }
 .iot-banner-content {
     max-width: 445px;
+    @media (max-width: $mobile-max) {
+        text-align: center;
+        max-width: auto;
+    }
 
     span {
         color: $primary-dark-color;
@@ -5656,6 +5679,11 @@ IoT Main Banner CSS
         line-height: 42px;
         font-weight: 300;
         display: block;
+        @media (max-width: $mobile-max)  {
+            font-size: 24px;
+            line-height: 36px;
+            margin: 8px 0 32px;
+        }
     }
     h1 {
         color: $primary-dark-color;
@@ -5665,6 +5693,12 @@ IoT Main Banner CSS
         margin: 28px 0;
         max-width: 296px;
         color: $primary-dark-color;
+        @media (max-width: $mobile-max) {
+            margin: 0 0 32px;
+            padding: 0;
+            max-width: none;
+        }
+        
     }
     .btn {
         font-weight: 700;
@@ -5678,6 +5712,7 @@ IoT Main Banner CSS
     top: 56%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
+    
 
     img {
         &:first-child {
@@ -5942,6 +5977,20 @@ IoT CTA CSS
         top: 111px;
         bottom: 145px;
     };
+    &--home {
+        background-image: url('../../static/images/home/bg-3.png');
+        background-repeat: no-repeat;
+    }
+    .row {
+        @media (max-width: $mobile-max) {
+            flex-direction: column-reverse;
+        }
+    }
+    .cta-iot-img {
+        @media (max-width: $mobile-max) {
+           display: none;
+        }
+    }
 }
 .cta-iot-content {
     h2 {
@@ -5985,6 +6034,9 @@ IoT Features CSS
         margin-top: 15px;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
+    @media (max-width: $mobile-max) {
+        text-align: center;
+    }
 }
 .iot-features-image {
     position: relative;
@@ -5992,9 +6044,9 @@ IoT Features CSS
     width: 520px;
     height: 400px;
     flex: none;
-    background-color: #cdcdcd;
-    img {
-        
+    @media (max-width: $mobile-max) {
+        width: 208px;
+        height: 160px;
     }
 }
 
@@ -6023,11 +6075,24 @@ IoT Why Choose Us CSS
     background: $primary-color;
     padding-top: 80px;
     padding-bottom: 154px;
+    &--home {
+        background-image: url('../../static/images/home/bg-2.png');
+        background-size: cover;
+    }
+    @media (max-width: $mobile-max) {
+        padding-top: 54px;
+        padding-bottom: 54px;
+    }
 
     .section-title {
         h2 {
             color: $light-color;
             margin-bottom: 24px;
+            overflow: hidden;
+            @media (max-width: $mobile-max) {
+                height: 50px;
+                margin-bottom: 30px;
+            }
         }
         .bar {
             &::before {
@@ -6039,11 +6104,32 @@ IoT Why Choose Us CSS
             font-size: 16px;
             opacity: .95;
             line-height: 24px;
+            @media (max-width: $mobile-max) {
+                margin-bottom: 24px;
+            }
             
         }
 
         img {
             margin: 62px 0;
+            @media (max-width: $mobile-max) {
+                display: none;
+            }
+        }
+    }
+
+    .single-features {
+        @media (max-width: $mobile-max) {
+            width: 100%;
+            height: auto;
+            padding-left: 0;
+            margin: 0;
+            p {
+                display: none;
+            }
+            .single-features__content {
+                text-align: center;
+            }
         }
     }
     
@@ -6123,20 +6209,33 @@ IoT Why Choose Us CSS
 Footer CSS
 =================================================*/
 .footer-area {
-    padding-top: 80px;
+    padding-top: 54px;
     position: relative;
     z-index: 1;
 
     .row-grid-footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        @media (max-width: $mobile-max) {
+            grid-template-columns: 1fr;
+        }
         &__item:first-child {
             justify-self: flex-start;
+            @media (max-width: $mobile-max) {
+                display: none;
+            }
         }
         &__item:nth-child(2) {
-            
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
+            @media (max-width: $mobile-max) {
+                grid-template-columns: 1fr;
+                .single-footer-widget {
+                    text-align: center;
+                    margin-bottom: 40px;
+                }
+                
+            }
         }
     }
 
@@ -6177,7 +6276,7 @@ Footer CSS
                 font-weight: 300;
                 line-height: 30px;
                 a {
-                    color: $primary-dark-color;
+                    color: $black-text;
                     &:hover {
                         color: $primary-dark-color;
                         padding-left: 7px;
@@ -6218,13 +6317,19 @@ Footer CSS
     }
 }
 .copyright-area {
+    display: flex;
+    flex-direction: column;
     margin-top: 80px;
-    border-top: 1px solid #d8ebfd;
     text-align: center;
+    color: $primary-color;
     padding: {
         top: 25px;
         bottom: 25px;
     };
+    &--black {
+        color: $black-text
+    }
+    
 }
 
 /*=============================
@@ -7893,6 +7998,9 @@ Agency CTA CSS
                         color: transparent;
                     }
                 }
+                @media (max-width: $mobile-max) {
+                    width: 100%;
+                }
             }
             button {
                 margin-top: 0;
@@ -7986,9 +8094,8 @@ Agency CTA CSS
 .iot-banner-img {
     width: 520px;
     height: 490px;
-    background-color: #c4c4c4;
-    img {
-
+    @media (max-width: $mobile-max) {
+        display: none;
     }
 }
 

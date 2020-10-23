@@ -13,10 +13,10 @@ class Features extends Component {
                             <div className=" iot-features-image">
                                 <ReactWOW delay='0.6s' animation='fadeInUp'>
                                     <img
-                                        // src={require('../../static/images/graphics/3.png')}
-                                        // className="wow fadeInUp"
-                                        // data-wow-delay="0.6s"
-                                        // alt="image"
+                                        src={require('../../static/images/home/2.png')}
+                                        className="wow fadeInUp"
+                                        data-wow-delay="0.6s"
+                                        alt="image"
                                         alt="image"
                                         className="wow fadeInUp"
                                     />
@@ -24,8 +24,9 @@ class Features extends Component {
                             </div>
                             <div className=" iot-features-content">
                                 <h3>What is Fraktal?</h3>
-                                <p>Fraktal is a Blockchain Network which solves scalability and transaction costs issues present in other smart contract platforms, while still remaining open, secure, and decentralised.
-                                This enables DeFi applications to scale to a global level and opens up the door to a whole new range of use cases that were never before possible.</p>
+                                <p>
+                                    Fraktal solves Blockchain scalability and privacy while remaining secure and decentralised. This enables countless new use cases for high frequency, low value transactions which have never before been possible.
+                                </p>
 
                                 <Link href="#">
                                     <a className="btn btn-secondary-green">Explore More</a>
@@ -40,15 +41,16 @@ class Features extends Component {
                         
                         <div className="iot-features-content">
                             <h3>What is DeFi?</h3>
-                            <p>DeFi (Decentralised Financial) apps give users full control over their assets, enabling investors to vastly increase their profits by no longer having to pay fees to banks, brokers, or other financial service providers.
-                            It will have a larger impact on the world than any technology ever has. By rewiring how economies function and how people store, transact, and invest anything of value.</p>
+                            <p>
+                                DeFi (Decentralised Finance) is a new era of finance powered by blockchain technology. It will have a larger impact on the world than any technology ever has by creating a secure environment for people to conduct trustless transactions.
+                            </p>
                             
                         </div>
 
-                        <div className=" iot-features-image">
+                        <div className="iot-features-image">
                             <ReactWOW delay='0.6s' animation='fadeInUp'>
                                 <img
-                                    // src={require('../../static/images/graphics/2.png')}
+                                    src={require('../../static/images/home/3.png')}
                                     className="wow fadeInUp"
                                     data-wow-delay="0.6s"
                                     alt="image"

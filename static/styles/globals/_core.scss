@@ -1,4 +1,5 @@
 $shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+$mobile-max: 425px;
 
 .container {
     max-width: 77.2%; //1040px
@@ -10,28 +11,48 @@ $shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
 .row-grid {
     display: grid;
-
-    
     &.main-banner-grid {
         grid-template-columns: 1fr 1fr;
         gap: 80px;
     }
+
     &.intro-grid {
         grid-template-columns: 1fr 1fr;
         gap: 80px;
+        @media (max-width: $mobile-max) {
+            gap: 16px;
+        }
     }
 
     &.why-choose-grid {
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 49px;
-        
+        gap: 49px; 
+        @media (max-width: $mobile-max) {
+            gap: 28px;
+        }
     }
+    @media (max-width: $mobile-max) {
+        grid-template-columns: 1fr !important;
+        gap: 0px;
+        justify-items: center;
+    }
+    
+}
+
+span {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 200;
 }
 
 h1 {
     font-size: 75px;
     line-height: 112px;
     font-weight: 700;
+    @media (max-width: $mobile-max) {
+        font-size: 36px;
+        line-height: 54px;
+    }
 }
 
 h2 {
@@ -64,9 +85,24 @@ h2 {
     line-height: normal;
 }
 
-.iot-features-area, .iot-main-banner {
+.iot-features-area {
     padding-bottom: 125px;
+    @media (max-width: $mobile-max) {
+        padding-bottom: 54px;
+    }
+    a.btn {
+        display: none;
+    }
 }
 .row {
     align-items: flex-start;
+}
+
+button, .btn {
+    @media (max-width: $mobile-max) {
+        border-radius: 0px !important;
+        padding: 11px 35px !important;
+        font-size: 12px !important;
+        line-height: 18px !important;
+    }
 }

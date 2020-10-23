@@ -12,7 +12,9 @@ class Features extends Component {
                     <div className="row align-items-flex-start justify-content-between">
                         <div className=" col-5 iot-features-content">
                             <h3>Open source community</h3>
-                            <p>This means that no single company or person owns Fraktal. Both individuals and companies unite to bring the Fraktal mission to life and make the world a more equal and inclusive place.</p>
+                            <p>
+                            This means that no single company or person owns Fraktal. Both individuals and companies unite to bring the Fraktal mission to life and make the world a more equal and inclusive place.
+                            </p>
                         </div>
 
                         <div className="col-7 iot-features-image">

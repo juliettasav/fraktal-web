@@ -31,7 +31,9 @@ class Partner extends Component {
 
                 <div className="section-title">
                     <h2>Fraktal Network Architecture</h2>
-                    <p>The Fraktal Network is a Proof of Stake Blockchain powered by the Tendermint Consensus Engine and developed with CosmosSDK. It extends smart contract functionality and developer tooling through the integration of the CosmWasm Virtual Machine.</p>
+                    <p>
+                        The Fraktal Network is a Proof-of-Stake Blockchain powered by the Tendermint Consensus Engine and developed with CosmosSDK. It extends smart contract functionality and developer tooling through the integration of the CosmWasm Virtual Machine.
+                    </p>
 
 
                 </div>

@@ -11,7 +11,7 @@ class Features extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 iot-features-content">
-                            <h3>The Fraktal Network Token (FRAK)</h3>
+                            <h3>The Fraktal Network Token</h3>
                             <p>FRAK is the native token of the Fraktal Network of Blockchains. What is unique is that this one token is used to validate an infinite number of parallel chains.</p>
 
                         </div>
@@ -45,8 +45,10 @@ class Features extends Component {
                         </div>
 
                         <div className="col-lg-6 iot-features-content">
-                            <h3>Inflationary → Deflationary</h3>
-                            <p>The Fraktal Network will begin as an inflationary network with a targeted inflation rate of 7.5% annually. In the Fraktal-4 release validator fees will no longer be from inflation and will transition to network fees. The exact amount can be dynamically changed via on-chain governance to decide the correct allocation between the Community Fund, Burning, and Validator Rewards. </p>
+                            <h3>Inflationary - Deflationary</h3>
+                            <p>
+                                The Fraktal Network will begin as an inflationary network with a targeted inflation rate of 7.5% annually. In the Fraktal-4 release, validator fees will no longer be from inflation and will trransistion to the network fees. The exact amount can be dynamically changed via  on-chain governance to decide the correct allocation between the Community Fund, Burning, and Validator Rewards.
+                            </p>
 
 
 
