@@ -50,13 +50,37 @@ This files table contents are outlined below>>>>>
 Default CSS
 =================================================*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  background-color: #F5F2F7;
+}
+
 .container {
   max-width: 77.2%;
+  padding: 0;
+  margin: 0 auto;
+}
+
+@media (max-width: 425px) {
+  .container {
+    max-width: 80.2%;
+  }
 }
 
 .container--header {
   max-width: 86.1%;
   margin: 0 auto;
+}
+
+.navbar-style-three .startp-nav {
+  padding: 0 !important;
+}
+
+.navbar-toggler {
+  padding: 0;
 }
 
 .row-grid {
@@ -103,10 +127,166 @@ Default CSS
   }
 }
 
-span {
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 200;
+.btn-secondary-green, .btn-secondary-purple {
+  min-width: 160px;
+  color: #F5F2F7;
+  margin-top: 15px;
+  font-weight: 700;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.btn-secondary-green {
+  background-color: #03C4A1;
+  -webkit-transition: all ease-in-out .2s;
+  transition: all ease-in-out .2s;
+}
+
+.btn-secondary-green:hover {
+  background-color: #5245AF;
+  color: #F5F2F7;
+}
+
+@media (max-width: 425px) {
+  .btn-secondary-green {
+    border-radius: 0px !important;
+    padding: 11px 35px !important;
+    font-size: 12px !important;
+    line-height: 18px !important;
+  }
+}
+
+.btn-secondary-purple {
+  background-color: #5245AF;
+}
+
+.odometer.odometer-auto-theme, .odometer.odometer-theme-default {
+  line-height: normal;
+}
+
+.iot-features-area {
+  padding-bottom: 125px;
+}
+
+@media (max-width: 425px) {
+  .iot-features-area {
+    padding-bottom: 54px;
+  }
+}
+
+.row {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.btn {
+  border: none;
+  padding: 20px 40px;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 18px;
+  border-radius: 0px;
+}
+
+.grid-row {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.grid-row.template-two {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
+}
+
+@media (max-width: 425px) {
+  .grid-row.template-two {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    justify-items: center;
+    -webkit-column-gap: 0px;
+            column-gap: 0px;
+  }
+}
+
+.grid-row.template-three {
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-row.grid-reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.grid-row.main-banner-grid {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.first-intro-home-block {
+      grid-template-areas: "image title" "image content" "image content" "image .";
+}
+
+.second-intro-home-block {
+      grid-template-areas: "title image" "content image" ". image";
+}
+
+.first-intro-home-block h3, .second-intro-home-block h3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: title;
+}
+
+.first-intro-home-block .iot-features-content, .second-intro-home-block .iot-features-content {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: content;
+}
+
+.first-intro-home-block p, .second-intro-home-block p {
+  margin-bottom: 28px;
+}
+
+.first-intro-home-block .iot-features-image, .second-intro-home-block .iot-features-image {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  grid-area: image;
+}
+
+@media (max-width: 425px) {
+  .first-intro-home-block, .second-intro-home-block {
+        grid-template-areas: "title" "image" "content";
+  }
+}
+
+/* owl carousel btn */
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -128,59 +308,41 @@ h2 {
   font-size: 43px;
 }
 
-.btn-secondary-green, .btn-secondary-purple {
-  color: #F5F2F7;
-  margin-top: 15px;
-  font-weight: 700;
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-.btn-secondary-green {
-  background-color: #03C4A1;
-  -webkit-transition: all ease-in-out .2s;
-  transition: all ease-in-out .2s;
-}
-
-.btn-secondary-green:hover {
-  background-color: #5245AF;
-  color: #F5F2F7;
-}
-
-.btn-secondary-purple {
-  background-color: #5245AF;
-}
-
-.odometer.odometer-auto-theme, .odometer.odometer-theme-default {
-  line-height: normal;
-}
-
-.iot-features-area {
-  padding-bottom: 125px;
-}
-
 @media (max-width: 425px) {
-  .iot-features-area {
-    padding-bottom: 54px;
+  h2 {
+    font-size: 28px;
+    line-height: 42px;
   }
 }
 
-.iot-features-area a.btn {
-  display: none;
-}
-
-.row {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+h3 {
+  line-height: 112px;
+  font-weight: 700;
+  font-size: 72px;
 }
 
 @media (max-width: 425px) {
-  button, .btn {
-    border-radius: 0px !important;
-    padding: 11px 35px !important;
-    font-size: 12px !important;
-    line-height: 18px !important;
+  h3 {
+    line-height: 54px;
+    font-size: 36px;
+  }
+}
+
+p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
+  color: #5245AF;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 425px) {
+  p {
+    font-size: 12px;
+    line-height: 24px;
   }
 }
 
@@ -223,250 +385,555 @@ h2 {
   right: 61px;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-  padding: 0;
-  margin: 0;
-  font-size: 18px;
-  background-color: #F5F2F7;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-a {
-  display: inline-block;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  text-decoration: none;
-  outline: 0 !important;
-}
-
-a:hover, a:focus {
-  text-decoration: none;
-}
-
-.d-table {
-  width: 100%;
-  height: 100%;
-}
-
-.d-table-cell {
-  vertical-align: middle;
-}
-
-p {
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 32px;
-  color: #5245AF;
-}
-
-p:last-child {
-  margin-bottom: 0;
+.agency-cta-area {
+  position: relative;
+  z-index: 1;
+  background-color: #7766F6;
+  padding-top: 110px;
+  padding-bottom: 77px;
 }
 
 @media (max-width: 425px) {
-  p {
-    font-size: 12px;
-    line-height: 24px;
+  .agency-cta-area {
+    padding: 45px 0;
   }
 }
 
-.ptb-80 {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-
-/* owl carousel btn */
-.owl-theme .owl-nav {
-  margin-top: 0;
-}
-
-.owl-theme .owl-dots {
-  margin-top: 20px;
-  line-height: 0.01;
-}
-
-.owl-theme .owl-dots .owl-dot span {
-  width: 15px !important;
-  height: 15px !important;
-  margin: 0 5px !important;
-  background: #D6D6D6 !important;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  border-radius: 50%;
-}
-
-.btn {
-  border: none;
-  padding: 20px 40px;
-  position: relative;
-  z-index: 1;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  font-size: 18px;
-  border-radius: 0px;
-}
-
-/* form control */
-.form-group {
-  margin-bottom: 18px;
-}
-
-label {
-  margin-bottom: 10px;
-  font-size: 15px;
-  font-weight: 500;
-}
-
-.form-control {
-  height: 50px;
-  padding: 10px 20px;
-  font-size: 14px;
-  border: 1px solid #eeeeee;
-  border-radius: 0;
-  background: #eeeeee;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.form-control:focus {
-  outline: 0;
-  background: #ffffff;
-  -webkit-box-shadow: unset;
-          box-shadow: unset;
-}
-
-/*Section Title*/
-.section-title {
+.agency-cta-area .agency-cta-content {
   text-align: center;
 }
 
-.section-title h2 {
+.agency-cta-area .agency-cta-content h2 {
+  color: #F5F2F7;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 425px) {
+  .agency-cta-area .agency-cta-content h2 {
+    text-align: center;
+  }
+}
+
+.agency-cta-area .agency-cta-content .btn {
+  margin-top: 0;
+}
+
+.agency-cta-area .agency-cta-content .free-trial-content {
+  margin-bottom: 52px;
+}
+
+@media (max-width: 425px) {
+  .agency-cta-area .agency-cta-content .free-trial-content {
+    margin-bottom: 40px;
+  }
+}
+
+.agency-cta-area .agency-cta-content .free-trial-content h2 {
   margin-bottom: 0;
+  font-size: 28px;
+  font-weight: 600;
 }
 
-.section-title p {
-  max-width: 520px;
-  margin: 0 auto;
-}
-
-.section-title .bar {
-  height: 5px;
-  width: 90px;
-  background: #cdf1d8;
-  margin: 20px auto;
+.agency-cta-area .agency-cta-content .free-trial-content form.newsletter-form {
   position: relative;
-  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 24px;
 }
 
-.section-title .bar::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: -2.7px;
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-name: MOVE-BG;
-          animation-name: MOVE-BG;
+@media (max-width: 425px) {
+  .agency-cta-area .agency-cta-content .free-trial-content form.newsletter-form {
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
-.section-title .sub-title {
+.agency-cta-area .agency-cta-content .free-trial-content form.newsletter-form .input-newsletter {
+  width: 428px;
   display: inline-block;
-  background-color: #f5dffd;
-  margin-bottom: 18px;
-  border-radius: 30px;
-  padding: 5px 20px 4px;
-  font-size: 13px;
+  height: 68px;
+  color: #000000;
+  border: none;
+  outline: 0;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+  background-color: #F5F2F7;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 43px;
 }
 
-@-webkit-keyframes MOVE-BG {
-  from {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  to {
-    -webkit-transform: translateX(88px);
-            transform: translateX(88px);
+.agency-cta-area .agency-cta-content .free-trial-content form.newsletter-form .input-newsletter::-webkit-input-placeholder {
+  color: #C4C4C4;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+}
+
+.agency-cta-area .agency-cta-content .free-trial-content form.newsletter-form .input-newsletter:-ms-input-placeholder {
+  color: #C4C4C4;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+}
+
+.agency-cta-area .agency-cta-content .free-trial-content form.newsletter-form .input-newsletter::-ms-input-placeholder {
+  color: #C4C4C4;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+}
+
+.agency-cta-area .agency-cta-content .free-trial-content form.newsletter-form .input-newsletter::placeholder {
+  color: #C4C4C4;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+}
+
+.agency-cta-area .agency-cta-content .free-trial-content form.newsletter-form .input-newsletter:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.agency-cta-area .agency-cta-content .free-trial-content form.newsletter-form .input-newsletter:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.agency-cta-area .agency-cta-content .free-trial-content form.newsletter-form .input-newsletter:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+.agency-cta-area .agency-cta-content .free-trial-content form.newsletter-form .input-newsletter:focus::placeholder {
+  color: transparent;
+}
+
+@media (max-width: 425px) {
+  .agency-cta-area .agency-cta-content .free-trial-content form.newsletter-form .input-newsletter {
+    width: 100%;
   }
 }
 
-@keyframes MOVE-BG {
-  from {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  to {
-    -webkit-transform: translateX(88px);
-            transform: translateX(88px);
-  }
+.agency-cta-area .agency-cta-content .free-trial-content form.newsletter-form button {
+  margin-top: 0;
+  margin-left: 24px;
+  border: none;
+  width: 187px;
+  height: 68px;
+}
+
+.agency-cta-area .agency-cta-content .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  gap: 32px;
+}
+
+.agency-cta-area .agency-cta-content .social-links li a {
+  text-align: center;
+  line-height: 27px;
+}
+
+.agency-cta-area .agency-cta-content .social-links li a img {
+  width: 32px;
 }
 
 /*================================================
-Preloader CSS
+IoT Main Banner CSS
 =================================================*/
-.preloader {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 9999999;
+.iot-main-banner {
+  position: relative;
+  z-index: 1;
+  background-image: url("../images/home/bg-1.png");
+  background-repeat: no-repeat;
+  padding-top: 215px;
+  padding-bottom: 170px;
 }
 
-.preloader .spinner {
-  width: 60px;
-  height: 60px;
-  background-color: #ffffff;
-  margin: 0 auto;
-  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
-          animation: sk-rotateplane 1.2s infinite ease-in-out;
+.iot-main-banner img {
+  min-width: 520px;
+}
+
+@media (max-width: 425px) {
+  .iot-main-banner {
+    padding-top: 153px;
+    padding-bottom: 34px;
+  }
+}
+
+.iot-banner-content {
+  max-width: 445px;
+}
+
+@media (max-width: 425px) {
+  .iot-banner-content {
+    text-align: center;
+    max-width: auto;
+  }
+}
+
+.iot-banner-content span {
+  color: #5245AF;
+  font-size: 28px;
+  line-height: 42px;
+  font-weight: 300;
+  display: block;
+}
+
+@media (max-width: 425px) {
+  .iot-banner-content span {
+    font-size: 24px;
+    line-height: 36px;
+    margin: 8px 0 32px;
+  }
+}
+
+.iot-banner-content h1 {
+  color: #5245AF;
+  margin: 0;
+}
+
+.iot-banner-content p {
+  margin: 28px 0;
+  max-width: 296px;
+  color: #5245AF;
+}
+
+@media (max-width: 425px) {
+  .iot-banner-content p {
+    margin: 0 0 32px;
+    padding: 0;
+    max-width: none;
+  }
+}
+
+.iot-banner-content .btn {
+  font-weight: 700;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.iot-banner-image {
   position: absolute;
+  text-align: center;
+  right: 30px;
+  top: 56%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.iot-banner-image img:first-child {
+  max-width: 730px;
+}
+
+.iot-banner-image img:last-child {
+  position: absolute;
+  left: -118px;
   right: 0;
-  left: 0;
-  -webkit-box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.4);
-          box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.4);
-  top: 50%;
-  margin-top: -75px;
+  margin: 0 auto;
+  top: 39px;
+  z-index: -1;
 }
 
-@-webkit-keyframes sk-rotateplane {
+.animate-border span {
+  position: absolute;
+  display: block;
+  width: 5%;
+  padding-bottom: 5%;
+  top: 51%;
+  left: 70%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  pointer-events: none;
+  border-radius: 50%;
+  z-index: -2;
+}
+
+.animate-border span:nth-child(1) {
+  -webkit-animation: 4.2s ease-out .5s infinite normal none running pulsei;
+  animation: 4.2s ease-out .5s infinite normal none running pulsei;
+}
+
+.animate-border span:nth-child(2) {
+  -webkit-animation: 4.2s ease-out 1.5s infinite normal none running pulsei;
+  animation: 4.2s ease-out 1.5s infinite normal none running pulsei;
+}
+
+.animate-border span:nth-child(3) {
+  -webkit-animation: 4.2s ease-out 2.5s infinite normal none running pulsei;
+  animation: 4.2s ease-out 2.5s infinite normal none running pulsei;
+}
+
+.animate-border span:nth-child(4) {
+  -webkit-animation: 4.2s ease-out 3.5s infinite normal none running pulsei;
+  animation: 4.2s ease-out 3.5s infinite normal none running pulsei;
+}
+
+@-webkit-keyframes pulsei {
   0% {
-    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-            transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-  }
-  50% {
-    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-            transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    border: 1.5px solid #b3eaf8;
+    opacity: 1;
+    width: 5%;
+    padding-bottom: 5%;
   }
   100% {
-    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-            transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 0;
+    width: 50%;
+    border: 1.5px solid #b3eaf8;
+    padding-bottom: 50%;
   }
 }
 
-@keyframes sk-rotateplane {
+@keyframes pulsei {
   0% {
-    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-            transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-  }
-  50% {
-    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-            transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    border: 1.5px solid #b3eaf8;
+    opacity: 1;
+    width: 5%;
+    padding-bottom: 5%;
   }
   100% {
-    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-            transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 0;
+    width: 50%;
+    border: 1.5px solid #b3eaf8;
+    padding-bottom: 50%;
+  }
+}
+
+.iot-why-choose-us {
+  position: relative;
+  z-index: 1;
+  padding-top: 80px;
+  padding-bottom: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 425px) {
+  .iot-why-choose-us {
+    padding-top: 54px;
+    padding-bottom: 54px;
+  }
+}
+
+.iot-why-choose-us .section-title {
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+@media (max-width: 425px) {
+  .iot-why-choose-us .section-title {
+    margin-bottom: 24px;
+  }
+}
+
+.iot-why-choose-us .section-title h2 {
+  margin-bottom: 24px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.iot-why-choose-us .section-title p {
+  text-align: center;
+}
+
+.iot-why-choose-us--architecture {
+  background-color: #7766F6;
+}
+
+.iot-why-choose-us--architecture h2 {
+  color: #F5F2F7;
+}
+
+.iot-why-choose-us--architecture p {
+  color: #F5F2F7;
+  max-width: 715px;
+  margin: 0 auto;
+}
+
+.iot-why-choose-us--architecture img {
+  background-color: #F5F2F7;
+}
+
+.iot-why-choose-us--gov h2 {
+  color: #5245AF;
+}
+
+.iot-why-choose-us--gov .single-repair-box {
+  background-color: #ffffff;
+}
+
+@media (max-width: 425px) {
+  .iot-why-choose-us--gov .row {
+    gap: 24px;
+  }
+}
+
+.iot-why-choose-us--leads-defi {
+  background: #7766F6;
+  background-image: url("../../static/images/home/bg-2.png");
+}
+
+.iot-why-choose-us--leads-defi h2 {
+  color: #F5F2F7;
+}
+
+@media (max-width: 425px) {
+  .iot-why-choose-us--leads-defi h2 {
+    height: 42px;
+  }
+}
+
+.iot-why-choose-us--leads-defi p {
+  color: #F5F2F7;
+}
+
+.iot-why-choose-us--leads-defi img {
+  margin-top: 62px;
+}
+
+@media (max-width: 425px) {
+  .iot-why-choose-us--leads-defi img {
+    display: none;
+  }
+}
+
+.iot-why-choose-us--leads-defi .single-features__content p {
+  color: #5245AF;
+}
+
+.iot-why-choose-us--funfacts-area {
+  padding-bottom: 120px;
+}
+
+.iot-why-choose-us--funfacts-area h2 {
+  color: #5245AF;
+}
+
+.iot-why-choose-us--funfacts-area h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #7766F6;
+}
+
+.iot-why-choose-us--funfacts-area p {
+  color: #5245AF;
+  max-width: 609px;
+  margin: 0 auto;
+}
+
+@media (max-width: 425px) {
+  .iot-why-choose-us--funfacts-area p {
+    max-width: 178px;
+    max-height: 64px;
+    margin-top: 24px;
+    margin-bottom: 44px;
+    font-size: 16px;
+    line-height: 32px;
+    overflow: hidden;
+  }
+}
+
+.iot-why-choose-us--funfacts-area .row {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media (max-width: 425px) {
+  .iot-why-choose-us--funfacts-area .funfact {
+    margin-bottom: 21px;
+  }
+}
+
+.iot-why-choose-us--funfacts-area .funfact p {
+  text-align: center;
+}
+
+@media (max-width: 425px) {
+  .iot-why-choose-us--funfacts-area .funfact p {
+    margin: 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .iot-why-choose-us--funfacts-area {
+    padding: 54px 0 33px;
+  }
+}
+
+.iot-why-choose-us--blog-area {
+  background-image: url("../../static/images/home/bg-4.png");
+  background-position-y: 30px;
+}
+
+.iot-why-choose-us--blog-area h2 {
+  color: #5245AF;
+}
+
+@media (max-width: 425px) {
+  .iot-why-choose-us--blog-area h2 {
+    max-width: 210px;
+    height: 42px;
+    overflow: hidden;
+    margin: 0 auto 24px;
+  }
+}
+
+.iot-why-choose-us--blog-area p {
+  color: #5245AF;
+}
+
+@media (max-width: 425px) {
+  .iot-why-choose-us--blog-area p {
+    display: none;
   }
 }
 
@@ -655,6 +1122,159 @@ Navbar CSS
 .navbar-style-three .startp-nav {
   padding-left: 25px;
   padding-right: 25px;
+}
+
+.products-info-area {
+  padding-top: 190px;
+  padding-bottom: 140px;
+}
+
+.products-info-area h2 {
+  color: #5245AF;
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.products-info-area .single-features {
+  background-color: #7766F6;
+  width: 329px;
+  height: 355px;
+}
+
+@media (max-width: 425px) {
+  .products-info-area .single-features {
+    width: 100%;
+  }
+}
+
+.products-info-area .single-features .single-features-img {
+  height: 130px;
+}
+
+.products-info-area .single-features h3, .products-info-area .single-features p {
+  color: #F5F2F7;
+}
+
+.hosting-features-area {
+  padding-top: 80px;
+  padding-bottom: 140px;
+}
+
+.hosting-features-area h2 {
+  color: #5245AF;
+  text-align: center;
+  max-width: 575px;
+  margin: 0 auto 64px;
+}
+
+.hosting-features-area .single-features {
+  width: 329px;
+  height: 355px;
+  background-color: #7766F6;
+}
+
+@media (max-width: 425px) {
+  .hosting-features-area .single-features {
+    width: 100%;
+  }
+}
+
+.hosting-features-area .single-features .single-features-img {
+  height: 130px;
+}
+
+.hosting-features-area .single-features h3 {
+  margin-bottom: 20px;
+  color: #F5F2F7;
+}
+
+.hosting-features-area .single-features p {
+  color: #F5F2F7;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@-webkit-keyframes MOVE-BG {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(88px);
+            transform: translateX(88px);
+  }
+}
+
+@keyframes MOVE-BG {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(88px);
+            transform: translateX(88px);
+  }
+}
+
+/*================================================
+Preloader CSS
+=================================================*/
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999999;
+}
+
+.preloader .spinner {
+  width: 60px;
+  height: 60px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+          animation: sk-rotateplane 1.2s infinite ease-in-out;
+  position: absolute;
+  right: 0;
+  left: 0;
+  -webkit-box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.4);
+  top: 50%;
+  margin-top: -75px;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% {
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+            transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+            transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+            transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+
+@keyframes sk-rotateplane {
+  0% {
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+            transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+            transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+            transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
 }
 
 /*================================================
@@ -1921,8 +2541,19 @@ Features CSS
   margin: 0 auto;
 }
 
-.single-features:nth-child(2n+1) {
-  margin-bottom: 20px;
+@media (max-width: 425px) {
+  .single-features {
+    width: 100%;
+    height: auto;
+    padding-left: 0;
+    margin: 0;
+  }
+  .single-features p {
+    display: none;
+  }
+  .single-features .single-features__content {
+    text-align: center;
+  }
 }
 
 .single-features .single-features-img {
@@ -1940,40 +2571,12 @@ Features CSS
   font-weight: 500;
   font-size: 24px;
   margin-bottom: 28px;
+  line-height: 36px;
   color: #5245AF;
 }
 
 .single-features__content p {
   color: #5245AF;
-}
-
-.hosting-features-area {
-  padding-top: 80px;
-  padding-bottom: 140px;
-}
-
-.hosting-features-area h2 {
-  color: #5245AF;
-  margin-bottom: 64px;
-}
-
-.hosting-features-area .single-features {
-  width: 329px;
-  height: 355px;
-  background-color: #7766F6;
-}
-
-.hosting-features-area .single-features .single-features-img {
-  height: 130px;
-}
-
-.hosting-features-area .single-features h3 {
-  margin-bottom: 20px;
-  color: #F5F2F7;
-}
-
-.hosting-features-area .single-features p {
-  color: #F5F2F7;
 }
 
 .single-hosting-features {
@@ -2382,49 +2985,6 @@ Works CSS
 /*================================================
 Fun Facts CSS
 =================================================*/
-.funfacts-area {
-  position: relative;
-  z-index: 1;
-  padding-top: 80px;
-  padding-bottom: 160px;
-}
-
-.funfacts-area .section-title h2 {
-  color: #5245AF;
-}
-
-.funfacts-area .section-title p {
-  color: #5245AF;
-  margin-top: 54px;
-  margin-bottom: 80px;
-  max-width: 609px;
-}
-
-.funfact {
-  text-align: center;
-}
-
-.funfact h3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #7766F6;
-  font-size: 75px;
-  line-height: 112.5px;
-  margin-bottom: 7px;
-  font-weight: 700;
-}
-
-.funfact p {
-  font-size: 20px;
-}
-
 .contact-cta-box {
   margin: 80px auto 0;
   max-width: 600px;
@@ -3122,33 +3682,6 @@ Partner CSS
 /*================================================
 Blog CSS
 =================================================*/
-.blog-area {
-  position: relative;
-  z-index: 1;
-  padding-top: 80px;
-  padding-bottom: 180px;
-}
-
-.blog-area--home {
-  background-image: url("../../static/images/home/bg-4.png");
-  background-repeat: no-repeat;
-  background-position-y: 30px;
-}
-
-.blog-area .pagination-area {
-  margin-bottom: 30px;
-}
-
-.blog-area h2 {
-  color: #5245AF;
-  margin-bottom: 54px;
-}
-
-.blog-area p {
-  color: #5245AF;
-  margin-bottom: 123px;
-}
-
 .single-blog-post {
   position: relative;
   -webkit-transition: 0.5s;
@@ -5086,6 +5619,13 @@ CTA CSS
   padding-bottom: 143px;
 }
 
+@media (max-width: 425px) {
+  .cta-area--fraktal-network {
+    padding-top: 54px;
+    padding-bottom: 80px;
+  }
+}
+
 .cta-area--fraktal-network .cta-fraktal-network {
   text-align: center;
 }
@@ -5486,6 +6026,10 @@ Repair CTA CSS
   padding-bottom: 140px;
 }
 
+.repair-cta-area .col-lg-6 {
+  text-align: center;
+}
+
 .cta-repair-content p {
   color: #F5F2F7;
   margin-top: 18px;
@@ -5541,6 +6085,7 @@ Repair Why Choose Us CSS
 
 .repair-why-choose-us .section-title h2 {
   color: #F5F2F7;
+  text-align: center;
   padding-top: 80px;
   padding-bottom: 64px;
 }
@@ -5548,6 +6093,12 @@ Repair Why Choose Us CSS
 .repair-why-choose-us .section-title p {
   color: #ffffff;
   opacity: .95;
+}
+
+@media (max-width: 425px) {
+  .repair-why-choose-us .row {
+    gap: 24px;
+  }
 }
 
 .single-repair-box {
@@ -5560,6 +6111,12 @@ Repair Why Choose Us CSS
   z-index: 1;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+@media (max-width: 425px) {
+  .single-repair-box {
+    width: 100%;
+  }
 }
 
 .single-repair-box__img {
@@ -5649,250 +6206,6 @@ a {
 /*================================================
 Repair Feedback CSS
 =================================================*/
-.single-repair-feedback {
-  background: #ffffff;
-  border-radius: 5px;
-  margin-bottom: 55px;
-  position: relative;
-  text-align: center;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.single-repair-feedback .client-img {
-  position: relative;
-  text-align: left;
-  margin-bottom: 40px;
-  display: inline-block;
-  padding-left: 108px;
-  padding-top: 18px;
-}
-
-.single-repair-feedback .client-img img {
-  border-radius: 50%;
-  padding: 3px;
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 90px;
-  height: 90px;
-}
-
-.single-repair-feedback .client-img h3 {
-  font-size: 18px;
-  margin: 0;
-}
-
-.single-repair-feedback .client-img span {
-  display: block;
-  margin-top: 8px;
-}
-
-.single-repair-feedback p {
-  font-size: 15px;
-}
-
-.single-repair-feedback::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -25px;
-  width: 50px;
-  height: 50px;
-  background: #ffffff;
-  right: 0;
-  margin: 0 auto;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-.single-repair-feedback::after {
-  content: "\f11b";
-  position: absolute;
-  top: 0;
-  left: 25px;
-  color: #d9dcde;
-  font-family: Flaticon;
-  font-size: 30px;
-  font-style: normal;
-  font-size: 65px;
-}
-
-/*================================================
-IoT Main Banner CSS
-=================================================*/
-.iot-main-banner {
-  position: relative;
-  z-index: 1;
-  background-image: url("../images/home/bg-1.png");
-  background-repeat: no-repeat;
-  padding-top: 215px;
-  padding-bottom: 170px;
-}
-
-.iot-main-banner img {
-  min-width: 520px;
-}
-
-@media (max-width: 425px) {
-  .iot-main-banner {
-    padding-top: 153px;
-    padding-bottom: 154px;
-  }
-}
-
-.iot-banner-content {
-  max-width: 445px;
-}
-
-@media (max-width: 425px) {
-  .iot-banner-content {
-    text-align: center;
-    max-width: auto;
-  }
-}
-
-.iot-banner-content span {
-  color: #5245AF;
-  font-size: 28px;
-  line-height: 42px;
-  font-weight: 300;
-  display: block;
-}
-
-@media (max-width: 425px) {
-  .iot-banner-content span {
-    font-size: 24px;
-    line-height: 36px;
-    margin: 8px 0 32px;
-  }
-}
-
-.iot-banner-content h1 {
-  color: #5245AF;
-  margin: 0;
-}
-
-.iot-banner-content p {
-  margin: 28px 0;
-  max-width: 296px;
-  color: #5245AF;
-}
-
-@media (max-width: 425px) {
-  .iot-banner-content p {
-    margin: 0 0 32px;
-    padding: 0;
-    max-width: none;
-  }
-}
-
-.iot-banner-content .btn {
-  font-weight: 700;
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-.iot-banner-image {
-  position: absolute;
-  text-align: center;
-  right: 30px;
-  top: 56%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.iot-banner-image img:first-child {
-  max-width: 730px;
-}
-
-.iot-banner-image img:last-child {
-  position: absolute;
-  left: -118px;
-  right: 0;
-  margin: 0 auto;
-  top: 39px;
-  z-index: -1;
-}
-
-.animate-border span {
-  position: absolute;
-  display: block;
-  width: 5%;
-  padding-bottom: 5%;
-  top: 51%;
-  left: 70%;
-  opacity: 0;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  pointer-events: none;
-  border-radius: 50%;
-  z-index: -2;
-}
-
-.animate-border span:nth-child(1) {
-  -webkit-animation: 4.2s ease-out .5s infinite normal none running pulsei;
-  animation: 4.2s ease-out .5s infinite normal none running pulsei;
-}
-
-.animate-border span:nth-child(2) {
-  -webkit-animation: 4.2s ease-out 1.5s infinite normal none running pulsei;
-  animation: 4.2s ease-out 1.5s infinite normal none running pulsei;
-}
-
-.animate-border span:nth-child(3) {
-  -webkit-animation: 4.2s ease-out 2.5s infinite normal none running pulsei;
-  animation: 4.2s ease-out 2.5s infinite normal none running pulsei;
-}
-
-.animate-border span:nth-child(4) {
-  -webkit-animation: 4.2s ease-out 3.5s infinite normal none running pulsei;
-  animation: 4.2s ease-out 3.5s infinite normal none running pulsei;
-}
-
-@-webkit-keyframes pulsei {
-  0% {
-    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-    border: 1.5px solid #b3eaf8;
-    opacity: 1;
-    width: 5%;
-    padding-bottom: 5%;
-  }
-  100% {
-    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-    opacity: 0;
-    width: 50%;
-    border: 1.5px solid #b3eaf8;
-    padding-bottom: 50%;
-  }
-}
-
-@keyframes pulsei {
-  0% {
-    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-    border: 1.5px solid #b3eaf8;
-    opacity: 1;
-    width: 5%;
-    padding-bottom: 5%;
-  }
-  100% {
-    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-    opacity: 0;
-    width: 50%;
-    border: 1.5px solid #b3eaf8;
-    padding-bottom: 50%;
-  }
-}
-
 /*================================================
 IoT Partner CSS
 =================================================*/
@@ -5902,7 +6215,14 @@ IoT Partner CSS
   text-align: center;
 }
 
-.iot-partner-area h2 {
+@media (max-width: 425px) {
+  .iot-partner-area {
+    padding-top: 54px;
+    padding-bottom: 54px;
+  }
+}
+
+.iot-partner-area--home h2 {
   color: #5245AF;
   font-size: 43px;
   font-weight: 700;
@@ -5910,26 +6230,22 @@ IoT Partner CSS
   margin-bottom: 54px;
 }
 
-.iot-partner-area p {
+@media (max-width: 425px) {
+  .iot-partner-area--home h2 {
+    margin-bottom: 24px;
+  }
+}
+
+.iot-partner-area--home p {
   color: #5245AF;
-  margin-bottom: 80px;
+  margin: 0 auto 80px;
+  max-width: 663px;
 }
 
-.iot-partner-area--architecture {
-  background-color: #7766F6;
-  padding-bottom: 22px;
-}
-
-.iot-partner-area--architecture h2, .iot-partner-area--architecture p {
-  color: #F5F2F7;
-}
-
-.iot-partner-area--architecture p {
-  max-width: 715px;
-}
-
-.iot-partner-area--architecture img {
-  background-color: #F5F2F7;
+@media (max-width: 425px) {
+  .iot-partner-area--home p {
+    margin-bottom: 24px;
+  }
 }
 
 .single-iot-partner {
@@ -6074,6 +6390,38 @@ IoT CTA CSS
 .iot-cta-area--home {
   background-image: url("../../static/images/home/bg-3.png");
   background-repeat: no-repeat;
+  padding-top: 204px;
+  padding-bottom: 239px;
+}
+
+.iot-cta-area--home .flex-row {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 100px;
+}
+
+@media (max-width: 425px) {
+  .iot-cta-area--home .flex-row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .iot-cta-area--home {
+    padding-top: 65px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 425px) {
+  .iot-cta-area--home .btn-secondary-green {
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 425px) {
@@ -6096,10 +6444,24 @@ IoT CTA CSS
   font-size: 34px;
 }
 
+@media (max-width: 425px) {
+  .cta-iot-content h2 {
+    margin-bottom: 25px;
+  }
+}
+
 .cta-iot-content p {
   color: #F5F2F7;
   opacity: .95;
   margin-bottom: 25px;
+}
+
+@media (max-width: 425px) {
+  .cta-iot-content p {
+    margin: 0 auto;
+    max-width: 286px;
+    margin-bottom: 32px;
+  }
 }
 
 .cta-iot-img {
@@ -6114,11 +6476,24 @@ IoT CTA CSS
 /*================================================
 IoT Features CSS
 =================================================*/
+@media (max-width: 425px) {
+  .iot-features-area {
+    padding-top: 23px;
+    padding-bottom: 54px;
+  }
+}
+
 .iot-features-area--fraktal-network, .iot-features-area--frak, .iot-features-area--top, .iot-features-area--partners {
   padding-top: 190px;
 }
 
-.iot-features-content h3 {
+@media (max-width: 425px) {
+  .iot-features-area--fraktal-network, .iot-features-area--frak, .iot-features-area--top, .iot-features-area--partners {
+    padding-top: 153px;
+  }
+}
+
+.iot-features-area h3 {
   color: #5245AF;
   font-size: 28px;
   font-weight: 500;
@@ -6126,14 +6501,13 @@ IoT Features CSS
   line-height: 42px;
 }
 
-.iot-features-content .btn {
-  margin-top: 15px;
+.iot-features-area .btn {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 @media (max-width: 425px) {
-  .iot-features-content {
+  .iot-features-area {
     text-align: center;
   }
 }
@@ -6155,6 +6529,18 @@ IoT Features CSS
   }
 }
 
+.second-intro-home-block img {
+  -o-object-position: 0px -75px;
+     object-position: 0px -75px;
+}
+
+@media (max-width: 425px) {
+  .second-intro-home-block img {
+    -o-object-position: 0px 0px;
+       object-position: 0px 0px;
+  }
+}
+
 /*================================================
 IoT Team CSS
 =================================================*/
@@ -6165,84 +6551,6 @@ IoT Team CSS
 .iot-team-area .container .single-team .team-content {
   padding-left: 25px;
   padding-right: 25px;
-}
-
-/*================================================
-IoT Why Choose Us CSS
-=================================================*/
-.iot-why-choose-us {
-  position: relative;
-  z-index: 1;
-  background: #7766F6;
-  padding-top: 80px;
-  padding-bottom: 154px;
-}
-
-.iot-why-choose-us--home {
-  background-image: url("../../static/images/home/bg-2.png");
-  background-size: cover;
-}
-
-@media (max-width: 425px) {
-  .iot-why-choose-us {
-    padding-top: 54px;
-    padding-bottom: 54px;
-  }
-}
-
-.iot-why-choose-us .section-title h2 {
-  color: #F5F2F7;
-  margin-bottom: 24px;
-  overflow: hidden;
-}
-
-@media (max-width: 425px) {
-  .iot-why-choose-us .section-title h2 {
-    height: 50px;
-    margin-bottom: 30px;
-  }
-}
-
-.iot-why-choose-us .section-title .bar::before {
-  background: #F5F2F7;
-}
-
-.iot-why-choose-us .section-title p {
-  color: #F5F2F7;
-  font-size: 16px;
-  opacity: .95;
-  line-height: 24px;
-}
-
-@media (max-width: 425px) {
-  .iot-why-choose-us .section-title p {
-    margin-bottom: 24px;
-  }
-}
-
-.iot-why-choose-us .section-title img {
-  margin: 62px 0;
-}
-
-@media (max-width: 425px) {
-  .iot-why-choose-us .section-title img {
-    display: none;
-  }
-}
-
-@media (max-width: 425px) {
-  .iot-why-choose-us .single-features {
-    width: 100%;
-    height: auto;
-    padding-left: 0;
-    margin: 0;
-  }
-  .iot-why-choose-us .single-features p {
-    display: none;
-  }
-  .iot-why-choose-us .single-features .single-features__content {
-    text-align: center;
-  }
 }
 
 .single-iot-box {
@@ -6456,6 +6764,12 @@ Footer CSS
   color: #7766F6;
   padding-top: 25px;
   padding-bottom: 25px;
+}
+
+@media (max-width: 425px) {
+  .copyright-area {
+    margin-top: 48px;
+  }
 }
 
 .copyright-area--black {
@@ -7389,12 +7703,34 @@ ML Pricing Tab CSS
   background-color: #7766F6;
 }
 
+@media (max-width: 425px) {
+  .single-blog-post-box {
+    width: 100%;
+  }
+}
+
+.single-blog-post-box .entry-thumbnail {
+  text-align: center;
+}
+
 .single-blog-post-box .entry-thumbnail a img {
   border-radius: 5px 5px 0 0;
 }
 
+@media (max-width: 425px) {
+  .single-blog-post-box .entry-thumbnail a img {
+    height: 116px;
+  }
+}
+
 .single-blog-post-box .entry-post-content {
   padding: 20px;
+}
+
+@media (max-width: 425px) {
+  .single-blog-post-box .entry-post-content {
+    text-align: right;
+  }
 }
 
 .single-blog-post-box .entry-post-content .entry-meta {
@@ -7442,9 +7778,15 @@ ML Pricing Tab CSS
 
 .single-blog-post-box .entry-post-content h3 {
   margin-bottom: 32px;
-  line-height: 36px;
+  line-height: 1;
   font-size: 24px;
   font-weight: 400;
+}
+
+@media (max-width: 425px) {
+  .single-blog-post-box .entry-post-content h3 {
+    margin-bottom: 0;
+  }
 }
 
 .single-blog-post-box .entry-post-content h3 a {
@@ -7468,6 +7810,15 @@ ML Pricing Tab CSS
 
 .single-blog-post-box .entry-post-content .learn-more-btn svg {
   width: 15px;
+}
+
+@media (max-width: 425px) {
+  .single-blog-post-box .entry-post-content .learn-more-btn {
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
 
 /* Home eight Agency Demo */
@@ -7591,6 +7942,71 @@ Our Solutions CSS
   position: relative;
   top: -1px;
   margin-right: 3px;
+}
+
+.earn-area--home {
+  position: relative;
+}
+
+@media (max-width: 425px) {
+  .earn-area--home {
+    min-height: 518px;
+    padding: 54px 0;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+@media (max-width: 425px) {
+  .earn-area--home h2 .title-mobile-text {
+    display: block;
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 425px) {
+  .earn-area--home .earn-area__circle {
+    width: 180px;
+    height: 180px;
+    top: 195px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 425px) {
+  .earn-area--home .earn-area__text {
+    font-size: 24px;
+    line-height: 1;
+    top: 270px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 425px) {
+  .earn-area--home .earn-area__text .circle-mobile-text {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: capitalize;
+  }
+}
+
+@media (max-width: 425px) {
+  .earn-area--home .btn-secondary-green {
+    position: absolute;
+    top: 372px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 
 /*================================================
@@ -8057,143 +8473,6 @@ Blog CSS
 /*================================================
 Agency CTA CSS
 =================================================*/
-.agency-cta-area {
-  position: relative;
-  z-index: 1;
-  background-color: #7766F6;
-}
-
-.agency-cta-content {
-  text-align: left;
-}
-
-.agency-cta-content h2 {
-  color: #F5F2F7;
-  margin-bottom: 24px;
-}
-
-.agency-cta-content .free-trial-content {
-  margin-bottom: 52px;
-}
-
-.agency-cta-content .free-trial-content h2 {
-  margin-bottom: 0;
-  font-size: 28px;
-  font-weight: 600;
-}
-
-.agency-cta-content .free-trial-content form {
-  position: relative;
-}
-
-.agency-cta-content .free-trial-content form .input-newsletter {
-  width: 428px;
-  display: inline-block;
-  height: 68px;
-  color: #000000;
-  border: none;
-  outline: 0;
-  font-size: 18px;
-  line-height: 27px;
-  font-weight: 700;
-  background-color: #F5F2F7;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 43px;
-}
-
-.agency-cta-content .free-trial-content form .input-newsletter::-webkit-input-placeholder {
-  color: #C4C4C4;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  font-size: 18px;
-  line-height: 27px;
-  font-weight: 700;
-}
-
-.agency-cta-content .free-trial-content form .input-newsletter:-ms-input-placeholder {
-  color: #C4C4C4;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  font-size: 18px;
-  line-height: 27px;
-  font-weight: 700;
-}
-
-.agency-cta-content .free-trial-content form .input-newsletter::-ms-input-placeholder {
-  color: #C4C4C4;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  font-size: 18px;
-  line-height: 27px;
-  font-weight: 700;
-}
-
-.agency-cta-content .free-trial-content form .input-newsletter::placeholder {
-  color: #C4C4C4;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  font-size: 18px;
-  line-height: 27px;
-  font-weight: 700;
-}
-
-.agency-cta-content .free-trial-content form .input-newsletter:focus::-webkit-input-placeholder {
-  color: transparent;
-}
-
-.agency-cta-content .free-trial-content form .input-newsletter:focus:-ms-input-placeholder {
-  color: transparent;
-}
-
-.agency-cta-content .free-trial-content form .input-newsletter:focus::-ms-input-placeholder {
-  color: transparent;
-}
-
-.agency-cta-content .free-trial-content form .input-newsletter:focus::placeholder {
-  color: transparent;
-}
-
-@media (max-width: 425px) {
-  .agency-cta-content .free-trial-content form .input-newsletter {
-    width: 100%;
-  }
-}
-
-.agency-cta-content .free-trial-content form button {
-  margin-top: 0;
-  margin-left: 24px;
-  border: none;
-  width: 187px;
-  height: 68px;
-}
-
-.agency-cta-content .free-trial-content p {
-  margin-bottom: 0;
-}
-
-.agency-cta-content .social-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 0;
-  margin: 0;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  list-style: none;
-  gap: 32px;
-}
-
-.agency-cta-content .social-links li a {
-  text-align: center;
-  line-height: 27px;
-}
-
-.agency-cta-content .social-links li a img {
-  width: 32px;
-}
-
 /*btn-gradient*/
 .btn-gradient {
   color: #ffffff;
@@ -8272,27 +8551,11 @@ Agency CTA CSS
   }
 }
 
-.products-info-area {
-  padding-top: 190px;
-  padding-bottom: 140px;
+.navbar-toggler.navbar-toggler-right.collapsed {
+  border: none;
 }
 
-.products-info-area h2 {
-  color: #5245AF;
-  margin-bottom: 64px;
-}
-
-.products-info-area .single-features {
-  background-color: #7766F6;
-  width: 329px;
-  height: 355px;
-}
-
-.products-info-area .single-features .single-features-img {
-  height: 130px;
-}
-
-.products-info-area .single-features h3, .products-info-area .single-features p {
-  color: #F5F2F7;
+.navbar-light .navbar-toggler-icon {
+  background-image: url("../../static/images/header/menu-mob.svg");
 }
 /*# sourceMappingURL=style.css.map */

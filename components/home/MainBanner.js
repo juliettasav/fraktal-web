@@ -8,8 +8,7 @@ class MainBanner extends Component {
         return (
             <section className="iot-main-banner">
                 <div className="container">
-                  <div className="row row-grid main-banner-grid">
-
+                  <div className="flex-row main-banner-block">
                     <div className="iot-banner-content">
                         <h1>Fraktal</h1>
                         <span>The DeFi Network</span>
@@ -18,7 +17,6 @@ class MainBanner extends Component {
                             <a className="btn btn-secondary-green">Learn More</a>
                         </Link>
                     </div>
-
                     <div className="iot-banner-img">
                         <ReactWOW delay='0.8s' animation='fadeInUp'>
                             <img
@@ -30,7 +28,6 @@ class MainBanner extends Component {
                         </ReactWOW>
 
                     </div>
-
                     </div>
                 </div>
         </section>

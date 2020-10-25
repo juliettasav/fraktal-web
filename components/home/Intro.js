@@ -8,9 +8,8 @@ class Features extends Component {
             <React.Fragment>
                 <section className="iot-features-area">
                     <div className="container">
-                        <div className="row row-grid intro-grid">
-
-                            <div className=" iot-features-image">
+                        <div className="grid-row template-two first-intro-home-block">
+                            <div className="iot-features-image">
                                 <ReactWOW delay='0.6s' animation='fadeInUp'>
                                     <img
                                         src={require('../../static/images/home/2.png')}
@@ -22,12 +21,11 @@ class Features extends Component {
                                     />
                                 </ReactWOW>
                             </div>
-                            <div className=" iot-features-content">
-                                <h3>What is Fraktal?</h3>
+                            <h3>What is Fraktal?</h3>
+                            <div className="iot-features-content">
                                 <p>
                                     Fraktal solves Blockchain scalability and privacy while remaining secure and decentralised. This enables countless new use cases for high frequency, low value transactions which have never before been possible.
                                 </p>
-
                                 <Link href="#">
                                     <a className="btn btn-secondary-green">Explore More</a>
                                 </Link>
@@ -37,16 +35,13 @@ class Features extends Component {
                 </section>
             <section className="iot-features-area">
                 <div className="container">
-                    <div className="row row-grid intro-grid">
-                        
-                        <div className="iot-features-content">
-                            <h3>What is DeFi?</h3>
+                    <div className="grid-row template-two second-intro-home-block">
+                        <h3>What is DeFi?</h3>
+                            <div className="iot-features-content">
                             <p>
                                 DeFi (Decentralised Finance) is a new era of finance powered by blockchain technology. It will have a larger impact on the world than any technology ever has by creating a secure environment for people to conduct trustless transactions.
                             </p>
-                            
                         </div>
-
                         <div className="iot-features-image">
                             <ReactWOW delay='0.6s' animation='fadeInUp'>
                                 <img

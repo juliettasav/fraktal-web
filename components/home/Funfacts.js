@@ -28,20 +28,20 @@ class Funfacts extends React.Component {
     render(){
         const { download, feedback, worker, contributor } = this.state;
         return (
-            <section className="funfacts-area">
+            <section className="iot-why-choose-us iot-why-choose-us--funfacts-area">
                 <div className="container">
                     <div className="section-title">
                         <h2>Join the Fraktal Community!</h2>
                         <p>Meet amazing people and start disrupting! No matter where you are located, if you are a developer, marketer, designer, activist or just want to hang out</p>
                     </div>
 
-                    <div className="row align-items-center">
+                    <div className="row">
                         <div className="col-lg-3 col-md-3 col-6">
                             <div className="funfact">
                                 <h3>
                                     <Odometer format="d" duration={500} value={download} />
                                 </h3>
-                                <p>Contributors</p>
+                                <p>Native <br /> Applications</p>
                             </div>
                         </div>
 
@@ -50,7 +50,7 @@ class Funfacts extends React.Component {
                                 <h3>
                                     <Odometer format="d" duration="500" value={feedback} />
                                 </h3>
-                                <p>Partner Companies</p>
+                                <p>Partner <br/> Integrations</p>
                             </div>
                         </div>
 
@@ -59,7 +59,7 @@ class Funfacts extends React.Component {
                                 <h3>
                                     <Odometer format="d" duration="500" value={worker} />
                                 </h3>
-                                <p>Applications</p>
+                                <p>Users</p>
                             </div>
                         </div>
 
@@ -68,7 +68,7 @@ class Funfacts extends React.Component {
                                 <h3>
                                     <Odometer format="d" duration="500" value={contributor} />M
                                 </h3>
-                                <p>Users</p>
+                                <p>TVL</p>
                             </div>
                         </div>
                     </div>

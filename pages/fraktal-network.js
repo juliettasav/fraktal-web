@@ -28,7 +28,6 @@ export default class FraktalNetwork extends React.Component {
             <Header />
             <Intro />
               <Architecture/>
-              <Cta />
               <Roadmap />
               <Cta />
             <Footer />

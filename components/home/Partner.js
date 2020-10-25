@@ -25,11 +25,10 @@ const options = {
 class Partner extends Component {
     render() {
         return (
-            <section className="iot-partner-area bg-f9fafb">
+            <section className="iot-partner-area iot-partner-area--home">
                 <div className="container">
 
                     <h2>Fraktal Works with</h2>
-                    <div className="bar"></div>
                     <p>
                         Fraktal directly integrates with all other Comsos Ecosystem by default, giving Fraktal powered DeFi aoos unlimited potential to disrupt the financial world. 
                     </p>

@@ -1,0 +1,23 @@
+.products-info-area {
+    padding-top: 190px;
+    padding-bottom: 140px;
+    h2 {
+        color: $primary-dark-color;
+        margin-bottom: 64px;
+        text-align: center;
+    }
+    .single-features {
+        background-color: $primary-color;
+        width: 329px;
+        height: 355px;
+        @media (max-width: $mobile-max) {
+            width: 100%;
+        }
+        .single-features-img {
+            height: 130px;
+        }
+        h3, p {
+            color: $light-color;
+        }
+    }
+}

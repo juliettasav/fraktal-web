@@ -5,7 +5,7 @@ import * as Icon from 'react-feather';
 class BlogCard extends Component {
     render() {
         return (
-            <section className="blog-area blog-area--home">
+            <section className="iot-why-choose-us iot-why-choose-us--blog-area">
                 <div className="container">
                     <div className="section-title">
                         <h2>Dive In Deeper And Learn More</h2>

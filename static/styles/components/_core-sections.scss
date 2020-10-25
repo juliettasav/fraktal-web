@@ -1,0 +1,156 @@
+.iot-why-choose-us {
+    position: relative;
+    z-index: 1;
+    padding-top: 80px;
+    padding-bottom: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media (max-width: $mobile-max) {
+        padding-top: 54px;
+        padding-bottom: 54px;
+    }
+
+    .section-title {
+        margin-bottom: 64px;
+        text-align: center;
+        @media (max-width: $mobile-max) {
+            margin-bottom: 24px;
+        }
+        h2 {
+            margin-bottom: 24px;
+            overflow: hidden;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+        
+    }
+
+    &--architecture {
+        background-color: $primary-color;
+        h2 {
+            color: $light-color;
+        }
+        p {
+            color: $light-color;
+            max-width: 715px;
+            margin: 0 auto;
+        }
+        img {
+            background-color: $light-color;
+        } 
+    }
+
+    &--gov {
+        h2 {
+            color: $primary-dark-color;
+        }
+        .single-repair-box {
+            background-color: $white-color;
+        }
+        .row {
+            @media (max-width: $mobile-max) {
+                gap: 24px;
+            }
+        }
+    }
+
+    &--leads-defi {
+        background: $primary-color;
+        background-image: url('../../static/images/home/bg-2.png');
+        h2 {
+            color: $light-color;
+            @media (max-width: $mobile-max) {
+                height: 42px;
+            }
+        }
+        p {
+            color: $light-color;
+        }
+        img {
+            margin-top: 62px;
+            @media (max-width: $mobile-max) {
+                display: none;
+            }
+        }
+        .single-features__content {
+            p {
+                color: $primary-dark-color;
+            }
+        }
+    }
+
+    &--funfacts-area {
+        padding-bottom: 120px;
+        h2 {
+            color: $primary-dark-color;
+        }
+        h3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $primary-color;
+        }
+        p {
+            color: $primary-dark-color;
+            max-width: 609px;
+            margin: 0 auto;
+            @media (max-width: $mobile-max) {
+                max-width: 178px;
+                max-height: 64px;
+                margin: {
+                    top: 24px;
+                    bottom: 44px;
+                };
+                font-size: 16px;
+                line-height: 32px;
+                overflow: hidden;
+            }
+        }
+
+        .row {
+            align-items: flex-start;
+            
+        }
+
+        .funfact {
+            @media (max-width: $mobile-max) {
+                margin-bottom: 21px;
+            }
+            p {
+                text-align: center;
+                @media (max-width: $mobile-max) {
+                    margin: 0;
+                }
+            }
+        }
+
+        @media (max-width: $mobile-max) {
+            padding: 54px 0 33px;
+        }
+
+    }
+    &--blog-area {
+        background-image: url('../../static/images/home/bg-4.png');
+        background-position-y: 30px;
+        h2 {
+            color: $primary-dark-color;
+            @media (max-width: $mobile-max) {
+                max-width: 210px;
+                height: 42px;
+                overflow: hidden;
+                margin: 0 auto 24px;
+            }
+    
+        }
+        p {
+            color: $primary-dark-color;
+            @media (max-width: $mobile-max) {
+                display: none;
+            }
+        }
+        
+    }
+    
+}

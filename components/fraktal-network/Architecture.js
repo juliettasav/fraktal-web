@@ -26,7 +26,7 @@ const options = {
 class Partner extends Component {
     render() {
         return (
-            <section className="iot-partner-area iot-partner-area--architecture">
+            <section className="iot-why-choose-us iot-why-choose-us--architecture">
                 <div className="container">
 
                 <div className="section-title">

@@ -1,13 +1,32 @@
-$shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-$mobile-max: 425px;
+body {
+    font-family: $font-family;
+    padding: 0;
+    margin: 0;
+    font-size: $font-size;
+    background-color: $back-main-color;
+}
 
 .container {
     max-width: 77.2%; //1040px
+    padding: 0;
+    margin: 0 auto;
+    @media (max-width: $mobile-max) {
+        max-width: 80.2%;
+    }
     &--header {
         max-width: 86.1%; //1240px;
         margin: 0 auto;
     }
 }
+
+.navbar-style-three .startp-nav {
+    padding: 0 !important;
+}
+
+.navbar-toggler {
+    padding: 0;
+}
+
 
 .row-grid {
     display: grid;
@@ -39,29 +58,9 @@ $mobile-max: 425px;
     
 }
 
-span {
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: 200;
-}
-
-h1 {
-    font-size: 75px;
-    line-height: 112px;
-    font-weight: 700;
-    @media (max-width: $mobile-max) {
-        font-size: 36px;
-        line-height: 54px;
-    }
-}
-
-h2 {
-    line-height: 64.5px;
-    font-weight: 700;
-    font-size: 43px;
-}
 
 .btn-secondary-green,  .btn-secondary-purple {
+    min-width: 160px;
     color: $light-color;
     margin-top: 15px;
     font-weight: 700;
@@ -74,6 +73,12 @@ h2 {
     &:hover {
         background-color: $primary-dark-color;
         color: $back-main-color;
+    }
+    @media (max-width: $mobile-max) {
+        border-radius: 0px !important;
+        padding: 11px 35px !important;
+        font-size: 12px !important;
+        line-height: 18px !important;
     }
 }
 
@@ -90,19 +95,121 @@ h2 {
     @media (max-width: $mobile-max) {
         padding-bottom: 54px;
     }
-    a.btn {
-        display: none;
-    }
+    
 }
 .row {
     align-items: flex-start;
 }
 
-button, .btn {
-    @media (max-width: $mobile-max) {
-        border-radius: 0px !important;
-        padding: 11px 35px !important;
-        font-size: 12px !important;
-        line-height: 18px !important;
-    }
+.btn {
+    border: none;
+    padding: 20px 40px;
+    position: relative;
+    z-index: 1;
+    transition: $transition;
+    font-size: $font-size;
+    border-radius: 0px;
 }
+
+// CUSTOM GRIDS
+
+.grid-row {
+    display: grid;
+    align-items: flex-start;
+
+    &.template-two {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 40px;
+        @media (max-width: $mobile-max) {
+            grid-template-columns: 1fr;
+            justify-items: center;
+            column-gap: 0px;
+
+        }
+    }
+    &.template-three {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    &.grid-reverse {
+        flex-direction: row-reverse;
+    }
+    
+    // THEMATIC TEMPLATES
+    &.main-banner-grid {
+        justify-content: space-between;
+    }
+
+}
+
+.flex-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    // &.main-banner-block {
+    // }
+}
+
+// INTRO HOME PAGE
+
+.first-intro-home-block {
+    grid-template-areas: 
+    "image title"
+    "image content"
+    "image content"
+    "image .";
+}
+
+.second-intro-home-block {
+    grid-template-areas: 
+    "title image"
+    "content image"
+    ". image";
+}
+
+.first-intro-home-block, .second-intro-home-block {
+    h3 {
+        grid-area: title;
+    }
+    .iot-features-content {
+        grid-area: content;
+    }
+    p {
+        margin-bottom: 28px;
+    }
+    .iot-features-image {
+        grid-area: image;
+    }
+    @media (max-width: $mobile-max) {
+        grid-template-areas: 
+            "title"
+            "image"
+            "content";
+    } 
+}
+
+/* owl carousel btn */
+// .owl-theme {
+//     .owl-nav {
+//         margin-top: 0;
+//     }
+//     .owl-dots {
+//         margin-top: 20px;
+//         line-height: 0.01;
+        
+//         .owl-dot {
+//             span {
+//                 width: 15px !important;
+//                 height: 15px !important;
+//                 margin: 0 5px !important;
+//                 background: #D6D6D6 !important;
+//                 transition: $transition;
+//                 border-radius: 50%;
+//             }
+//             &:hover, &.active {
+//                 span {
+//                 }
+//             }
+//         }
+//     }
+// }
+

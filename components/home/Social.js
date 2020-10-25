@@ -34,14 +34,14 @@ class AgencyCtaArea extends Component {
    
     render() {
         return (
-            <div className="agency-cta-area ptb-80">
+            <div className="agency-cta-area">
                 <div className="container">
                     <div className="agency-cta-content">
                         <h2>Stay in Touch</h2>
                         <div className="free-trial-content">
                             <form className="newsletter-form">
                                 <input type="email" className="input-newsletter" placeholder="Your Email" />
-                                <button type="submit" className="btn-secondary-green">Subscribe</button>
+                                <a className="btn btn-secondary-green" href="#" target="_blank">Subscribe</a>                            
                             </form>
                         </div>
                         <ul className="social-links">

@@ -5,7 +5,7 @@ import * as Icon from 'react-feather';
 class WhyChoose extends Component {
     render() {
         return (
-            <section className="iot-why-choose-us iot-why-choose-us--home">
+            <section className="iot-why-choose-us iot-why-choose-us--leads-defi">
                 <div className="container">
                     <div className="section-title">
                         <h2>Fraktal Leads DeFi</h2>

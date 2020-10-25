@@ -1,0 +1,114 @@
+.agency-cta-area {
+    position: relative;
+    z-index: 1;
+    background-color: $primary-color;
+    padding: {
+        top: 110px;
+        bottom: 77px;
+    };
+    @media (max-width: $mobile-max) {
+        padding: 45px 0;
+    }
+
+    .agency-cta-content {
+        text-align: center;
+        h2 {
+            color: $light-color;
+            margin-bottom: 24px;
+            @media (max-width: $mobile-max) {
+                text-align: center;
+            }
+        }
+        .btn {
+            margin-top: 0;
+        }
+        .free-trial-content {
+            margin-bottom: 52px;
+            @media (max-width: $mobile-max) {
+                margin-bottom: 40px;
+            }
+            h2 {
+                margin-bottom: 0;
+                font: {
+                    size: 28px;
+                    weight: 600;
+                }
+            }
+            form.newsletter-form {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 24px;
+                @media (max-width: $mobile-max) {
+                    text-align: center;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                
+                .input-newsletter {
+                    width: 428px;
+                    display: inline-block;
+                    height: 68px;
+                    color: $black-text;
+                    border: none;
+                    outline: 0;
+                    font-size: 18px;
+                    line-height: 27px;
+                    font-weight: 700;
+                    background-color: $light-color;
+                    padding: {
+                        top: 20px;
+                        bottom: 20px;
+                        left: 43px;
+                    };
+                    &::placeholder {
+                        color: #C4C4C4;
+                        transition: $transition;
+                        font-size: 18px;
+                        line-height: 27px;
+                        font-weight: 700;
+                        
+                    }
+                    &:focus {
+                        &::placeholder {
+                            color: transparent;
+                        }
+                    }
+                    @media (max-width: $mobile-max) {
+                        width: 100%;
+                    }
+                }
+                button {
+                    margin-top: 0;
+                    margin-left: 24px;
+                    border: none;
+                    width: 187px;
+                    height: 68px;
+                    
+                }
+            }
+            
+        }
+    
+        .social-links {
+            display: flex;
+            padding: 0;
+            margin: 0;
+            align-items: center;
+            justify-content: center;
+            list-style: none;
+            gap: 32px;
+            li {
+                a {
+                    text-align: center;
+                    line-height: 27px;
+                    img {
+                        width: 32px;
+                    }
+                    
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,155 @@
+/*================================================
+IoT Main Banner CSS
+=================================================*/
+.iot-main-banner {
+    position: relative;
+    z-index: 1;
+    background-image: url('../images/home/bg-1.png');
+    background-repeat: no-repeat;
+    padding: {
+        top: 215px;
+        bottom: 170px;
+    };
+    img {
+        min-width: 520px;
+    }
+    @media (max-width: $mobile-max) {
+        padding: {
+            top: 153px;
+            bottom: 34px;
+        };  
+    }
+}
+.iot-banner-content {
+    max-width: 445px;
+    @media (max-width: $mobile-max) {
+        text-align: center;
+        max-width: auto;
+    }
+
+    span {
+        color: $primary-dark-color;
+        font-size: 28px;
+        line-height: 42px;
+        font-weight: 300;
+        display: block;
+        @media (max-width: $mobile-max)  {
+            font-size: 24px;
+            line-height: 36px;
+            margin: 8px 0 32px;
+        }
+    }
+    h1 {
+        color: $primary-dark-color;
+        margin: 0;
+    }
+    p {
+        margin: 28px 0;
+        max-width: 296px;
+        color: $primary-dark-color;
+        @media (max-width: $mobile-max) {
+            margin: 0 0 32px;
+            padding: 0;
+            max-width: none;
+        }
+        
+    }
+    .btn {
+        font-weight: 700;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+}
+.iot-banner-image {
+    position: absolute;
+    text-align: center;
+    right: 30px;
+    top: 56%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    
+
+    img {
+        &:first-child {
+            max-width: 730px;
+        }
+        &:last-child {
+            position: absolute;
+            left: -118px;
+            right: 0;
+            margin: 0 auto;
+            top: 39px;
+            z-index: -1;
+        }
+    }
+}
+.animate-border {
+    span {
+        position: absolute;
+        display: block;
+        width: 5%;
+        padding-bottom: 5%;
+        top: 51%;
+        left: 70%;
+        opacity: 0;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        pointer-events: none;
+        border-radius: 50%;
+        z-index: -2;
+
+        &:nth-child(1) {
+            -webkit-animation: 4.2s ease-out .5s infinite normal none running pulsei;
+            animation: 4.2s ease-out .5s infinite normal none running pulsei;
+        }
+        &:nth-child(2) {
+            -webkit-animation: 4.2s ease-out 1.5s infinite normal none running pulsei;
+            animation: 4.2s ease-out 1.5s infinite normal none running pulsei;
+        }
+        &:nth-child(3) {
+            -webkit-animation: 4.2s ease-out 2.5s infinite normal none running pulsei;
+            animation: 4.2s ease-out 2.5s infinite normal none running pulsei;
+        }
+        &:nth-child(4) {
+            -webkit-animation: 4.2s ease-out 3.5s infinite normal none running pulsei;
+            animation: 4.2s ease-out 3.5s infinite normal none running pulsei;
+        }
+    }
+}
+@-webkit-keyframes pulsei {
+    0% {
+        -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        border: 1.5px solid #b3eaf8;
+        opacity: 1;
+        width: 5%;
+        padding-bottom: 5%;
+    }
+    100% {
+        -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 0;
+        width: 50%;
+        border: 1.5px solid #b3eaf8;
+        padding-bottom: 50%;
+    }
+}
+@keyframes pulsei {
+    0% {
+        -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        border: 1.5px solid #b3eaf8;
+        opacity: 1;
+        width: 5%;
+        padding-bottom: 5%;
+    }
+    100% {
+        -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 0;
+        width: 50%;
+        border: 1.5px solid #b3eaf8;
+        padding-bottom: 50%;
+    }
+}

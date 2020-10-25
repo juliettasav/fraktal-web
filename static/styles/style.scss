@@ -50,177 +50,23 @@ This files table contents are outlined below>>>>>
 Default CSS
 =================================================*/
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import './globals/variables';
 @import './globals/colors';
 @import './globals/core';
+@import './globals/typography';
 @import './components/earn';
+@import './components/stay-in-touch.scss';
+@import './components/main-banner.scss';
+@import './components/core-sections.scss';
+@import './components/header.scss';
+@import './components/products-info';
+@import './components/partners-features';
 
-$font-family: 'Poppins', sans-serif;
-$white-color: #ffffff;
-
-$hosting-main-color: #032b8d;
-
-$transition: .5s;
-$font-size: 18px;
-
-body {
-    font-family: $font-family;
-    padding: 0;
-    margin: 0;
-    font-size: $font-size;
-    background-color: $back-main-color;
-}
 img {
     max-width: 100%;
     height: auto;
 }
-a {
-    display: inline-block;
-    transition: $transition;
-    text-decoration: none;
-    outline: 0 !important;
 
-    &:hover, &:focus {
-        text-decoration: none;
-    }
-}
-.d-table {
-    width: 100%;
-    height: 100%;
-
-    &-cell {
-        vertical-align: middle;
-    }
-}
-p {
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 32px;
-    color: $primary-dark-color;
-
-    &:last-child {
-        margin-bottom: 0;
-    }
-    @media (max-width: $mobile-max) {
-        font-size: 12px;
-        line-height: 24px;
-    }
-}
-
-.ptb-80 {
-    padding: {
-        top: 80px;
-        bottom: 80px;
-    }
-}
-
-/* owl carousel btn */
-.owl-theme {
-    .owl-nav {
-        margin-top: 0;
-    }
-    .owl-dots {
-        margin-top: 20px;
-        line-height: 0.01;
-        
-        .owl-dot {
-            span {
-                width: 15px !important;
-                height: 15px !important;
-                margin: 0 5px !important;
-                background: #D6D6D6 !important;
-                transition: $transition;
-                border-radius: 50%;
-            }
-            &:hover, &.active {
-                span {
-                }
-            }
-        }
-    }
-}
-.btn {
-    border: none;
-    padding: 20px 40px;
-    position: relative;
-    z-index: 1;
-    transition: $transition;
-    font-size: $font-size;
-    border-radius: 0px;
-}
-
-/* form control */
-.form-group {
-    margin-bottom: 18px;
-}
-label {
-    margin-bottom: 10px;
-    
-    font: {
-        size: 15px;
-        weight: 500;
-    };
-}
-.form-control {
-    height: 50px;
-    padding: 10px 20px;
-    font-size: 14px;
-    
-    border: 1px solid #eeeeee;
-    border-radius: 0;
-    background: #eeeeee;
-    transition: $transition;
-
-    &:focus {
-        outline: 0;
-        background: $white-color;
-        box-shadow: unset;
-    }
-}
-/*Section Title*/
-.section-title {
-    text-align: center;
-
-    h2 {
-        margin-bottom: 0;
-    }
-    p {
-        max-width: 520px;
-        margin: 0 auto;
-    }
-    .bar {
-        height: 5px;
-        width: 90px;
-        background: #cdf1d8;
-        margin: 20px auto;
-        position: relative;
-        border-radius: 30px;
-
-        &::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: -2.7px;
-            height: 10px;
-            width: 10px;
-            border-radius: 50%;
-            animation: {
-                duration: 3s;
-                timing-function: linear;
-                iteration-count: infinite;
-                name: MOVE-BG;
-            };
-        }
-    }
-    .sub-title {
-        display: inline-block;
-        
-        background-color: #f5dffd;
-        margin-bottom: 18px;
-        border-radius: 30px;
-        padding: 5px 20px 4px;
-        font-size: 13px;
-    }
-}
 @keyframes MOVE-BG {
     from {
         transform: translateX(0);
@@ -264,204 +110,6 @@ Preloader CSS
     }
     100% {
         transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-    }
-}
-
-/*================================================
-Navbar CSS
-=================================================*/
-#header {
-    &.is-sticky {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 999;
-        animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
-
-        .startp-nav {
-            background-color: $white-color !important;
-            box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
-            animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
-            padding: 5px 0;
-        }
-    }
-}
-.startp-nav {
-    background: transparent;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding-top: 15px;
-    width: 100%;
-    z-index: 999;
-    height: auto;
-
-    
-
-    .navbar {
-        padding: 0;
-        
-    }
-    &.p-relative {
-        position: relative;
-        padding-bottom: 15px;
-    }
-    img {
-        width: 50px;
-    }
-    nav {
-        ul {
-            padding: 0;
-            margin: 0;
-            list-style-type: none;
-        }
-        .navbar-nav {
-            .nav-item {
-                position: relative;
-                padding: 15px 0;
-
-                img {
-                    width: 31px;
-                }
-
-                a {
-                    font: {
-                        weight: 400;
-                        size: 15px;
-                    };
-                    color: $primary-dark-color;
-                    padding: {
-                        left: 0;
-                        right: 0;
-                        top: 0;
-                        bottom: 0;
-                    };
-                    margin: {
-                        left: 15px;
-                        right: 15px;
-                    };
-                    &:hover, &:focus, &.active {
-                        
-                    }
-                    svg {
-                        width: 14px;
-                    }
-                    span {
-                        display: inline-block;
-                        background-color: red;
-                        color: $white-color;
-                        font-size: 9px;
-                        width: 13px;
-                        height: 13px;
-                        text-align: center;
-                        line-height: 14px;
-                        border-radius: 50%;
-                        position: relative;
-                        top: -7px;
-                        right: 4px;
-                    }
-                }
-                .dropdown_menu {
-                    filter: $shadow;
-                    background: $back-main-color;
-                    position: absolute;
-                    top: 80px;
-                    left: 0;
-                    width: 200px;
-                    z-index: 99;
-                    opacity: 0;
-                    visibility: hidden;
-                    transition: all 0.3s ease-in-out;
-                    padding: {
-                        top: 20px;
-                        left: 5px;
-                        right: 5px;
-                        bottom: 20px;
-                    };
-                    li {
-                        position: relative;
-                        padding: 0;
-
-                        a {
-                            padding: 9px 15px;
-                            margin: 0;
-                            opacity: .6;
-                            display: block;
-                            color: $primary-dark-color;
-                            font: {
-                                size: 14px;
-                                weight: 500;
-                            };
-                            &:hover, &:focus, &.active {
-                                opacity: 1;
-                            }
-                        }
-                        .dropdown_menu {
-                            position: absolute;
-                            left: 220px;
-                            top: 0;
-                            opacity: 0 !important;
-                            visibility: hidden !important;
-
-                            li {
-                                a {
-                                    color: #4a6f8a;
-
-                                    
-                                }
-                            }
-                        }
-                        &:hover {
-                            .dropdown_menu {
-                                opacity: 1 !important;
-                                visibility: visible !important;
-                                top: -20px !important;
-                            }
-                            
-                        }
-                    }
-                }
-                &:hover {
-                    ul {
-                        opacity: 1;
-                        visibility: visible;
-                        top: 100%;
-                    }
-                }
-            }
-        }
-        .others-option {
-            margin-left: 20px;
-
-            .btn {
-                
-                background: $primary-color;
-                padding: 6px 30px;
-                font-weight: 400;
-                // font-size: ;
-            }
-        }
-    }
-    &.is-sticky {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 15px 0;
-        z-index: 999;
-        box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
-        background-color: $back-main-color;
-        animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
-        img {
-            width: 50px;
-        }
-    }
-}
-.navbar-style-three {
-    .startp-nav {
-        padding-left: 25px;
-        padding-right: 25px;
     }
 }
 
@@ -1089,13 +737,6 @@ Why Choose US CSS
     z-index: 1;
     .section-title {
         text-align: left;
-
-        // p {
-        //     margin: {
-        //         left: 0;
-        //         right: 0;
-        //     };
-        // }
     }
     &--gov {
         padding: 80px 0 160px;
@@ -1683,13 +1324,23 @@ Features CSS
     padding: {
 
     };
-    &:nth-child(2n+1) {
-        margin-bottom: 20px;
+
+    @media (max-width: $mobile-max) {
+        width: 100%;
+        height: auto;
+        padding-left: 0;
+        margin: 0;
+        p {
+            display: none;
+        }
+        .single-features__content {
+            text-align: center;
+        }
     }
+
     .single-features-img {
         height: 190px;
         width: 100%;
-        // background-color: #C4C4C4;
     }
     &__content {
         margin-top: 10px;
@@ -1699,6 +1350,7 @@ Features CSS
             font-weight: 500;
             font-size: 24px;
             margin-bottom: 28px;
+            line-height: 36px;
             color: $primary-dark-color;
         }
         p {
@@ -1708,32 +1360,6 @@ Features CSS
     
 }
 
-.hosting-features-area {
-    padding-top: 80px;
-    padding-bottom: 140px;
-    
-    h2 {
-        color: $primary-dark-color;
-        margin-bottom: 64px;
-    }
-
-    .single-features {
-        width: 329px;
-        height: 355px;
-        background-color: $primary-color;
-        .single-features-img {
-            height: 130px;
-        }
-        h3 {
-            margin-bottom: 20px;
-            color: $light-color;
-        }
-        p {
-            color: $light-color;
-        }
-    }
-
-}
 .single-hosting-features {
     position: relative;
     margin-bottom: 30px;
@@ -2153,46 +1779,8 @@ Works CSS
 /*================================================
 Fun Facts CSS
 =================================================*/
-.funfacts-area {
-    position: relative;
-    z-index: 1;
-    padding: {
-        top: 80px;
-        bottom: 160px;
-    }
 
-    .section-title {
-        h2 {
-            color: $primary-dark-color;
-        }
-        p {
-            color: $primary-dark-color;
-            margin: {
-                top: 54px;
-                bottom: 80px;
-            }
-            max-width: 609px;
-        }
-    }
 
-}
-.funfact {
-    text-align: center;
-
-    h3 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: $primary-color;
-        font-size: 75px;
-        line-height: 112.5px;
-        margin-bottom: 7px;
-        font-weight: 700;
-    }
-    p {
-        font-size: 20px;
-    }
-}
 .contact-cta-box {
     margin: 80px auto 0;
     max-width: 600px;
@@ -2941,30 +2529,7 @@ Partner CSS
 /*================================================
 Blog CSS
 =================================================*/
-.blog-area {
-    position: relative;
-    z-index: 1;
-    padding-top: 80px;
-    padding-bottom: 180px;
 
-    &--home {
-        background-image: url('../../static/images/home/bg-4.png');
-        background-repeat: no-repeat;
-        background-position-y: 30px;
-    }
-
-    .pagination-area {
-        margin-bottom: 30px;
-    }
-    h2 {
-        color: $primary-dark-color;
-        margin-bottom: 54px;
-    }
-    p {
-        color: $primary-dark-color;
-        margin-bottom: 123px;
-    }
-}
 .single-blog-post {
     position: relative;
     -webkit-transition: $transition;
@@ -4985,6 +4550,13 @@ CTA CSS
     &--fraktal-network {
         padding-top: 172px;
         padding-bottom: 143px;
+        @media (max-width: $mobile-max) {
+            padding: {
+                top: 54px;
+                bottom: 80px;
+            };
+        }
+
         .cta-fraktal-network {
             text-align: center;
             h2 {
@@ -5399,6 +4971,9 @@ Repair CTA CSS
         top: 80px;
         bottom: 140px;
     };
+    .col-lg-6 {
+        text-align: center;
+    }
 }
 .cta-repair-content {
     p {
@@ -5457,6 +5032,7 @@ Repair Why Choose Us CSS
     .section-title {
         h2 {
             color: $light-color;
+            text-align: center;
             padding: {
                 top: 80px;
                 bottom: 64px;
@@ -5466,6 +5042,11 @@ Repair Why Choose Us CSS
         p {
             color: $white-color;
             opacity: .95;
+        }
+    }
+    .row {
+        @media (max-width: $mobile-max) {
+            gap: 24px;
         }
     }
     
@@ -5480,6 +5061,9 @@ Repair Why Choose Us CSS
     z-index: 1;
     -webkit-transition: $transition;
     transition: $transition;
+    @media (max-width: $mobile-max) {
+        width: 100%;
+    }
 
     &__img {
         width: 100%;
@@ -5571,270 +5155,119 @@ Repair Why Choose Us CSS
 /*================================================
 Repair Feedback CSS
 =================================================*/
-.single-repair-feedback {
-    background: $white-color;
-    border-radius: 5px;
-    margin-bottom: 55px;
-    position: relative;
-    text-align: center;
-    padding: {
-        left: 40px;
-        right: 40px;
-        top: 40px;
-        bottom: 40px;
-    };
-    .client-img {
-        position: relative;
-        text-align: left;
-        margin-bottom: 40px;
-        display: inline-block;
-        padding: {
-            left: 108px;
-            top: 18px;
-        };
-        img {
-            border-radius: 50%;
+// .single-repair-feedback {
+//     background: $white-color;
+//     border-radius: 5px;
+//     margin-bottom: 55px;
+//     position: relative;
+//     text-align: center;
+//     padding: {
+//         left: 40px;
+//         right: 40px;
+//         top: 40px;
+//         bottom: 40px;
+//     };
+//     .client-img {
+//         position: relative;
+//         text-align: left;
+//         margin-bottom: 40px;
+//         display: inline-block;
+//         padding: {
+//             left: 108px;
+//             top: 18px;
+//         };
+//         img {
+//             border-radius: 50%;
             
-            padding: 3px;
-            display: inline-block;
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 90px;
-            height: 90px;
-        }
-        h3 {
-            font-size: 18px;
-            margin: 0;
-        }
-        span {
-            display: block;
+//             padding: 3px;
+//             display: inline-block;
+//             position: absolute;
+//             left: 0;
+//             top: 0;
+//             width: 90px;
+//             height: 90px;
+//         }
+//         h3 {
+//             font-size: 18px;
+//             margin: 0;
+//         }
+//         span {
+//             display: block;
             
-            margin-top: 8px;
-        }
-    }
-    p {
-        font-size: 15px;
-    }
-    &::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: -25px;
-        width: 50px;
-        height: 50px;
-        background: $white-color;
-        right: 0;
-        margin: 0 auto;
-        -webkit-transform: rotate(45deg);
-        transform: rotate(45deg);
-    }
-    &::after {
-        content: "\f11b";
-        position: absolute;
-        top: 0;
-        left: 25px;
-        color: #d9dcde;
-        font: {
-            family: Flaticon;
-            size: 30px;
-            style: normal;
-            size: 65px;
-        };
-    }
-}
+//             margin-top: 8px;
+//         }
+//     }
+//     p {
+//         font-size: 15px;
+//     }
+//     &::before {
+//         content: '';
+//         position: absolute;
+//         left: 0;
+//         bottom: -25px;
+//         width: 50px;
+//         height: 50px;
+//         background: $white-color;
+//         right: 0;
+//         margin: 0 auto;
+//         -webkit-transform: rotate(45deg);
+//         transform: rotate(45deg);
+//     }
+//     &::after {
+//         content: "\f11b";
+//         position: absolute;
+//         top: 0;
+//         left: 25px;
+//         color: #d9dcde;
+//         font: {
+//             family: Flaticon;
+//             size: 30px;
+//             style: normal;
+//             size: 65px;
+//         };
+//     }
+// }
 
-/*================================================
-IoT Main Banner CSS
-=================================================*/
-.iot-main-banner {
-    position: relative;
-    z-index: 1;
-    background-image: url('../images/home/bg-1.png');
-    background-repeat: no-repeat;
-    padding: {
-        top: 215px;
-        bottom: 170px;
-    };
-    img {
-        min-width: 520px;
-    }
-    @media (max-width: $mobile-max) {
-        padding: {
-            top: 153px;
-            bottom: 154px;
-        };  
-    }
-}
-.iot-banner-content {
-    max-width: 445px;
-    @media (max-width: $mobile-max) {
-        text-align: center;
-        max-width: auto;
-    }
 
-    span {
-        color: $primary-dark-color;
-        font-size: 28px;
-        line-height: 42px;
-        font-weight: 300;
-        display: block;
-        @media (max-width: $mobile-max)  {
-            font-size: 24px;
-            line-height: 36px;
-            margin: 8px 0 32px;
-        }
-    }
-    h1 {
-        color: $primary-dark-color;
-        margin: 0;
-    }
-    p {
-        margin: 28px 0;
-        max-width: 296px;
-        color: $primary-dark-color;
-        @media (max-width: $mobile-max) {
-            margin: 0 0 32px;
-            padding: 0;
-            max-width: none;
-        }
-        
-    }
-    .btn {
-        font-weight: 700;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    }
-}
-.iot-banner-image {
-    position: absolute;
-    text-align: center;
-    right: 30px;
-    top: 56%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    
-
-    img {
-        &:first-child {
-            max-width: 730px;
-        }
-        &:last-child {
-            position: absolute;
-            left: -118px;
-            right: 0;
-            margin: 0 auto;
-            top: 39px;
-            z-index: -1;
-        }
-    }
-}
-.animate-border {
-    span {
-        position: absolute;
-        display: block;
-        width: 5%;
-        padding-bottom: 5%;
-        top: 51%;
-        left: 70%;
-        opacity: 0;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        pointer-events: none;
-        border-radius: 50%;
-        z-index: -2;
-
-        &:nth-child(1) {
-            -webkit-animation: 4.2s ease-out .5s infinite normal none running pulsei;
-            animation: 4.2s ease-out .5s infinite normal none running pulsei;
-        }
-        &:nth-child(2) {
-            -webkit-animation: 4.2s ease-out 1.5s infinite normal none running pulsei;
-            animation: 4.2s ease-out 1.5s infinite normal none running pulsei;
-        }
-        &:nth-child(3) {
-            -webkit-animation: 4.2s ease-out 2.5s infinite normal none running pulsei;
-            animation: 4.2s ease-out 2.5s infinite normal none running pulsei;
-        }
-        &:nth-child(4) {
-            -webkit-animation: 4.2s ease-out 3.5s infinite normal none running pulsei;
-            animation: 4.2s ease-out 3.5s infinite normal none running pulsei;
-        }
-    }
-}
-@-webkit-keyframes pulsei {
-    0% {
-        -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-        border: 1.5px solid #b3eaf8;
-        opacity: 1;
-        width: 5%;
-        padding-bottom: 5%;
-    }
-    100% {
-        -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-        opacity: 0;
-        width: 50%;
-        border: 1.5px solid #b3eaf8;
-        padding-bottom: 50%;
-    }
-}
-@keyframes pulsei {
-    0% {
-        -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-        border: 1.5px solid #b3eaf8;
-        opacity: 1;
-        width: 5%;
-        padding-bottom: 5%;
-    }
-    100% {
-        -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-        opacity: 0;
-        width: 50%;
-        border: 1.5px solid #b3eaf8;
-        padding-bottom: 50%;
-    }
-}
 
 /*================================================
 IoT Partner CSS
 =================================================*/
 .iot-partner-area {
-    
     padding: {
         top: 80px;
         bottom: 168px;
     };
     text-align: center;
-    h2 {
+    @media (max-width: $mobile-max) {
+        padding: {
+            top: 54px;
+            bottom: 54px;
+        };
+    } 
+
+    &--home {
         
-        color: $primary-dark-color;
-        font-size: 43px;
-        font-weight: 700;
-        line-height: 64.5px;
-        margin-bottom: 54px;
-    }
-    p {
-        color: $primary-dark-color;
-        margin-bottom: 80px;
-    }
-    &--architecture {
-        background-color: $primary-color; 
-        padding-bottom: 22px;
-        h2, p {
-            color: $light-color;
+        h2 {
+            color: $primary-dark-color;
+            font-size: 43px;
+            font-weight: 700;
+            line-height: 64.5px;
+            margin-bottom: 54px;
+            @media (max-width: $mobile-max) {
+                margin-bottom: 24px;
+            }
         }
         p {
-            max-width: 715px;
+            color: $primary-dark-color;
+            margin: 0 auto 80px;
+            max-width: 663px;
+            @media (max-width: $mobile-max) {
+                margin-bottom: 24px;
+            }
         }
-        img {
-            background-color: $light-color;
-        } 
-     }
+        
+    }
 }
 .single-iot-partner {
     text-align: center;
@@ -5980,6 +5413,32 @@ IoT CTA CSS
     &--home {
         background-image: url('../../static/images/home/bg-3.png');
         background-repeat: no-repeat;
+        padding: {
+            top: 204px;
+            bottom: 239px;
+        };
+
+        .flex-row {
+            justify-content: flex-end;
+            margin-right: 100px;
+            @media (max-width: $mobile-max) {
+                justify-content: center;
+                margin-right: 0;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: $mobile-max) {
+            padding: {
+                top: 65px;
+                bottom: 40px;
+            };
+        }
+        .btn-secondary-green {
+            @media (max-width: $mobile-max) {
+                margin-top: 0;
+            }  
+        }
     }
     .row {
         @media (max-width: $mobile-max) {
@@ -5996,13 +5455,22 @@ IoT CTA CSS
     h2 {
         color: $light-color;
         font-size: 34px;
+        @media (max-width: $mobile-max) {
+            margin-bottom: 25px;
+        }
     }
 
     p {
         color: $light-color;
         opacity: .95;
         margin-bottom: 25px;
+        @media (max-width: $mobile-max) {
+            margin: 0 auto;
+            max-width: 286px;
+            margin-bottom: 32px;
+        }
     }
+
 }
 .cta-iot-img {
     text-align: center;
@@ -6016,12 +5484,19 @@ IoT CTA CSS
 IoT Features CSS
 =================================================*/
 .iot-features-area {
+    @media (max-width: $mobile-max) {
+        padding: {
+            top: 23px;
+            bottom: 54px;
+        };
+    }
     &--fraktal-network, &--frak, &--top, &--partners  {
         padding-top: 190px;
+        @media (max-width: $mobile-max) {
+            padding-top: 153px;
+        }
     }
-   
-}
-.iot-features-content {
+
     h3 {
         color: $primary-dark-color;
         font-size: 28px;
@@ -6031,13 +5506,14 @@ IoT Features CSS
     }
     
     .btn {
-        margin-top: 15px;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
     @media (max-width: $mobile-max) {
         text-align: center;
     }
+   
 }
+
 .iot-features-image {
     position: relative;
     text-align: center;
@@ -6047,6 +5523,15 @@ IoT Features CSS
     @media (max-width: $mobile-max) {
         width: 208px;
         height: 160px;
+    }
+}
+
+.second-intro-home-block {
+    img {
+        object-position: 0px -75px;
+        @media (max-width: $mobile-max) {
+            object-position: 0px 0px;
+        }
     }
 }
 
@@ -6066,74 +5551,6 @@ IoT Team CSS
     }
 }
 
-/*================================================
-IoT Why Choose Us CSS
-=================================================*/
-.iot-why-choose-us {
-    position: relative;
-    z-index: 1;
-    background: $primary-color;
-    padding-top: 80px;
-    padding-bottom: 154px;
-    &--home {
-        background-image: url('../../static/images/home/bg-2.png');
-        background-size: cover;
-    }
-    @media (max-width: $mobile-max) {
-        padding-top: 54px;
-        padding-bottom: 54px;
-    }
-
-    .section-title {
-        h2 {
-            color: $light-color;
-            margin-bottom: 24px;
-            overflow: hidden;
-            @media (max-width: $mobile-max) {
-                height: 50px;
-                margin-bottom: 30px;
-            }
-        }
-        .bar {
-            &::before {
-                background: $light-color;
-            }
-        }
-        p {
-            color: $light-color;
-            font-size: 16px;
-            opacity: .95;
-            line-height: 24px;
-            @media (max-width: $mobile-max) {
-                margin-bottom: 24px;
-            }
-            
-        }
-
-        img {
-            margin: 62px 0;
-            @media (max-width: $mobile-max) {
-                display: none;
-            }
-        }
-    }
-
-    .single-features {
-        @media (max-width: $mobile-max) {
-            width: 100%;
-            height: auto;
-            padding-left: 0;
-            margin: 0;
-            p {
-                display: none;
-            }
-            .single-features__content {
-                text-align: center;
-            }
-        }
-    }
-    
-}
 .single-iot-box {
     text-align: center;
     background-color: $white-color;
@@ -6326,6 +5743,9 @@ Footer CSS
         top: 25px;
         bottom: 25px;
     };
+    @media (max-width: $mobile-max) {
+        margin-top: 48px;
+    }
     &--black {
         color: $black-text
     }
@@ -7295,15 +6715,27 @@ ML Pricing Tab CSS
     transition: $transition;
     background-color: $primary-color;
 
+    @media (max-width: $mobile-max) {
+        width: 100%;
+    }
+
     .entry-thumbnail {
+        text-align: center;
         a {
             img {
-                border-radius: 5px 5px 0 0;        
+                border-radius: 5px 5px 0 0; 
+                @media (max-width: $mobile-max) {
+                    height: 116px;
+                }       
             }
         }
     }
     .entry-post-content {
         padding: 20px;
+
+        @media (max-width: $mobile-max) {
+            text-align: right;
+        }
 
         .entry-meta {
             margin-bottom: 10px;
@@ -7351,9 +6783,15 @@ ML Pricing Tab CSS
         }
         h3 {
             margin-bottom: 32px;
-            line-height: 36px;
+            line-height: 1;
             font-size: 24px;
             font-weight: 400;
+
+            @media (max-width: $mobile-max) {
+                margin: {
+                    bottom: 0;
+                };
+            }
             
             a {
                 color: $light-color;
@@ -7368,6 +6806,7 @@ ML Pricing Tab CSS
             font-size: 16px;
             line-height: 32px;
             color: $light-color;
+            
         }
         .learn-more-btn {
             margin-top: 15px;
@@ -7375,6 +6814,12 @@ ML Pricing Tab CSS
             color: $light-color;
             svg {
                 width: 15px;
+            }
+            @media (max-width: $mobile-max) {
+                margin-top: 0;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
             }
         }
     }
@@ -7503,6 +6948,65 @@ Our Solutions CSS
         }
         &:hover {
             
+        }
+    }
+}
+
+.earn-area--home {
+    position: relative;
+    @media (max-width: $mobile-max) {
+        min-height: 518px;
+        padding: 54px 0;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    h2 {
+        .title-mobile-text {
+            @media (max-width: $mobile-max) {
+                display: block;
+                margin-top: 24px;
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 300;
+            }
+        }
+    }
+
+    .earn-area__circle {
+        @media (max-width: $mobile-max) {
+            width: 180px;
+            height: 180px;
+            top: 195px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .earn-area__text {
+        @media (max-width: $mobile-max) {
+            font-size: 24px;
+            line-height: 1;
+            top: 270px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .circle-mobile-text {
+            @media (max-width: $mobile-max) {
+                font-weight: 300;
+                font-size: 12px;
+                line-height: 18px;
+                text-transform: capitalize;
+            }
+        }
+    }
+
+    .btn-secondary-green {
+        @media (max-width: $mobile-max) {
+            position: absolute;
+            top: 372px;
+            left: 50%;
+            transform: translateX(-50%);
         }
     }
 }
@@ -7945,96 +7449,7 @@ Blog CSS
 /*================================================
 Agency CTA CSS
 =================================================*/
-.agency-cta-area {
-    position: relative;
-    z-index: 1;
-    background-color: $primary-color;
-}
-.agency-cta-content {
-    text-align: left;
-    h2 {
-        color: $light-color;
-        margin-bottom: 24px;
-        
-    }
-    .free-trial-content {
-        margin-bottom: 52px;
-        h2 {
-            margin-bottom: 0;
-            font: {
-                size: 28px;
-                weight: 600;
-            }
-        }
-        form {
-            position: relative;
-            
-            .input-newsletter {
-                width: 428px;
-                display: inline-block;
-                height: 68px;
-                color: $black-text;
-                border: none;
-                outline: 0;
-                font-size: 18px;
-                line-height: 27px;
-                font-weight: 700;
-                background-color: $light-color;
-                padding: {
-                    top: 20px;
-                    bottom: 20px;
-                    left: 43px;
-                };
-                &::placeholder {
-                    color: #C4C4C4;
-                    transition: $transition;
-                    font-size: 18px;
-                    line-height: 27px;
-                    font-weight: 700;
-                    
-                }
-                &:focus {
-                    &::placeholder {
-                        color: transparent;
-                    }
-                }
-                @media (max-width: $mobile-max) {
-                    width: 100%;
-                }
-            }
-            button {
-                margin-top: 0;
-                margin-left: 24px;
-                border: none;
-                width: 187px;
-                height: 68px;
-                
-            }
-        }
-        p {
-            margin-bottom: 0;
-        }
-    }
 
-    .social-links {
-        display: flex;
-        padding: 0;
-        margin: 0;
-        align-items: center;
-        list-style: none;
-        gap: 32px;
-        li {
-            a {
-                text-align: center;
-                line-height: 27px;
-                img {
-                    width: 32px;
-                }
-                
-            }
-        }
-    }
-}
 
 /*btn-gradient*/
 .btn-gradient {
@@ -8099,22 +7514,10 @@ Agency CTA CSS
     }
 }
 
-.products-info-area {
-    padding-top: 190px;
-    padding-bottom: 140px;
-    h2 {
-        color: $primary-dark-color;
-        margin-bottom: 64px;
-    }
-    .single-features {
-        background-color: $primary-color;
-        width: 329px;
-        height: 355px;
-        .single-features-img {
-            height: 130px;
-        }
-        h3, p {
-            color: $light-color;
-        }
-    }
+.navbar-toggler.navbar-toggler-right.collapsed {
+    border: none;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url('../../static/images/header/menu-mob.svg');
 }

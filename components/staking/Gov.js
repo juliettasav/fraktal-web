@@ -4,7 +4,7 @@ import ReactWOW from 'react-wow';
 class WhyChoose extends Component {
     render() {
         return (
-            <section className="why-choose-us why-choose-us--gov">
+            <section className="iot-why-choose-us iot-why-choose-us--gov">
                 <div className="container">
                     <div className="section-title">
                         <h2>FRAK Economic Layer </h2>
