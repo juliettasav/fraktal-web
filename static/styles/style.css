@@ -974,6 +974,14 @@ Navbar CSS
   padding: 0;
 }
 
+@media (max-width: 425px) {
+  .startp-nav .navbar {
+    -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
+            box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
+    background-color: #F5F2F7;
+  }
+}
+
 .startp-nav.p-relative {
   position: relative;
   padding-bottom: 15px;

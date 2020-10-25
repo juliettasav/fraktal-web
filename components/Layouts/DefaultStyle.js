@@ -11,10 +11,17 @@ class DefaultStyleTwo extends React.Component {
         collapsed: true,
     };
 
+    preventGoTop = (e) => {
+        e.preventDefault();
+        
+    }
+
     toggleNavbar = () => {
+        let elementId = document.getElementById("navbar");
         this.setState({
             collapsed: !this.state.collapsed,
         });
+        
     }
 
     componentDidMount() {
@@ -69,7 +76,7 @@ class DefaultStyleTwo extends React.Component {
                             <div className={classOne} id="navbarSupportedContent">
                                 <ul className="navbar-nav nav ml-auto align-items-center">
                                 <li className="nav-item">
-                                    <a href="#" className="nav-link">About <Icon.ChevronDown /></a>
+                                    <a onClick={this.preventGoTop} href="#" className="nav-link">About <Icon.ChevronDown /></a>
                                     <ul className="dropdown_menu">
                                         <li className="nav-item">
                                             <Link activeClassName="active" href="/fraktal-network">
@@ -92,7 +99,7 @@ class DefaultStyleTwo extends React.Component {
                                 </li>
 
                                 <li className="nav-item">
-                                    <a href="#" className="nav-link">Community <Icon.ChevronDown /></a>
+                                    <a href="#" onClick={this.preventGoTop} className="nav-link">Community <Icon.ChevronDown /></a>
                                     <ul className="dropdown_menu">
                                         <li className="nav-item">
                                             <Link activeClassName="active" href="/staking">
@@ -130,7 +137,7 @@ class DefaultStyleTwo extends React.Component {
                                     </li>
 
                                     <li className="nav-item">
-                                        <a href="#" className="nav-link">Developers<Icon.ChevronDown /></a>
+                                        <a href="#" onClick={this.preventGoTop} className="nav-link">Developers<Icon.ChevronDown /></a>
                                         <ul className="dropdown_menu">
                                             <li className="nav-item">
 
@@ -147,18 +154,6 @@ class DefaultStyleTwo extends React.Component {
                                     <li className="nav-item">
             
                                         <img src={require('../../static/images/language.svg')} alt="Language Icon"/>
-                                            {/* <ul className="dropdown_menu">
-                                                <li className="nav-item">
-
-                                                    <a className="nav-link" href="#" target="_blank">Eng</a>
-
-                                                </li>
-
-                                                <li className="nav-item">
-                                                        <a className="nav-link" href="#" target="_blank">Mandarian</a>
-                                                </li>
-
-                                        </ul> */}
                                     </li>
                                 </ul>
                                 
