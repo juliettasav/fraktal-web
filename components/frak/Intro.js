@@ -46,7 +46,7 @@ class Features extends Component {
                         <h3>Inflationary - Deflationary</h3>
                         <div className="iot-features-content">
                             <p>
-                                The Fraktal Network will begin as an inflationary network with a targeted inflation rate of 7.5% annually. In the Fraktal-4 release, validator fees will no longer be from inflation and will trransistion to the network fees. The exact amount can be dynamically changed via  on-chain governance to decide the correct allocation between the Community Fund, Burning, and Validator Rewards.
+                                The Fraktal Network will begin as an inflationary network with a targeted inflation rate of 7.5% annually. <div className="text-mobile">In the Fraktal-4 release, validator fees will no longer be from inflation and will trransistion to the network fees. The exact amount can be dynamically changed via  on-chain governance to decide the correct allocation between the Community Fund, Burning, and Validator Rewards.</div>
                             </p>
 
 

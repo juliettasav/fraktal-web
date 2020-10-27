@@ -58,6 +58,10 @@ body {
   background-color: #F5F2F7;
 }
 
+.row {
+  margin: 0;
+}
+
 .container {
   max-width: 77.2%;
   padding: 0;
@@ -210,7 +214,8 @@ body {
   .grid-row.template-two {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    justify-items: center;
+    justify-items: left;
+    text-align: left;
     -webkit-column-gap: 0px;
             column-gap: 0px;
   }
@@ -410,7 +415,7 @@ p:last-child {
 
 @media (max-width: 425px) {
   .agency-cta-area .agency-cta-content h2 {
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -450,14 +455,14 @@ p:last-child {
 
 @media (max-width: 425px) {
   .agency-cta-area .agency-cta-content .free-trial-content form.newsletter-form {
-    text-align: center;
+    text-align: left;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
   }
 }
 
@@ -559,6 +564,14 @@ p:last-child {
   gap: 32px;
 }
 
+@media (max-width: 425px) {
+  .agency-cta-area .agency-cta-content .social-links {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+}
+
 .agency-cta-area .agency-cta-content .social-links li a {
   text-align: center;
   line-height: 27px;
@@ -597,7 +610,7 @@ IoT Main Banner CSS
 
 @media (max-width: 425px) {
   .iot-banner-content {
-    text-align: center;
+    text-align: left;
     max-width: auto;
   }
 }
@@ -773,8 +786,22 @@ IoT Main Banner CSS
   text-align: center;
 }
 
+@media (max-width: 425px) {
+  .iot-why-choose-us .section-title h2 {
+    text-align: left;
+    margin-bottom: 16px;
+  }
+}
+
 .iot-why-choose-us .section-title p {
   text-align: center;
+}
+
+@media (max-width: 425px) {
+  .iot-why-choose-us .section-title p {
+    text-align: left;
+    margin: 0;
+  }
 }
 
 .iot-why-choose-us--architecture {
@@ -850,6 +877,12 @@ IoT Main Banner CSS
   color: #5245AF;
 }
 
+@media (max-width: 425px) {
+  .iot-why-choose-us--funfacts-area h2 {
+    text-align: left;
+  }
+}
+
 .iot-why-choose-us--funfacts-area h3 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -861,6 +894,14 @@ IoT Main Banner CSS
       -ms-flex-align: center;
           align-items: center;
   color: #7766F6;
+}
+
+@media (max-width: 425px) {
+  .iot-why-choose-us--funfacts-area h3 {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 
 .iot-why-choose-us--funfacts-area p {
@@ -875,6 +916,9 @@ IoT Main Banner CSS
     max-height: 64px;
     margin-top: 24px;
     margin-bottom: 44px;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
     font-size: 16px;
     line-height: 32px;
     overflow: hidden;
@@ -900,6 +944,7 @@ IoT Main Banner CSS
 @media (max-width: 425px) {
   .iot-why-choose-us--funfacts-area .funfact p {
     margin: 0;
+    text-align: left;
   }
 }
 
@@ -923,7 +968,7 @@ IoT Main Banner CSS
     max-width: 210px;
     height: 42px;
     overflow: hidden;
-    margin: 0 auto 24px;
+    margin-bottom: 24px;
   }
 }
 
@@ -971,13 +1016,11 @@ Navbar CSS
 }
 
 .startp-nav .navbar {
-  padding: 0;
+  padding: 5px 0;
 }
 
 @media (max-width: 425px) {
   .startp-nav .navbar {
-    -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
-            box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
     background-color: #F5F2F7;
   }
 }
@@ -1137,10 +1180,24 @@ Navbar CSS
   padding-bottom: 140px;
 }
 
+@media (max-width: 425px) {
+  .products-info-area {
+    padding-top: 143px;
+    padding-bottom: 48px;
+  }
+}
+
 .products-info-area h2 {
   color: #5245AF;
   margin-bottom: 64px;
   text-align: center;
+}
+
+@media (max-width: 425px) {
+  .products-info-area h2 {
+    text-align: left;
+    margin-bottom: 26px;
+  }
 }
 
 .products-info-area .single-features {
@@ -1152,6 +1209,8 @@ Navbar CSS
 @media (max-width: 425px) {
   .products-info-area .single-features {
     width: 100%;
+    height: 100%;
+    background-color: #ffffff;
   }
 }
 
@@ -1161,6 +1220,12 @@ Navbar CSS
 
 .products-info-area .single-features h3, .products-info-area .single-features p {
   color: #F5F2F7;
+}
+
+@media (max-width: 425px) {
+  .products-info-area .single-features h3, .products-info-area .single-features p {
+    color: #5245AF;
+  }
 }
 
 .hosting-features-area {
@@ -5618,8 +5683,31 @@ CTA CSS
   text-align: center;
 }
 
+@media (max-width: 425px) {
+  .cta-area--staking {
+    text-align: left;
+    padding-top: 23px;
+    padding-bottom: 44px;
+  }
+}
+
 .cta-area--staking h2 {
   margin-bottom: 48px;
+}
+
+@media (max-width: 425px) {
+  .cta-area--staking h2 {
+    max-width: 310px;
+    margin-bottom: 23px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  .cta-area--staking .btn-secondary-green {
+    margin-top: 0;
+  }
 }
 
 .cta-area--fraktal-network {
@@ -5629,8 +5717,7 @@ CTA CSS
 
 @media (max-width: 425px) {
   .cta-area--fraktal-network {
-    padding-top: 54px;
-    padding-bottom: 80px;
+    padding: 54px 0;
   }
 }
 
@@ -5638,9 +5725,27 @@ CTA CSS
   text-align: center;
 }
 
+@media (max-width: 425px) {
+  .cta-area--fraktal-network .cta-fraktal-network {
+    text-align: left;
+  }
+}
+
 .cta-area--fraktal-network .cta-fraktal-network h2 {
   margin: 0 auto 56px;
   max-width: 848px;
+}
+
+@media (max-width: 425px) {
+  .cta-area--fraktal-network .cta-fraktal-network h2 {
+    margin: 0 0 24px;
+  }
+}
+
+@media (max-width: 425px) {
+  .cta-area--fraktal-network .cta-fraktal-network .btn-secondary-green {
+    margin-top: 0;
+  }
 }
 
 .cta-content h2 {
@@ -6034,8 +6139,27 @@ Repair CTA CSS
   padding-bottom: 140px;
 }
 
+@media (max-width: 425px) {
+  .repair-cta-area {
+    padding-top: 65px;
+    padding-bottom: 48px;
+  }
+}
+
 .repair-cta-area .col-lg-6 {
   text-align: center;
+}
+
+@media (max-width: 425px) {
+  .repair-cta-area .col-lg-6:first-child {
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .cta-repair-content {
+    text-align: left;
+  }
 }
 
 .cta-repair-content p {
@@ -6044,10 +6168,30 @@ Repair CTA CSS
   margin-bottom: 48px;
 }
 
+@media (max-width: 425px) {
+  .cta-repair-content p {
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+}
+
 .cta-repair-content h3 {
   color: #ffffff;
   font-size: 25px;
   margin-bottom: 17px;
+}
+
+@media (max-width: 425px) {
+  .cta-repair-content h3 {
+    line-height: 42px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 425px) {
+  .cta-repair-content .btn-secondary-green {
+    margin-top: 0;
+  }
 }
 
 .cta-repair-img {
@@ -6088,14 +6232,32 @@ Repair Why Choose Us CSS
   position: relative;
   z-index: 1;
   background-color: #7766F6;
-  padding-bottom: 84px;
+  padding: 84px 0;
+}
+
+@media (max-width: 425px) {
+  .repair-why-choose-us {
+    padding: 54px 0;
+  }
 }
 
 .repair-why-choose-us .section-title h2 {
   color: #F5F2F7;
   text-align: center;
-  padding-top: 80px;
   padding-bottom: 64px;
+}
+
+@media (max-width: 425px) {
+  .repair-why-choose-us .section-title h2 {
+    text-align: left;
+    padding-bottom: 24px;
+  }
+}
+
+@media (max-width: 425px) {
+  .repair-why-choose-us .section-title h2 .mobile-text {
+    display: block;
+  }
 }
 
 .repair-why-choose-us .section-title p {
@@ -6124,6 +6286,7 @@ Repair Why Choose Us CSS
 @media (max-width: 425px) {
   .single-repair-box {
     width: 100%;
+    height: 245px;
   }
 }
 
@@ -6144,6 +6307,19 @@ Repair Why Choose Us CSS
   font-weight: 500;
   margin-top: 10px;
   margin-bottom: 28px;
+}
+
+@media (max-width: 425px) {
+  .single-repair-box h3 {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 425px) {
+  .single-repair-box p {
+    display: none;
+  }
 }
 
 .single-repair-box a {
@@ -6227,14 +6403,12 @@ IoT Partner CSS
   .iot-partner-area {
     padding-top: 54px;
     padding-bottom: 54px;
+    text-align: left;
   }
 }
 
 .iot-partner-area--home h2 {
   color: #5245AF;
-  font-size: 43px;
-  font-weight: 700;
-  line-height: 64.5px;
   margin-bottom: 54px;
 }
 
@@ -6447,6 +6621,13 @@ IoT CTA CSS
   }
 }
 
+@media (max-width: 425px) {
+  .cta-iot-content {
+    text-align: left;
+    padding-left: 37px;
+  }
+}
+
 .cta-iot-content h2 {
   color: #F5F2F7;
   font-size: 34px;
@@ -6466,7 +6647,6 @@ IoT CTA CSS
 
 @media (max-width: 425px) {
   .cta-iot-content p {
-    margin: 0 auto;
     max-width: 286px;
     margin-bottom: 32px;
   }
@@ -7967,6 +8147,12 @@ Our Solutions CSS
 }
 
 @media (max-width: 425px) {
+  .earn-area--home h2 {
+    text-align: left;
+  }
+}
+
+@media (max-width: 425px) {
   .earn-area--home h2 .title-mobile-text {
     display: block;
     margin-top: 24px;
@@ -7981,9 +8167,7 @@ Our Solutions CSS
     width: 180px;
     height: 180px;
     top: 195px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    left: 40px;
   }
 }
 
@@ -7992,14 +8176,14 @@ Our Solutions CSS
     font-size: 24px;
     line-height: 1;
     top: 270px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    left: 73px;
+    max-width: 116px;
   }
 }
 
 @media (max-width: 425px) {
   .earn-area--home .earn-area__text .circle-mobile-text {
+    display: block;
     font-weight: 300;
     font-size: 12px;
     line-height: 18px;
@@ -8011,9 +8195,7 @@ Our Solutions CSS
   .earn-area--home .btn-secondary-green {
     position: absolute;
     top: 372px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    left: 15px;
   }
 }
 
@@ -8565,5 +8747,38 @@ Agency CTA CSS
 
 .navbar-light .navbar-toggler-icon {
   background-image: url("../../static/images/header/menu-mob.svg");
+}
+
+@media (max-width: 425px) {
+  .iot-features-content .text-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .hosting-features-area {
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 425px) {
+  .hosting-features-area h2 {
+    text-align: left;
+    margin-bottom: 34px;
+  }
+}
+
+@media (max-width: 425px) {
+  .hosting-features-area .single-features {
+    background-color: #ffffff;
+    height: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .hosting-features-area .single-features h3 {
+    color: #5245AF;
+  }
 }
 /*# sourceMappingURL=style.css.map */

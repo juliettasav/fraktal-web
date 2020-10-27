@@ -4542,26 +4542,53 @@ CTA CSS
     &--staking {
         padding-bottom: 80px;
         text-align: center;
-
+        @media (max-width: $mobile-max) {
+            text-align: left;
+            padding: {
+                top: 23px;
+                bottom: 44px;
+            }
+        }
         h2 {
             margin-bottom: 48px;
+            @media (max-width: $mobile-max) {
+                max-width: 310px;
+                margin-bottom: 23px;
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+
+        .btn-secondary-green {
+            @media (max-width: $mobile-max) {
+                margin-top: 0;
+            }
         }
     }
     &--fraktal-network {
         padding-top: 172px;
         padding-bottom: 143px;
         @media (max-width: $mobile-max) {
-            padding: {
-                top: 54px;
-                bottom: 80px;
-            };
+            padding: 54px 0;
         }
 
         .cta-fraktal-network {
             text-align: center;
+            @media (max-width: $mobile-max) {
+                text-align: left;
+            }
             h2 {
                 margin: 0 auto 56px;
                 max-width: 848px;
+                @media (max-width: $mobile-max) {
+                    margin: 0 0 24px;
+                    
+                }
+            }
+            .btn-secondary-green {
+                @media (max-width: $mobile-max) {
+                    margin-top: 0;
+                }
             }
         }
     }
@@ -4971,20 +4998,49 @@ Repair CTA CSS
         top: 80px;
         bottom: 140px;
     };
+    @media (max-width: $mobile-max) {
+        padding: {
+            top: 65px;
+            bottom: 48px;
+        }; 
+    }
     .col-lg-6 {
         text-align: center;
+        &:first-child {
+            @media (max-width: $mobile-max) {
+                display: none;
+            }
+        }
     }
 }
 .cta-repair-content {
+    @media (max-width: $mobile-max) {
+        text-align: left;
+    }
     p {
         color: $light-color;
         margin-top: 18px;
         margin-bottom: 48px;
+        @media (max-width: $mobile-max) {
+            margin-top: 0;
+            margin-bottom: 24px;        
+        }
     }
     h3 {
         color: $white-color;
         font-size: 25px;
         margin-bottom: 17px;
+        @media (max-width: $mobile-max) {
+            line-height: 42px;
+            margin-bottom: 25px;        
+        }
+        
+    }
+
+    .btn-secondary-green {
+        @media (max-width: $mobile-max) {
+            margin-top: 0;
+        }
     }
 }
 .cta-repair-img {
@@ -5028,15 +5084,26 @@ Repair Why Choose Us CSS
     position: relative;
     z-index: 1;
     background-color: $primary-color;
-    padding-bottom: 84px;
+    padding: 84px 0;
+    @media (max-width: $mobile-max) {
+        padding: 54px 0;
+    }
     .section-title {
         h2 {
             color: $light-color;
             text-align: center;
             padding: {
-                top: 80px;
                 bottom: 64px;
             };
+            @media (max-width: $mobile-max) {
+                text-align: left;
+                padding-bottom: 24px;
+            }
+            .mobile-text{
+                @media (max-width: $mobile-max) {
+                    display: block;
+                }
+            }
         }
         
         p {
@@ -5063,6 +5130,7 @@ Repair Why Choose Us CSS
     transition: $transition;
     @media (max-width: $mobile-max) {
         width: 100%;
+        height: 245px;
     }
 
     &__img {
@@ -5083,8 +5151,15 @@ Repair Why Choose Us CSS
             top: 10px;
             bottom: 28px;
         };
+        @media (max-width: $mobile-max) {
+            text-align: center;
+            margin-bottom: 32px;
+        }
     }
     p {
+        @media (max-width: $mobile-max) {
+            display: none;
+        }
     }
     a {
         width: 40px;
@@ -5244,15 +5319,13 @@ IoT Partner CSS
             top: 54px;
             bottom: 54px;
         };
+        text-align: left;
     } 
 
     &--home {
         
         h2 {
             color: $primary-dark-color;
-            font-size: 43px;
-            font-weight: 700;
-            line-height: 64.5px;
             margin-bottom: 54px;
             @media (max-width: $mobile-max) {
                 margin-bottom: 24px;
@@ -5452,6 +5525,10 @@ IoT CTA CSS
     }
 }
 .cta-iot-content {
+    @media (max-width: $mobile-max) {
+        text-align: left;
+        padding-left: 37px;
+    }
     h2 {
         color: $light-color;
         font-size: 34px;
@@ -5465,7 +5542,6 @@ IoT CTA CSS
         opacity: .95;
         margin-bottom: 25px;
         @media (max-width: $mobile-max) {
-            margin: 0 auto;
             max-width: 286px;
             margin-bottom: 32px;
         }
@@ -6962,6 +7038,9 @@ Our Solutions CSS
     }
 
     h2 {
+        @media (max-width: $mobile-max) {
+            text-align: left;
+        }
         .title-mobile-text {
             @media (max-width: $mobile-max) {
                 display: block;
@@ -6978,8 +7057,7 @@ Our Solutions CSS
             width: 180px;
             height: 180px;
             top: 195px;
-            left: 50%;
-            transform: translateX(-50%);
+            left: 40px;
         }
     }
 
@@ -6988,11 +7066,12 @@ Our Solutions CSS
             font-size: 24px;
             line-height: 1;
             top: 270px;
-            left: 50%;
-            transform: translateX(-50%);
+            left: 73px;
+            max-width: 116px;
         }
         .circle-mobile-text {
             @media (max-width: $mobile-max) {
+                display: block;
                 font-weight: 300;
                 font-size: 12px;
                 line-height: 18px;
@@ -7005,8 +7084,7 @@ Our Solutions CSS
         @media (max-width: $mobile-max) {
             position: absolute;
             top: 372px;
-            left: 50%;
-            transform: translateX(-50%);
+            left: 15px;
         }
     }
 }
@@ -7521,3 +7599,37 @@ Agency CTA CSS
 .navbar-light .navbar-toggler-icon {
     background-image: url('../../static/images/header/menu-mob.svg');
 }
+
+.iot-features-content {
+    .text-mobile {
+        @media (max-width: $mobile-max) {
+            display: none;
+        }
+    }
+}
+
+.hosting-features-area {
+    @media (max-width: $mobile-max) {
+        padding-top: 0;
+        padding-bottom: 40px;
+    }
+    h2 {
+        @media (max-width: $mobile-max) {
+            text-align: left;
+            margin-bottom: 34px;
+        }
+    }
+    .single-features {
+        @media (max-width: $mobile-max) {
+            background-color: $white-color;
+            height: 100%;
+        }
+        h3 {
+            @media (max-width: $mobile-max) {
+                color: $primary-dark-color;
+            }
+        }
+
+    }
+}
+

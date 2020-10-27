@@ -6,6 +6,10 @@ body {
     background-color: $back-main-color;
 }
 
+.row {
+    margin: 0;
+}
+
 .container {
     max-width: 77.2%; //1040px
     padding: 0;
@@ -122,7 +126,8 @@ body {
         column-gap: 40px;
         @media (max-width: $mobile-max) {
             grid-template-columns: 1fr;
-            justify-items: center;
+            justify-items: left;
+            text-align: left;
             column-gap: 0px;
 
         }

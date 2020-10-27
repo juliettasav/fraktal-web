@@ -11,11 +11,9 @@ class Cta extends Component {
 
                             <h2>Rewards are paid in real-time 24/7 and typically range between 7% to 12 % annually</h2>
     
-                            <div className="buy-btn">
-                                <Link href="#">
-                                    <a className="btn btn-secondary-green">Earn Today</a>
-                                </Link>
-                            </div>
+                            <Link href="#">
+                                <a className="btn btn-secondary-green">Earn Today</a>
+                            </Link>
 
                     </div>
                 </div>

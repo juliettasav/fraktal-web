@@ -23,7 +23,7 @@ IoT Main Banner CSS
 .iot-banner-content {
     max-width: 445px;
     @media (max-width: $mobile-max) {
-        text-align: center;
+        text-align: left;
         max-width: auto;
     }
 

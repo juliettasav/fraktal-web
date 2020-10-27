@@ -8,7 +8,7 @@ class WhyChoose extends Component {
             <section className="repair-why-choose-us">
                 <div className="container">
                     <div className="section-title">
-                        <h2>FRAK Economic Layer</h2>
+                        <h2>FRAK <span className="mobile-text">Economic Layer</span></h2>
                     </div>
 
                     <div className="row">

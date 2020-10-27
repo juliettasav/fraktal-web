@@ -29,9 +29,8 @@ Navbar CSS
     height: auto;
 
     .navbar {
-        padding: 0;
+        padding: 5px 0;
         @media (max-width: $mobile-max) {
-            box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
             background-color: #F5F2F7;
         }
         
