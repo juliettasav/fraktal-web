@@ -77,10 +77,14 @@
             color: $light-color;
         }
         img {
-            margin-top: 62px;
-            @media (max-width: $mobile-max) {
-                display: none;
-            }
+            &.whyus-logo {
+                margin-top: 62px;
+                @media (max-width: $mobile-max) {
+                    display: none;
+                }
+            } 
+            
+            
         }
         .single-features__content {
             p {

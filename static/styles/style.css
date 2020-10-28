@@ -289,6 +289,14 @@ body {
 }
 
 /* owl carousel btn */
+.single-features-img {
+  text-align: center;
+}
+
+.single-features-img img {
+  height: 100%;
+}
+
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
@@ -595,6 +603,8 @@ IoT Main Banner CSS
 
 .iot-main-banner img {
   min-width: 520px;
+  -o-object-position: 0px -50px;
+     object-position: 0px -50px;
 }
 
 @media (max-width: 425px) {
@@ -855,12 +865,12 @@ IoT Main Banner CSS
   color: #F5F2F7;
 }
 
-.iot-why-choose-us--leads-defi img {
+.iot-why-choose-us--leads-defi img.whyus-logo {
   margin-top: 62px;
 }
 
 @media (max-width: 425px) {
-  .iot-why-choose-us--leads-defi img {
+  .iot-why-choose-us--leads-defi img.whyus-logo {
     display: none;
   }
 }
@@ -6407,6 +6417,10 @@ IoT Partner CSS
   }
 }
 
+.iot-partner-area h2 {
+  color: #5245AF;
+}
+
 .iot-partner-area--home h2 {
   color: #5245AF;
   margin-bottom: 54px;
@@ -6703,6 +6717,8 @@ IoT Features CSS
 .iot-features-image {
   position: relative;
   text-align: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
   width: 520px;
   height: 400px;
   -webkit-box-flex: 0;
@@ -6712,8 +6728,20 @@ IoT Features CSS
 
 @media (max-width: 425px) {
   .iot-features-image {
-    width: 208px;
+    width: 190px;
     height: 160px;
+  }
+}
+
+.iot-features-image img {
+  -o-object-position: 0px -30px;
+     object-position: 0px -30px;
+}
+
+@media (max-width: 425px) {
+  .iot-features-image img {
+    -o-object-position: 0px -10px;
+       object-position: 0px -10px;
   }
 }
 
@@ -8766,6 +8794,7 @@ Agency CTA CSS
   .hosting-features-area h2 {
     text-align: left;
     margin-bottom: 34px;
+    font-weight: 500;
   }
 }
 

@@ -5321,6 +5321,10 @@ IoT Partner CSS
         };
         text-align: left;
     } 
+    h2 {
+        color: $primary-dark-color;
+
+    }
 
     &--home {
         
@@ -5593,12 +5597,20 @@ IoT Features CSS
 .iot-features-image {
     position: relative;
     text-align: center;
+    justify-self: center;
     width: 520px;
     height: 400px;
     flex: none;
+    
     @media (max-width: $mobile-max) {
-        width: 208px;
+        width: 190px;
         height: 160px;
+    }
+    img {
+        object-position: 0px -30px;
+        @media (max-width: $mobile-max) {
+            object-position: 0px -10px;
+        }
     }
 }
 
@@ -7617,6 +7629,7 @@ Agency CTA CSS
         @media (max-width: $mobile-max) {
             text-align: left;
             margin-bottom: 34px;
+            font-weight: 500;
         }
     }
     .single-features {
