@@ -67,6 +67,9 @@
     &--leads-defi {
         background: $primary-color;
         background-image: url('../../static/images/home/bg-2.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
         h2 {
             color: $light-color;
             @media (max-width: $mobile-max) {
