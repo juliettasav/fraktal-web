@@ -4539,6 +4539,10 @@ CTA CSS
         top: 160px;
         bottom: 22px;
     }
+    background-image: url('../../static/images/network/bg-1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     &--staking {
         padding-bottom: 80px;
         text-align: center;
@@ -5083,14 +5087,14 @@ Repair Why Choose Us CSS
 .repair-why-choose-us {
     position: relative;
     z-index: 1;
-    background-color: $primary-color;
+    // background-color: $primary-color;
     padding: 84px 0;
     @media (max-width: $mobile-max) {
         padding: 54px 0;
     }
     .section-title {
         h2 {
-            color: $light-color;
+            color: $primary-dark-color;
             text-align: center;
             padding: {
                 bottom: 64px;
@@ -5114,6 +5118,12 @@ Repair Why Choose Us CSS
     .row {
         @media (max-width: $mobile-max) {
             gap: 24px;
+        }
+        .single-repair-box {
+            background-color: $primary-color;
+            h3, p {
+                color: $light-color;
+            }
         }
     }
     
@@ -5611,7 +5621,7 @@ IoT Features CSS
     img {
         object-position: 0px -30px;
         @media (max-width: $mobile-max) {
-            object-position: 0px -10px;
+            object-position: 0px -10px !important;
         }
     }
 }
@@ -7041,7 +7051,11 @@ Our Solutions CSS
         }
     }
 }
-
+.earn-area {
+    background-image: url('../../static/images/home/bg-4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .earn-area--home {
     position: relative;
     @media (max-width: $mobile-max) {

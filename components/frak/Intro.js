@@ -19,10 +19,11 @@ class Features extends Component {
                         <div className="iot-features-image">
                             <ReactWOW delay='0.6s' animation='fadeInUp'>
                                 <img
-                                    src={require('../../static/images/graphics/3.png')}
+                                    src={require('../../static/images/frak/1.png')}
                                     className="wow fadeInUp"
                                     data-wow-delay="0.6s"
                                     alt="image"
+                                    style={{objectPosition: '0px 0px'}}
                                 />
                             </ReactWOW>
                         </div>
@@ -36,10 +37,11 @@ class Features extends Component {
                         <div className="iot-features-image">
                             <ReactWOW delay='0.6s' animation='fadeInUp'>
                                 <img
-                                    src={require('../../static/images/graphics/2.png')}
+                                    src={require('../../static/images/frak/2.png')}
                                     className="wow fadeInUp"
                                     data-wow-delay="0.6s"
                                     alt="image"
+                                    
                                 />
                             </ReactWOW>
                         </div>

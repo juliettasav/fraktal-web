@@ -849,6 +849,9 @@ IoT Main Banner CSS
 .iot-why-choose-us--leads-defi {
   background: #7766F6;
   background-image: url("../../static/images/home/bg-2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .iot-why-choose-us--leads-defi h2 {
@@ -965,7 +968,7 @@ IoT Main Banner CSS
 }
 
 .iot-why-choose-us--blog-area {
-  background-image: url("../../static/images/home/bg-4.png");
+  background-image: url("../../static/images/home/bg-5.png");
   background-position-y: 30px;
 }
 
@@ -5686,6 +5689,10 @@ CTA CSS
   overflow: hidden;
   padding-top: 160px;
   padding-bottom: 22px;
+  background-image: url("../../static/images/network/bg-1.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .cta-area--staking {
@@ -6241,7 +6248,6 @@ Repair Why Choose Us CSS
 .repair-why-choose-us {
   position: relative;
   z-index: 1;
-  background-color: #7766F6;
   padding: 84px 0;
 }
 
@@ -6252,7 +6258,7 @@ Repair Why Choose Us CSS
 }
 
 .repair-why-choose-us .section-title h2 {
-  color: #F5F2F7;
+  color: #5245AF;
   text-align: center;
   padding-bottom: 64px;
 }
@@ -6279,6 +6285,14 @@ Repair Why Choose Us CSS
   .repair-why-choose-us .row {
     gap: 24px;
   }
+}
+
+.repair-why-choose-us .row .single-repair-box {
+  background-color: #7766F6;
+}
+
+.repair-why-choose-us .row .single-repair-box h3, .repair-why-choose-us .row .single-repair-box p {
+  color: #F5F2F7;
 }
 
 .single-repair-box {
@@ -6586,6 +6600,8 @@ IoT CTA CSS
 .iot-cta-area--home {
   background-image: url("../../static/images/home/bg-3.png");
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding-top: 204px;
   padding-bottom: 239px;
 }
@@ -6740,8 +6756,8 @@ IoT Features CSS
 
 @media (max-width: 425px) {
   .iot-features-image img {
-    -o-object-position: 0px -10px;
-       object-position: 0px -10px;
+    -o-object-position: 0px -10px !important;
+       object-position: 0px -10px !important;
   }
 }
 
@@ -8158,6 +8174,12 @@ Our Solutions CSS
   position: relative;
   top: -1px;
   margin-right: 3px;
+}
+
+.earn-area {
+  background-image: url("../../static/images/home/bg-4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .earn-area--home {
