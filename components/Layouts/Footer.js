@@ -121,7 +121,7 @@ export default class Footer extends React.Component {
                     
                     <div className="copyright-area">
                         <span className="copyright-area--black">Copyright 2020</span>
-                        <span>Infinite Chain Foundation</span>
+                        <span><a href="infinitechain.org" target="_blank">Infinite Chain Foundation</a></span>
                     </div>
                     
 

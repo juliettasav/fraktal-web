@@ -13,7 +13,7 @@ class MainBanner extends Component {
                         <h1>Fraktal</h1>
                         <span>The DeFi Network</span>
                         <p>Design and scale incredibly powerful DeFi apps like never before possible. </p>
-                        <Link href="#">
+                        <Link href="/fraktal-network">
                             <a className="btn btn-secondary-green">Learn More</a>
                         </Link>
                     </div>

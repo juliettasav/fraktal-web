@@ -5849,6 +5849,15 @@ Footer CSS
     &--black {
         color: $black-text
     }
+    a {
+        color: $primary-color;
+        text-decoration: none;
+        transition: opacity ease-in-out .2s;
+        
+        &:hover {
+            opacity: 0.8;
+        }
+    }
     
 }
 

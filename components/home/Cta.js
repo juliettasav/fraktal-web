@@ -10,9 +10,8 @@ class Cta extends Component {
                     <div className="cta-iot-content">
                         <h2>Become a Fraktal Developer</h2>
                         <p>Contribute to Fraktal network or build your own powerful decentralised applications.</p>
-                        <Link href="#">
-                            <a className="btn btn-secondary-green">Get Started!</a>
-                        </Link>
+                        
+                        <a className="btn btn-secondary-green" href="https://developer.fraktal.network/" target="_blank">Get Started!</a>
                     </div>
                 </div>
             </section>

@@ -884,16 +884,17 @@ IoT Main Banner CSS
 
 .iot-why-choose-us--funfacts-area {
   padding-bottom: 120px;
+  text-align: center;
+}
+
+@media (max-width: 425px) {
+  .iot-why-choose-us--funfacts-area {
+    text-align: left;
+  }
 }
 
 .iot-why-choose-us--funfacts-area h2 {
   color: #5245AF;
-}
-
-@media (max-width: 425px) {
-  .iot-why-choose-us--funfacts-area h2 {
-    text-align: left;
-  }
 }
 
 .iot-why-choose-us--funfacts-area h3 {
@@ -931,7 +932,6 @@ IoT Main Banner CSS
     margin-bottom: 44px;
     margin-left: 0;
     margin-right: 0;
-    text-align: left;
     font-size: 16px;
     line-height: 32px;
     overflow: hidden;
@@ -7006,6 +7006,17 @@ Footer CSS
 
 .copyright-area--black {
   color: #000000;
+}
+
+.copyright-area a {
+  color: #7766F6;
+  text-decoration: none;
+  -webkit-transition: opacity ease-in-out .2s;
+  transition: opacity ease-in-out .2s;
+}
+
+.copyright-area a:hover {
+  opacity: 0.8;
 }
 
 /*=============================

@@ -73,8 +73,7 @@ class Funfacts extends React.Component {
                         </div>
                     </div>
 
-                    
-
+                    <a className="btn btn-secondary-green" href="https://discord.com/invite/SqsG7zY" target="_blank">Join!</a>
                     
                 </div>
             </section>

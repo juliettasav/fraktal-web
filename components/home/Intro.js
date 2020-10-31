@@ -26,7 +26,7 @@ class Features extends Component {
                                 <p>
                                     Fraktal solves Blockchain scalability and privacy while remaining secure and decentralised. This enables countless new use cases for high frequency, low value transactions which have never before been possible.
                                 </p>
-                                <Link href="#">
+                                <Link href="/fraktal-network">
                                     <a className="btn btn-secondary-green">Explore More</a>
                                 </Link>
                             </div>

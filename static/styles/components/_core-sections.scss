@@ -98,11 +98,12 @@
 
     &--funfacts-area {
         padding-bottom: 120px;
+        text-align: center;
+        @media (max-width: $mobile-max) {
+            text-align: left;
+        }
         h2 {
             color: $primary-dark-color;
-            @media (max-width: $mobile-max) {
-                text-align: left;
-            }
         }
         h3 {
             display: flex;
@@ -126,7 +127,6 @@
                     left: 0;
                     right: 0;
                 };
-                text-align: left;
                 font-size: 16px;
                 line-height: 32px;
                 overflow: hidden;
