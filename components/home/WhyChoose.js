@@ -44,7 +44,7 @@ class WhyChoose extends Component {
                                 <img src={require('../../static/images/home/6.png')}/>
                             </div>
                             <div className="single-features__content">
-                                <h3>Low Fees</h3>
+                                <h3>Cross Chain</h3>
                                 <p>
                                     Tap into hundreds of billions of dollars of untapped liquidity across different Blockchains such as BTC, ETH, USDT, BNB, XRP, ATOM, and DOT
                                 </p>

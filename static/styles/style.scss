@@ -5628,7 +5628,7 @@ IoT Features CSS
 
 .second-intro-home-block {
     img {
-        object-position: 0px -75px;
+        object-position: 0px -50px;
         @media (max-width: $mobile-max) {
             object-position: 0px 0px;
         }
@@ -6833,14 +6833,16 @@ ML Pricing Tab CSS
         a {
             img {
                 border-radius: 5px 5px 0 0; 
+                margin-top: 10px;
                 @media (max-width: $mobile-max) {
                     height: 116px;
+                    
                 }       
             }
         }
     }
     .entry-post-content {
-        padding: 20px;
+        padding: 15px 20px;
 
         @media (max-width: $mobile-max) {
             text-align: right;
