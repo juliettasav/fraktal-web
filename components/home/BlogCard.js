@@ -18,7 +18,7 @@ class BlogCard extends Component {
                                 <div className="entry-thumbnail">
                                     <Link href="#">
                                         <a>
-                                            <img src={require("../../static/images/graphics/10.png")} alt="image" />
+                                            <img src={require("../../static/images/home/8.png")} alt="image" />
                                         </a>
                                     </Link>
                                 </div>
@@ -41,7 +41,7 @@ class BlogCard extends Component {
                                 <div className="entry-thumbnail">
                                     <Link href="#">
                                         <a>
-                                            <img src={require("../../static/images/graphics/12.png")} alt="image" />
+                                            <img src={require("../../static/images/home/9.png")} alt="image" />
                                         </a>
                                     </Link>
                                 </div>
@@ -64,7 +64,7 @@ class BlogCard extends Component {
                                 <div className="entry-thumbnail">
                                     <Link href="#">
                                         <a>
-                                            <img src={require("../../static/images/graphics/12.png")} alt="image" />
+                                            <img src={require("../../static/images/home/10.png")} alt="image" />
                                         </a>
                                     </Link>
                                 </div>
