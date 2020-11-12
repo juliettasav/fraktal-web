@@ -46,7 +46,7 @@
             margin: 0 auto;
         }
         img {
-            background-color: $light-color;
+
         } 
     }
 
@@ -178,4 +178,31 @@
         
     }
     
+}
+
+.lg-image-box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.single-features {
+    .single-features-img.partners-box {
+        justify-content: flex-start;
+        @media (max-width: $mobile-max) {
+            justify-content: center;
+        }
+        img {
+            height: auto;
+            margin-left: 10px;
+        }
+    }
+    
+} 
+
+.single-features.partners-box-container {
+    background-color: $primary-color !important;
+    h3 {
+        color: $light-color !important;
+    }
 }

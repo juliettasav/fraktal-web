@@ -37,15 +37,15 @@ class Partner extends Component {
 
 
                 </div>
-                    <div className="row">
-                    <ReactWOW delay='0.6s' animation='fadeInUp'>
-                        <img
-                            src={require('../../static/images/graphics/architecture.png')}
-                            className="wow fadeInUp"
-                            data-wow-delay="0.6s"
-                            alt="image"
-                        />
-                    </ReactWOW>
+                    <div className="lg-image-box">
+                        <ReactWOW delay='0.6s' animation='fadeInUp'>
+                            <img
+                                src={require('../../static/images/network/3.png')}
+                                className="wow fadeInUp"
+                                data-wow-delay="0.6s"
+                                alt="image"
+                            />
+                        </ReactWOW>
                     </div>
                 </div>
             </section>

@@ -15,7 +15,7 @@ class WhyChoose extends Component {
                         <div className="col-lg-4 col-md-6">
                             <div className="single-repair-box">
                                 <div className="single-repair-box__img">
-                                    {/* img */}
+                                    <img src={require('../../static/images/frak/3.png')} alt="image" />
                                 </div>
                                 <div className="single-repair-box__content">
                                     <h3>Staking</h3>
@@ -26,8 +26,8 @@ class WhyChoose extends Component {
 
                         <div className="col-lg-4 col-md-6">
                             <div className="single-repair-box">
-                            <div className="single-repair-box__img">
-                                    {/* img */}
+                                <div className="single-repair-box__img">
+                                    <img src={require('../../static/images/frak/4.png')} alt="image" />
                                 </div>
                                 <div className="single-repair-box__content">
                                     <h3>Governance</h3>
@@ -42,8 +42,8 @@ class WhyChoose extends Component {
 
                         <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
                             <div className="single-repair-box">
-                            <div className="single-repair-box__img">
-                                    {/* img */}
+                                <div className="single-repair-box__img">
+                                    <img src={require('../../static/images/frak/5.png')} alt="image" />
                                 </div>
                                 <div className="single-repair-box__content">
                                     <h3>Network Fees</h3>

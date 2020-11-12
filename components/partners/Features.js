@@ -20,7 +20,7 @@ class Features extends Component {
                         <div className="iot-features-image">
                             <ReactWOW delay='0.6s' animation='fadeInUp'>
                                 <img
-                                    src={require('../../static/images/graphics/3.png')}
+                                    src={require('../../static/images/partners/1.png')}
                                     className="wow fadeInUp"
                                     data-wow-delay="0.6s"
                                     alt="image"

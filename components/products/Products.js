@@ -11,8 +11,9 @@ class Services extends Component {
                 <h2>Products</h2>
                 </div>
                 <div className="row-grid why-choose-grid">
-                        <div className="single-features">
-                            <div className="single-features-img">
+                        <div className="single-features partners-box-container">
+                            <div className="single-features-img partners-box">
+                            <img src={require('../../static/images/products/2.png')}/>
                             </div>
                             <div className="single-features__content">
                                 <h3>Fraktal Network</h3>
@@ -20,9 +21,9 @@ class Services extends Component {
                             </div>
                         </div>
 
-                        <div className="single-features">
-                            <div className="single-features-img">
-                            
+                        <div className="single-features partners-box-container">
+                            <div className="single-features-img partners-box">
+                            <img src={require('../../static/images/products/3.png')}/>
                             </div>
                             <div className="single-features__content">
                                 <h3>Fraktal TestNet</h3>
@@ -30,27 +31,27 @@ class Services extends Component {
                             </div>
                         </div>
 
-                        <div className="single-features">
-                            <div className="single-features-img">
-                            
+                        <div className="single-features partners-box-container">
+                            <div className="single-features-img partners-box">
+                            <img src={require('../../static/images/products/4.png')}/>
                             </div>
                             <div className="single-features__content">
                                 <h3>Gabel.io</h3>
                                 <p>Your own personal bank. Safely store your assets and send money instantly, anywhere in the world without bank fees.</p>
                             </div>
                         </div>
-                        <div className="single-features">
-                            <div className="single-features-img">
-                            
+                        <div className="single-features partners-box-container">
+                            <div className="single-features-img partners-box">
+                            <img src={require('../../static/images/products/5.png')}/>
                             </div>
                             <div className="single-features__content">
                                 <h3>FraktalScan by TokenWeb</h3>
                                 <p>A Block Explorer designed for multi-chain networks powered by IBC.</p>
                             </div>
                         </div>
-                        <div className="single-features">
-                            <div className="single-features-img">
-                            
+                        <div className="single-features partners-box-container">
+                            <div className="single-features-img partners-box">
+                            <img src={require('../../static/images/products/6.png')}/>
                             </div>
                             <div className="single-features__content">
                                 <h3>FrakIt</h3>
