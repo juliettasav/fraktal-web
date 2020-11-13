@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactWOW from 'react-wow';
 
 class WhyChoose extends Component {
     render() {
@@ -36,7 +35,7 @@ class WhyChoose extends Component {
                             </div>
                         </div>
 
-                        <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
+                        <div className="col-lg-4 col-md-6">
                             <div className="single-repair-box">
                                 <div className="single-repair-box__img">
                                         <img src={require('../../static/images/staking/6.png')} />

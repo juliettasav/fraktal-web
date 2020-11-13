@@ -50,15 +50,20 @@ body {
     &.why-choose-grid {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 49px; 
+          
         @media (max-width: $mobile-max) {
             gap: 28px;
         }
     }
+    @media (max-width: 1270px) {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 0px;
+    } 
     @media (max-width: $mobile-max) {
         grid-template-columns: 1fr !important;
         gap: 0px;
-        justify-items: center;
-    }
+    } 
+    
     
 }
 
@@ -150,8 +155,18 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    // &.main-banner-block {
-    // }
+    @media(max-width: $tablet-max) {
+        justify-content: center;
+    }
+    @media(max-width: $mobile-max) {
+        justify-content: flex-start;
+    }
+
+    &.main-banner-block {
+        @media(max-width: $tablet-max) {
+            align-items: center;
+        }
+    }
 }
 
 // INTRO HOME PAGE

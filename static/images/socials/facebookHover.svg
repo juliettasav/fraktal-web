@@ -4,9 +4,10 @@
 	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#3B5998;}
-	.st1{fill:#E5E5E5;}
+	.st1{fill:#FFFFFF;}
 </style>
-<path class="st0" d="M29.4,2.7v26.6H18.7V18.7h6.7V16h-6.7v-2.7c0-2.2,1.8-4,4-4h2.7V6.7h-2.7c-3.7,0-6.7,3-6.7,6.7V16h-2.7v2.7H16
-	v10.7H2.7V2.7H29.4z"/>
-<rect x="16" y="29.3" class="st1" width="2.7" height="0.1"/>
+<path class="st0" d="M28.6,32H3.4C1.5,32,0,30.5,0,28.6V3.4C0,1.5,1.5,0,3.4,0h25.3C30.5,0,32,1.5,32,3.4v25.3
+	C32,30.5,30.5,32,28.6,32z"/>
+<path class="st1" d="M18.7,13.3V16h6.7v2.7h-6.7V32H16V18.7h-2.7V16H16v-2.6c0-3.7,3-6.7,6.7-6.7h2.7v2.6h-2.7
+	C20.5,9.3,18.7,11.1,18.7,13.3z"/>
 </svg>

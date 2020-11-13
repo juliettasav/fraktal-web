@@ -59,7 +59,7 @@ class BlogCard extends Component {
                             </div>
                         </div>
 
-                        <div className="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
+                        <div className="col-lg-4 col-md-6">
                             <div className="single-blog-post-box">
                                 <div className="entry-thumbnail">
                                     <Link href="#">

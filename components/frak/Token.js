@@ -40,7 +40,7 @@ class WhyChoose extends Component {
                             </div>
                         </div>
 
-                        <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
+                        <div className="col-lg-4 col-md-6">
                             <div className="single-repair-box">
                                 <div className="single-repair-box__img">
                                     <img src={require('../../static/images/frak/5.png')} alt="image" />

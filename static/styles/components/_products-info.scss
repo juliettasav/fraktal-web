@@ -17,13 +17,11 @@
     }
     .single-features {
         background-color: $primary-color;
-        width: 329px;
-        height: 355px;
-        @media (max-width: $mobile-max) {
-            width: 100%;
-            height: 100%;
+        width: 100%;
+        max-width: 330px;
+        height: auto;
+        @media (max-width: $tablet-max) {
             background-color: $white-color;
-            
         }
         .single-features-img {
             height: 130px;
