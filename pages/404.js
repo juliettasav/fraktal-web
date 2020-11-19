@@ -1,5 +1,9 @@
 import React from 'react'
 import { Preloader, Placeholder } from 'react-preloading-screen'
+import Header from '../components/Layouts/Header'
+import Footer from '../components/Layouts/Footer'
+import GoTop from '../components/Layouts/GoTop'
+
 class Custom404 extends React.Component {
     render() {
         return (
@@ -9,23 +13,17 @@ class Custom404 extends React.Component {
                         <div className="spinner"></div>
                     </div>
                 </Placeholder>
+                <Header />
                 <section className="error-area">
-                    <div className="d-table">
-                        <div className="d-table-cell">
-                            <div className="container">
-                                <div className="error-content">
-                                    <div className="notfound-404">
-                                        <h1>Oops!</h1>
-                                    </div>
-                                    <h3>404 - Page Not Found</h3>
-                                    <a className="btn btn-primary" href="/">
-                                        Go to Homepage
-                                    </a>
-                                </div>
-                            </div>
+                    <div className="container">
+                        <div className="error-content">
+                            <img src={require('../static/images/not-found.png')}/>
+                            <a className="btn btn-secondary-green" href="/">Go Back</a>
                         </div>
                     </div>
                 </section>
+                <Footer />
+                <GoTop scrollStepInPx="50" delayInMs="16.66" />
             </Preloader>
         );
     }

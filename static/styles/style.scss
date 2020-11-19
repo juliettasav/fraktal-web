@@ -120,7 +120,7 @@ Main Banner CSS
     position: relative;
     height: 910px;
     z-index: 1;
-    background: transparent url(../images/banner-bg1.jpg) right top no-repeat;
+    // background: transparent url(../images/banner-bg1.jpg) right top no-repeat;
 
     .hero-content {
         h1 {
@@ -748,9 +748,6 @@ Why Choose US CSS
                 color: $primary-dark-color;
             }
         }
-        .single-repair-box {
-            background-color: $white-color;
-        }
     }
 }
 .why-choose-us-image {
@@ -1313,26 +1310,6 @@ Features CSS
 }
 
 .single-features {
-    position: relative;
-    height: 500px;
-    // width: 328px;
-    -webkit-transition: $transition;
-    transition: $transition;
-    background: $light-color;
-    vertical-align: top;
-    margin: 0 auto;
-    @media (max-width: $mobile-max) {
-        width: 100%;
-        height: auto;
-        padding-left: 0;
-        margin: 0;
-        p {
-            display: none;
-        }
-        .single-features__content {
-            text-align: center;
-        }
-    }
 
     .single-features-img {
         height: 190px;
@@ -1341,10 +1318,15 @@ Features CSS
         justify-content: center;
         align-items: center;
     }
+
     &__content {
         margin-top: 10px;
         padding: 0 15px;
         color: $primary-dark-color;
+        @media (max-width: $mobile-max) {
+            text-align: center;;
+        }
+
         h3 {
             font-weight: 500;
             font-size: 24px;
@@ -1352,8 +1334,12 @@ Features CSS
             line-height: 36px;
             color: $primary-dark-color;
         }
+
         p {
             color: $primary-dark-color;
+            @media (max-width: $mobile-max) {
+                display: none;
+            }
         }
     }
     
@@ -2289,7 +2275,7 @@ Feedback CSS
         height: 260px;
         content: '';
         z-index: -1;
-        background-image: url(../images/layer.png);
+        // background-image: url(../images/layer.png);
     }
     &::after {
         position: absolute;
@@ -2299,7 +2285,7 @@ Feedback CSS
         height: 260px;
         content: '';
         z-index: -1;
-        background-image: url(../images/layer.png);
+        // background-image: url(../images/layer.png);
     }
     &.owl-theme {
         .owl-nav {
@@ -3823,7 +3809,7 @@ Page Title CSS
 .page-title-area {
     position: relative;
     z-index: 1;
-    background: transparent url(../images/banner-bg1.jpg) right top no-repeat;
+    // background: transparent url(../images/banner-bg1.jpg) right top no-repeat;
     text-align: center;
     padding: {
         top: 190px;
@@ -4323,7 +4309,7 @@ Coming Soon CSS
     z-index: 1;
     height: 100vh;
     background: {
-        image: url(../images/coming-soon.jpg);
+        // image: url(../images/coming-soon.jpg);
         position: center center;
         size: cover;
         repeat: no-repeat;
@@ -4487,44 +4473,11 @@ Coming Soon CSS
 .error-area {
     height: 100vh;
 }
+
 .error-content {
-    text-align: center;
-    margin-top: -70px;
-
-    .notfound-404 {
-        position: relative;
-        height: 280px;
-        z-index: -1;
-        margin-bottom: 30px;
-
-        h1 {
-            margin: 0;
-            position: absolute;
-            left: 50%;
-            -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-            background: url(../images/oops-bg.jpg) no-repeat;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-size: cover;
-            background-position: center;
-            font: {
-                size: 230px;
-                weight: 900;
-            };
-        }
-    }
-    h3 {
-        margin-bottom: 15px;
-        font: {
-            weight: 600;
-            size: 25px;
-        };
-    }
-    p {
-        max-width: 550px;
-        margin: 0 auto 25px;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*================================================
@@ -4572,7 +4525,7 @@ CTA CSS
         padding-top: 172px;
         padding-bottom: 143px;
         @media (max-width: $mobile-max) {
-            padding: 54px 0;
+            padding: 0;
         }
 
         .cta-fraktal-network {
@@ -5152,29 +5105,10 @@ Repair Why Choose Us CSS
         @media (max-width: $mobile-max) {
             gap: 24px;
         }
-        .single-repair-box {
-            background-color: $primary-color;
-            h3, p {
-                color: $light-color;
-            }
-        }
     }
     
 }
 .single-repair-box {
-    height: 497px;
-    margin-bottom: 30px;
-    text-align: left;
-    background-color: $light-color;
-    position: relative;
-    z-index: 1;
-    -webkit-transition: $transition;
-    transition: $transition;
-    @media (max-width: $mobile-max) {
-        width: 100%;
-        height: 245px;
-    }
-
     &__img {
         width: 100%;
         height: 190px;
@@ -5199,8 +5133,15 @@ Repair Why Choose Us CSS
             text-align: center;
             margin-bottom: 32px;
         }
+
+        &.mod-light {
+            color: $light-color
+        }
     }
     p {
+        &.mod-light {
+            color: $light-color
+        }
         @media (max-width: $mobile-max) {
             display: none;
         }
@@ -5272,84 +5213,6 @@ Repair Why Choose Us CSS
 }
 
 /*================================================
-Repair Feedback CSS
-=================================================*/
-// .single-repair-feedback {
-//     background: $white-color;
-//     border-radius: 5px;
-//     margin-bottom: 55px;
-//     position: relative;
-//     text-align: center;
-//     padding: {
-//         left: 40px;
-//         right: 40px;
-//         top: 40px;
-//         bottom: 40px;
-//     };
-//     .client-img {
-//         position: relative;
-//         text-align: left;
-//         margin-bottom: 40px;
-//         display: inline-block;
-//         padding: {
-//             left: 108px;
-//             top: 18px;
-//         };
-//         img {
-//             border-radius: 50%;
-            
-//             padding: 3px;
-//             display: inline-block;
-//             position: absolute;
-//             left: 0;
-//             top: 0;
-//             width: 90px;
-//             height: 90px;
-//         }
-//         h3 {
-//             font-size: 18px;
-//             margin: 0;
-//         }
-//         span {
-//             display: block;
-            
-//             margin-top: 8px;
-//         }
-//     }
-//     p {
-//         font-size: 15px;
-//     }
-//     &::before {
-//         content: '';
-//         position: absolute;
-//         left: 0;
-//         bottom: -25px;
-//         width: 50px;
-//         height: 50px;
-//         background: $white-color;
-//         right: 0;
-//         margin: 0 auto;
-//         -webkit-transform: rotate(45deg);
-//         transform: rotate(45deg);
-//     }
-//     &::after {
-//         content: "\f11b";
-//         position: absolute;
-//         top: 0;
-//         left: 25px;
-//         color: #d9dcde;
-//         font: {
-//             family: Flaticon;
-//             size: 30px;
-//             style: normal;
-//             size: 65px;
-//         };
-//     }
-// }
-
-
-
-/*================================================
 IoT Partner CSS
 =================================================*/
 .iot-partner-area {
@@ -5359,10 +5222,7 @@ IoT Partner CSS
     };
     text-align: center;
     @media (max-width: $mobile-max) {
-        padding: {
-            top: 54px;
-            bottom: 54px;
-        };
+        padding: 0;
         text-align: left;
     } 
     h2 {
@@ -5377,7 +5237,10 @@ IoT Partner CSS
     }
 
     &--home {
-        
+        @media (max-width: $mobile-max) {
+            min-height: auto;
+            padding: 54px 0;
+        }
         h2 {
             color: $primary-dark-color;
             margin-bottom: 54px;
@@ -5533,17 +5396,13 @@ IoT CTA CSS
     position: relative;
     z-index: 1;
     background-color: $primary-color;
-    padding: {
-        top: 111px;
-        bottom: 145px;
-    };
+    
     &--home {
         background-image: url('../../static/images/home/bg-3.png');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        padding: 82px 0;
-
+        padding: 86px 0;
         .grid-row {
             grid-template-columns: 1fr 1fr;
             align-items: center;
@@ -5795,14 +5654,13 @@ Footer CSS
             @media (max-width: $mobile-max) {
                 grid-template-columns: 1fr;
                 .single-footer-widget {
-                    text-align: center;
+                    text-align: left;
                     margin-bottom: 40px;
                 }
                 
             }
         }
     }
-
 }
 .single-footer-widget {
     text-align: center;
@@ -5967,7 +5825,7 @@ ML Main Banner CSS
         bottom: 140px;
     };
     background: {
-        image: url(../images/banner-bg.jpg);
+        // image: url(../images/banner-bg.jpg);
         position: bottom right;
         size: cover;
         repeat: no-repeat;
@@ -6007,7 +5865,7 @@ ML Main Banner CSS
         bottom: 240px;
     };
     background: {
-        image: url(../images/banner-bg.jpg);
+        // image: url(../images/banner-bg.jpg);
         position: bottom right;
         size: cover;
         repeat: no-repeat;
@@ -6184,22 +6042,6 @@ Our Solutions CSS
         border-radius: 5px;
         height: 100%;
         background: linear-gradient(to right top, #d5fefd, #e0fdff, #effbff, #fbfaff, #fffcff);
-    }
-    .learn-more-btn {
-        color: #365267;
-        font: {
-            size: $font-size;
-            weight: 600;
-        };
-        svg {
-            width: 18px;
-            position: relative;
-            top: -1px;
-            margin-right: 3px;
-        }
-        &:hover {
-            
-        }
     }
     &:hover {
         transform: translateY(-10px);
@@ -6487,61 +6329,6 @@ Free Trial Area CSS
 .free-trial-image {
     text-align: center;
 }
-// .free-trial-content {
-//     margin-bottom: 80px;
-//     h2 {
-//         margin-bottom: 0;
-//         font: {
-//             size: 28px;
-//             weight: 600;
-//         }
-//     }
-//     form {
-//         position: relative;
-        
-//         .input-newsletter {
-//             width: 428px;
-//             display: inline-block;
-//             height: 68px;
-//             color: $black-text;
-//             border: none;
-//             outline: 0;
-//             font-size: 18px;
-//             line-height: 27px;
-//             font-weight: 700;
-//             background-color: $light-color;
-//             padding: {
-//                 top: 20px;
-//                 bottom: 20px;
-//                 left: 43px;
-//             };
-//             &::placeholder {
-//                 color: #C4C4C4;
-//                 transition: $transition;
-//                 font-size: 18px;
-//                 line-height: 27px;
-//                 font-weight: 700;
-                
-//             }
-//             &:focus {
-//                 &::placeholder {
-//                     color: transparent;
-//                 }
-//             }
-//         }
-//         button {
-//             margin-left: 64px;
-//             border: none;
-//             width: 187px;
-//             height: 68px;
-            
-//         }
-//     }
-//     p {
-//         margin-bottom: 0;
-//     }
-// }
-
 /*================================================
 ML Projects Area CSS
 =================================================*/
@@ -6865,13 +6652,6 @@ ML Pricing Tab CSS
 /* ML Blog Card CSS
 =================================================*/
 .single-blog-post-box {
-    height: 405px;
-    margin-bottom: 30px;
-    transition: $transition;
-    background-color: $primary-color;
-    @media (max-width: $mobile-max) {
-        width: 100%;
-    }
 
     .entry-thumbnail {
         text-align: center;
@@ -6965,6 +6745,8 @@ ML Pricing Tab CSS
             
         }
         .learn-more-btn {
+            position: absolute;
+            bottom: 8px;
             margin-top: 15px;
             font-weight: 600;
             color: $light-color;
@@ -6972,10 +6754,11 @@ ML Pricing Tab CSS
                 width: 15px;
             }
             @media (max-width: $mobile-max) {
-                margin-top: 0;
+                right: 20px;
                 font-weight: 500;
                 font-size: 12px;
                 line-height: 18px;
+
             }
         }
     }
@@ -7090,22 +6873,6 @@ Our Solutions CSS
         font-size: 18px;
         margin-bottom: 10px;
     }
-    .learn-more-btn {
-        color: #365267;
-        font: {
-            size: $font-size;
-            weight: 500;
-        };
-        svg {
-            width: 18px;
-            position: relative;
-            top: -1px;
-            margin-right: 3px;
-        }
-        &:hover {
-            
-        }
-    }
 }
 .earn-area {
     background-image: url('../../static/images/home/bg-4.png');
@@ -7114,6 +6881,7 @@ Our Solutions CSS
 }
 .earn-area--home {
     position: relative;
+    align-items: baseline;
     @media (max-width: $mobile-max) {
         min-height: 518px;
         padding: 54px 0;
@@ -7132,34 +6900,6 @@ Our Solutions CSS
                 font-size: 16px;
                 line-height: 24px;
                 font-weight: 300;
-            }
-        }
-    }
-
-    .earn-area__circle {
-        @media (max-width: $mobile-max) {
-            width: 180px;
-            height: 180px;
-            top: 195px;
-            left: 40px;
-        }
-    }
-
-    .earn-area__text {
-        @media (max-width: $mobile-max) {
-            font-size: 24px;
-            line-height: 1;
-            top: 270px;
-            left: 73px;
-            max-width: 116px;
-        }
-        .circle-mobile-text {
-            @media (max-width: $mobile-max) {
-                display: block;
-                font-weight: 300;
-                font-size: 12px;
-                line-height: 18px;
-                text-transform: capitalize;
             }
         }
     }

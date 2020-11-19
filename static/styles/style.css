@@ -87,6 +87,21 @@ body {
   padding: 0;
 }
 
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 520px) {
+  section {
+    min-height: 100vh;
+  }
+}
+
 .row-grid {
   display: -ms-grid;
   display: grid;
@@ -95,30 +110,30 @@ body {
 .row-grid.main-banner-grid {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  gap: 40px;
 }
 
 .row-grid.intro-grid {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  gap: 40px;
 }
 
 @media (max-width: 520px) {
   .row-grid.intro-grid {
-    gap: 16px;
+    gap: 20px;
   }
 }
 
-.row-grid.why-choose-grid {
+.row-grid.three-items-grid {
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  gap: 49px;
+  gap: 40px;
 }
 
 @media (max-width: 520px) {
-  .row-grid.why-choose-grid {
-    gap: 28px;
+  .row-grid.three-items-grid {
+    gap: 20px;
   }
 }
 
@@ -130,12 +145,68 @@ body {
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 768px) {
   .row-grid {
     -ms-grid-columns: 1fr !important;
         grid-template-columns: 1fr !important;
     gap: 0px;
   }
+}
+
+.row-grid .single-box-grid {
+  position: relative;
+  min-height: 500px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .row-grid .single-box-grid {
+    min-height: unset;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 520px) {
+  .row-grid .single-box-grid {
+    width: 100%;
+    height: auto;
+    padding-left: 0;
+    margin: 0;
+  }
+}
+
+.row-grid .single-box-grid.mod-small {
+  min-height: 340px;
+}
+
+@media (max-width: 768px) {
+  .row-grid .single-box-grid.mod-small {
+    min-height: unset;
+  }
+}
+
+@media (max-width: 520px) {
+  .row-grid .single-box-grid.mod-small {
+    height: auto;
+  }
+}
+
+.row-grid .single-box-grid.mod-light {
+  background: #ffffff;
+}
+
+.row-grid .single-box-grid.mod-light h1, .row-grid .single-box-grid.mod-light h2, .row-grid .single-box-grid.mod-light h3, .row-grid .single-box-grid.mod-light h4, .row-grid .single-box-grid.mod-light h5, .row-grid .single-box-grid.mod-light p, .row-grid .single-box-grid.mod-light span {
+  color: #5245AF;
+}
+
+.row-grid .single-box-grid.mod-dark {
+  background-color: #7766F6;
+}
+
+.row-grid .single-box-grid.mod-dark h1, .row-grid .single-box-grid.mod-dark h2, .row-grid .single-box-grid.mod-dark h3, .row-grid .single-box-grid.mod-dark h4, .row-grid .single-box-grid.mod-dark h5, .row-grid .single-box-grid.mod-dark p, .row-grid .single-box-grid.mod-dark span {
+  color: #F5F2F7;
 }
 
 .btn-secondary-green, .btn-secondary-purple {
@@ -340,7 +411,7 @@ h1 {
 
 @media (max-width: 520px) {
   h1 {
-    font-size: 36px;
+    font-size: 42px;
     line-height: 54px;
   }
 }
@@ -353,8 +424,8 @@ h2 {
 
 @media (max-width: 520px) {
   h2 {
-    font-size: 28px;
-    line-height: 42px;
+    font-size: 34px;
+    line-height: 46px;
   }
 }
 
@@ -384,7 +455,7 @@ p:last-child {
 
 @media (max-width: 520px) {
   p {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 24px;
   }
 }
@@ -417,6 +488,26 @@ p:last-child {
   top: 263px;
 }
 
+@media (max-width: 905px) {
+  .earn-area__circle {
+    width: 500px;
+    height: 500px;
+    right: -200px;
+    top: unset;
+    bottom: -100px;
+  }
+}
+
+@media (max-width: 520px) {
+  .earn-area__circle {
+    width: 180px;
+    height: 180px;
+    top: 195px;
+    bottom: unset;
+    left: 40px;
+  }
+}
+
 .earn-area__text {
   position: absolute;
   color: #5245AF;
@@ -426,6 +517,35 @@ p:last-child {
   max-width: 233px;
   top: 416px;
   right: 61px;
+}
+
+@media (max-width: 905px) {
+  .earn-area__text {
+    bottom: 100px;
+    right: 20px;
+    top: unset;
+  }
+}
+
+@media (max-width: 520px) {
+  .earn-area__text {
+    font-size: 24px;
+    line-height: 1;
+    bottom: unset;
+    top: 270px;
+    left: 73px;
+    max-width: 116px;
+  }
+}
+
+@media (max-width: 520px) {
+  .earn-area__text .circle-mobile-text {
+    display: block;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: capitalize;
+  }
 }
 
 .agency-cta-area {
@@ -443,18 +563,12 @@ p:last-child {
 }
 
 .agency-cta-area .agency-cta-content {
-  text-align: center;
+  text-align: left;
 }
 
 .agency-cta-area .agency-cta-content h2 {
   color: #F5F2F7;
   margin-bottom: 24px;
-}
-
-@media (max-width: 520px) {
-  .agency-cta-area .agency-cta-content h2 {
-    text-align: left;
-  }
 }
 
 .agency-cta-area .agency-cta-content .btn {
@@ -505,7 +619,7 @@ p:last-child {
 }
 
 .agency-cta-area .agency-cta-content .free-trial-content form.newsletter-form .input-newsletter {
-  width: 428px;
+  width: 100%;
   display: inline-block;
   height: 68px;
   color: #000000;
@@ -595,19 +709,11 @@ p:last-child {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   list-style: none;
   gap: 32px;
-}
-
-@media (max-width: 520px) {
-  .agency-cta-area .agency-cta-content .social-links {
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-  }
 }
 
 .agency-cta-area .agency-cta-content .social-links li a {
@@ -624,22 +730,31 @@ IoT Main Banner CSS
 =================================================*/
 .iot-main-banner {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   z-index: 1;
+  height: 100vh;
   background-image: url("../images/home/bg-1.png");
   background-repeat: no-repeat;
-  padding-top: 215px;
-  padding-bottom: 170px;
+  background-size: cover;
 }
 
 @media (max-width: 520px) {
   .iot-main-banner {
-    padding-top: 153px;
-    padding-bottom: 34px;
+    background-position-y: center;
   }
 }
 
 .iot-banner-content {
-  max-width: 445px;
+  max-width: 555px;
+  padding-top: 50px;
 }
 
 @media (max-width: 520px) {
@@ -659,8 +774,6 @@ IoT Main Banner CSS
 
 @media (max-width: 520px) {
   .iot-banner-content span {
-    font-size: 24px;
-    line-height: 36px;
     margin: 8px 0 32px;
   }
 }
@@ -798,8 +911,7 @@ IoT Main Banner CSS
 
 @media (max-width: 520px) {
   .iot-why-choose-us {
-    padding-top: 54px;
-    padding-bottom: 54px;
+    padding: 54px 0;
   }
 }
 
@@ -854,10 +966,6 @@ IoT Main Banner CSS
 
 .iot-why-choose-us--gov h2 {
   color: #5245AF;
-}
-
-.iot-why-choose-us--gov .single-repair-box {
-  background-color: #ffffff;
 }
 
 @media (max-width: 520px) {
@@ -1044,14 +1152,6 @@ IoT Main Banner CSS
 .single-features .single-features-img.partners-box img {
   height: auto;
   margin-left: 10px;
-}
-
-.single-features.partners-box-container {
-  background-color: #7766F6 !important;
-}
-
-.single-features.partners-box-container h3 {
-  color: #F5F2F7 !important;
 }
 
 /*================================================
@@ -1272,31 +1372,8 @@ Navbar CSS
   }
 }
 
-.products-info-area .single-features {
-  background-color: #7766F6;
-  width: 100%;
-  max-width: 330px;
-  height: auto;
-}
-
-@media (max-width: 905px) {
-  .products-info-area .single-features {
-    background-color: #ffffff;
-  }
-}
-
 .products-info-area .single-features .single-features-img {
   height: 130px;
-}
-
-.products-info-area .single-features h3, .products-info-area .single-features p {
-  color: #F5F2F7;
-}
-
-@media (max-width: 520px) {
-  .products-info-area .single-features h3, .products-info-area .single-features p {
-    color: #5245AF;
-  }
 }
 
 .hosting-features-area {
@@ -1311,20 +1388,8 @@ Navbar CSS
   margin: 0 auto 64px;
 }
 
-.hosting-features-area .single-features {
-  width: 100%;
-  max-width: 330px;
-  height: auto;
-  background-color: #7766F6;
-}
-
 .hosting-features-area .single-features h3 {
   margin-bottom: 20px;
-  color: #F5F2F7;
-}
-
-.hosting-features-area .single-features p {
-  color: #F5F2F7;
 }
 
 img {
@@ -1419,7 +1484,6 @@ Main Banner CSS
   position: relative;
   height: 910px;
   z-index: 1;
-  background: transparent url(../images/banner-bg1.jpg) right top no-repeat;
 }
 
 .main-banner .hero-content h1 {
@@ -2087,10 +2151,6 @@ Why Choose US CSS
   color: #5245AF;
 }
 
-.why-choose-us--gov .single-repair-box {
-  background-color: #ffffff;
-}
-
 .why-choose-us-image {
   position: relative;
   text-align: center;
@@ -2665,31 +2725,6 @@ Features CSS
   overflow: hidden;
 }
 
-.single-features {
-  position: relative;
-  height: 500px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  background: #F5F2F7;
-  vertical-align: top;
-  margin: 0 auto;
-}
-
-@media (max-width: 520px) {
-  .single-features {
-    width: 100%;
-    height: auto;
-    padding-left: 0;
-    margin: 0;
-  }
-  .single-features p {
-    display: none;
-  }
-  .single-features .single-features__content {
-    text-align: center;
-  }
-}
-
 .single-features .single-features-img {
   height: 190px;
   width: 100%;
@@ -2710,6 +2745,12 @@ Features CSS
   color: #5245AF;
 }
 
+@media (max-width: 520px) {
+  .single-features__content {
+    text-align: center;
+  }
+}
+
 .single-features__content h3 {
   font-weight: 500;
   font-size: 24px;
@@ -2720,6 +2761,12 @@ Features CSS
 
 .single-features__content p {
   color: #5245AF;
+}
+
+@media (max-width: 520px) {
+  .single-features__content p {
+    display: none;
+  }
 }
 
 .single-hosting-features {
@@ -3621,7 +3668,6 @@ border-
   height: 260px;
   content: '';
   z-index: -1;
-  background-image: url(../images/layer.png);
 }
 
 .testimonials-slides::after {
@@ -3632,7 +3678,6 @@ border-
   height: 260px;
   content: '';
   z-index: -1;
-  background-image: url(../images/layer.png);
 }
 
 .testimonials-slides.owl-theme .owl-nav.disabled + .owl-dots {
@@ -5064,7 +5109,6 @@ Page Title CSS
 .page-title-area {
   position: relative;
   z-index: 1;
-  background: transparent url(../images/banner-bg1.jpg) right top no-repeat;
   text-align: center;
   padding-top: 190px;
   padding-bottom: 100px;
@@ -5542,7 +5586,6 @@ Coming Soon CSS
   position: relative;
   z-index: 1;
   height: 100vh;
-  background-image: url(../images/coming-soon.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -5700,41 +5743,16 @@ Coming Soon CSS
 }
 
 .error-content {
-  text-align: center;
-  margin-top: -70px;
-}
-
-.error-content .notfound-404 {
-  position: relative;
-  height: 280px;
-  z-index: -1;
-  margin-bottom: 30px;
-}
-
-.error-content .notfound-404 h1 {
-  margin: 0;
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  background: url(../images/oops-bg.jpg) no-repeat;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: cover;
-  background-position: center;
-  font-size: 230px;
-  font-weight: 900;
-}
-
-.error-content h3 {
-  margin-bottom: 15px;
-  font-weight: 600;
-  font-size: 25px;
-}
-
-.error-content p {
-  max-width: 550px;
-  margin: 0 auto 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /*================================================
@@ -5791,7 +5809,7 @@ CTA CSS
 
 @media (max-width: 520px) {
   .cta-area--fraktal-network {
-    padding: 54px 0;
+    padding: 0;
   }
 }
 
@@ -6387,32 +6405,6 @@ Repair Why Choose Us CSS
   }
 }
 
-.repair-why-choose-us .row .single-repair-box {
-  background-color: #7766F6;
-}
-
-.repair-why-choose-us .row .single-repair-box h3, .repair-why-choose-us .row .single-repair-box p {
-  color: #F5F2F7;
-}
-
-.single-repair-box {
-  height: 497px;
-  margin-bottom: 30px;
-  text-align: left;
-  background-color: #F5F2F7;
-  position: relative;
-  z-index: 1;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-@media (max-width: 520px) {
-  .single-repair-box {
-    width: 100%;
-    height: 245px;
-  }
-}
-
 .single-repair-box__img {
   width: 100%;
   height: 190px;
@@ -6445,6 +6437,14 @@ Repair Why Choose Us CSS
     text-align: center;
     margin-bottom: 32px;
   }
+}
+
+.single-repair-box h3.mod-light {
+  color: #F5F2F7;
+}
+
+.single-repair-box p.mod-light {
+  color: #F5F2F7;
 }
 
 @media (max-width: 520px) {
@@ -6519,9 +6519,6 @@ a {
 }
 
 /*================================================
-Repair Feedback CSS
-=================================================*/
-/*================================================
 IoT Partner CSS
 =================================================*/
 .iot-partner-area {
@@ -6532,8 +6529,7 @@ IoT Partner CSS
 
 @media (max-width: 520px) {
   .iot-partner-area {
-    padding-top: 54px;
-    padding-bottom: 54px;
+    padding: 0;
     text-align: left;
   }
 }
@@ -6544,6 +6540,13 @@ IoT Partner CSS
 
 .iot-partner-area--roadmap .section-title {
   margin-bottom: 53px;
+}
+
+@media (max-width: 520px) {
+  .iot-partner-area--home {
+    min-height: auto;
+    padding: 54px 0;
+  }
 }
 
 .iot-partner-area--home h2 {
@@ -6704,8 +6707,6 @@ IoT CTA CSS
   position: relative;
   z-index: 1;
   background-color: #7766F6;
-  padding-top: 111px;
-  padding-bottom: 145px;
 }
 
 .iot-cta-area--home {
@@ -6713,7 +6714,7 @@ IoT CTA CSS
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 82px 0;
+  padding: 86px 0;
 }
 
 .iot-cta-area--home .grid-row {
@@ -7037,7 +7038,7 @@ Footer CSS
         grid-template-columns: 1fr;
   }
   .footer-area .row-grid-footer__item:nth-child(2) .single-footer-widget {
-    text-align: center;
+    text-align: left;
     margin-bottom: 40px;
   }
 }
@@ -7201,7 +7202,6 @@ ML Main Banner CSS
   z-index: 1;
   padding-top: 130px;
   padding-bottom: 140px;
-  background-image: url(../images/banner-bg.jpg);
   background-position: bottom right;
   background-size: cover;
   background-repeat: no-repeat;
@@ -7237,7 +7237,6 @@ ML Main Banner CSS
   z-index: 1;
   padding-top: 260px;
   padding-bottom: 240px;
-  background-image: url(../images/banner-bg.jpg);
   background-position: bottom right;
   background-size: cover;
   background-repeat: no-repeat;
@@ -7432,19 +7431,6 @@ Our Solutions CSS
   height: 100%;
   background: -webkit-gradient(linear, left bottom, right top, from(#d5fefd), color-stop(#e0fdff), color-stop(#effbff), color-stop(#fbfaff), to(#fffcff));
   background: linear-gradient(to right top, #d5fefd, #e0fdff, #effbff, #fbfaff, #fffcff);
-}
-
-.single-solutions-box .learn-more-btn {
-  color: #365267;
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.single-solutions-box .learn-more-btn svg {
-  width: 18px;
-  position: relative;
-  top: -1px;
-  margin-right: 3px;
 }
 
 .single-solutions-box:hover {
@@ -8073,20 +8059,6 @@ ML Pricing Tab CSS
 
 /* ML Blog Card CSS
 =================================================*/
-.single-blog-post-box {
-  height: 405px;
-  margin-bottom: 30px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  background-color: #7766F6;
-}
-
-@media (max-width: 520px) {
-  .single-blog-post-box {
-    width: 100%;
-  }
-}
-
 .single-blog-post-box .entry-thumbnail {
   text-align: center;
 }
@@ -8182,6 +8154,8 @@ ML Pricing Tab CSS
 }
 
 .single-blog-post-box .entry-post-content .learn-more-btn {
+  position: absolute;
+  bottom: 8px;
   margin-top: 15px;
   font-weight: 600;
   color: #F5F2F7;
@@ -8193,7 +8167,7 @@ ML Pricing Tab CSS
 
 @media (max-width: 520px) {
   .single-blog-post-box .entry-post-content .learn-more-btn {
-    margin-top: 0;
+    right: 20px;
     font-weight: 500;
     font-size: 12px;
     line-height: 18px;
@@ -8310,19 +8284,6 @@ Our Solutions CSS
   margin-bottom: 10px;
 }
 
-.solutions-box .learn-more-btn {
-  color: #365267;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.solutions-box .learn-more-btn svg {
-  width: 18px;
-  position: relative;
-  top: -1px;
-  margin-right: 3px;
-}
-
 .earn-area {
   background-image: url("../../static/images/home/bg-4.png");
   background-repeat: no-repeat;
@@ -8331,6 +8292,9 @@ Our Solutions CSS
 
 .earn-area--home {
   position: relative;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 @media (max-width: 520px) {
@@ -8356,35 +8320,6 @@ Our Solutions CSS
     font-size: 16px;
     line-height: 24px;
     font-weight: 300;
-  }
-}
-
-@media (max-width: 520px) {
-  .earn-area--home .earn-area__circle {
-    width: 180px;
-    height: 180px;
-    top: 195px;
-    left: 40px;
-  }
-}
-
-@media (max-width: 520px) {
-  .earn-area--home .earn-area__text {
-    font-size: 24px;
-    line-height: 1;
-    top: 270px;
-    left: 73px;
-    max-width: 116px;
-  }
-}
-
-@media (max-width: 520px) {
-  .earn-area--home .earn-area__text .circle-mobile-text {
-    display: block;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 18px;
-    text-transform: capitalize;
   }
 }
 

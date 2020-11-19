@@ -10,21 +10,10 @@
     }
 
     .single-features {
-        width: 100%;
-        max-width: 330px;
-        height: auto;
-        background-color: $primary-color;
-        @media (max-width: $mobile-max) {
-        }
-        .single-features-img {
-        }
         h3 {
             margin-bottom: 20px;
-            color: $light-color;
         }
-        p {
-            color: $light-color;
-        }
+
     }
 
 }

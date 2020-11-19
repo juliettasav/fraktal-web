@@ -11,13 +11,10 @@
     }
 
     .agency-cta-content {
-        text-align: center;
+        text-align: left;
         h2 {
             color: $light-color;
             margin-bottom: 24px;
-            @media (max-width: $mobile-max) {
-                text-align: left;
-            }
         }
         .btn {
             margin-top: 0;
@@ -47,7 +44,7 @@
                 }
                 
                 .input-newsletter {
-                    width: 428px;
+                    width: 100%;
                     display: inline-block;
                     height: 68px;
                     color: $black-text;
@@ -96,12 +93,9 @@
             padding: 0;
             margin: 0;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
             list-style: none;
             gap: 32px;
-            @media (max-width: $mobile-max) {
-                justify-content: left;
-            }
             li {
                 a {
                     text-align: center;

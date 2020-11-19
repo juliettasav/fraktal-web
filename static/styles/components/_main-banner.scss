@@ -3,26 +3,21 @@ IoT Main Banner CSS
 =================================================*/
 .iot-main-banner {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     z-index: 1;
+    height: 100vh;
     background-image: url('../images/home/bg-1.png');
     background-repeat: no-repeat;
-    padding: {
-        top: 215px;
-        bottom: 170px;
-    };
-    img {
-        // min-width: 520px;
-        // object-position: 0px -50px;
-    }
+    background-size: cover;
     @media (max-width: $mobile-max) {
-        padding: {
-            top: 153px;
-            bottom: 34px;
-        };  
+        background-position-y: center;
     }
 }
 .iot-banner-content {
-    max-width: 445px;
+    max-width: 555px;
+    padding-top: 50px;
     @media (max-width: $mobile-max) {
         text-align: left;
         max-width: auto;
@@ -35,8 +30,6 @@ IoT Main Banner CSS
         font-weight: 300;
         display: block;
         @media (max-width: $mobile-max)  {
-            font-size: 24px;
-            line-height: 36px;
             margin: 8px 0 32px;
         }
     }

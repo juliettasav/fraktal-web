@@ -12,9 +12,8 @@ class BlogCard extends Component {
                         <p>The Fraktal Ecosystem Blog is a great place to learn more about the project in greater details.</p>
                     </div>
 
-                    <div className="row">
-                        <div className="col-lg-4 col-md-6">
-                            <div className="single-blog-post-box">
+                    <div className="row-grid three-items-grid">
+                            <div className="single-box-grid mod-dark single-blog-post-box">
                                 <div className="entry-thumbnail">
                                     <Link href="#">
                                         <a>
@@ -24,8 +23,6 @@ class BlogCard extends Component {
                                 </div>
 
                                 <div className="entry-post-content">
-
-
                                     <h3><a href="#">Token</a></h3>
                                     <p>Learn everything about FRAK, Staking, Governance, Economics, Storage, and more.</p>
 
@@ -34,10 +31,8 @@ class BlogCard extends Component {
                                     </Link>
                                 </div>
                             </div>
-                        </div>
 
-                        <div className="col-lg-4 col-md-6">
-                            <div className="single-blog-post-box">
+                            <div className="single-box-grid mod-dark single-blog-post-box">
                                 <div className="entry-thumbnail">
                                     <Link href="#">
                                         <a>
@@ -57,10 +52,8 @@ class BlogCard extends Component {
                                     </Link>
                                 </div>
                             </div>
-                        </div>
 
-                        <div className="col-lg-4 col-md-6">
-                            <div className="single-blog-post-box">
+                            <div className="single-box-grid mod-dark single-blog-post-box">
                                 <div className="entry-thumbnail">
                                     <Link href="#">
                                         <a>
@@ -80,7 +73,6 @@ class BlogCard extends Component {
                                     </Link>
                                 </div>
                             </div>
-                        </div>
                     </div>
                 </div>
 

@@ -10,8 +10,8 @@ class Features extends Component {
                         <h2>Meet The Members Of The Fraktal Community</h2>                      
                     </div>
 
-                    <div className="row-grid why-choose-grid">
-                        <div className="single-features partners-box-container">
+                    <div className="row-grid three-items-grid">
+                        <div className="single-box-grid mod-dark single-features">
                             <div className="single-features-img partners-box">
                                 <img src={require('../../static/images/partners/2.png')}/>
                             </div>
@@ -23,7 +23,7 @@ class Features extends Component {
                             </div>
                         </div>
 
-                        <div className="single-features partners-box-container">
+                        <div className="single-box-grid mod-dark single-features">
                             <div className="single-features-img partners-box">
                             <img src={require('../../static/images/partners/3.png')}/>
                             </div>
@@ -33,7 +33,7 @@ class Features extends Component {
                             </div>
                         </div>
 
-                        <div className="single-features partners-box-container">
+                        <div className="single-box-grid mod-dark single-features">
                             <div className="single-features-img partners-box">
                                 <img src={require('../../static/images/partners/4.png')}/>
                             </div>
@@ -44,7 +44,7 @@ class Features extends Component {
                                 </p>
                             </div>
                         </div>
-                        <div className="single-features partners-box-container">
+                        <div className="single-box-grid mod-dark single-features">
                             <div className="single-features-img partners-box">
                             <img src={require('../../static/images/partners/5.png')}/>
 
@@ -54,7 +54,7 @@ class Features extends Component {
                                 <p>Each staked token equates to 1 vote on network proposals and other governance decisions which impact the Fraktal Network</p>
                             </div>
                         </div>
-                        <div className="single-features partners-box-container">
+                        <div className="single-box-grid mod-dark single-features">
                             <div className="single-features-img partners-box">
                             <img src={require('../../static/images/partners/6.png')}/>
 
@@ -66,7 +66,7 @@ class Features extends Component {
                                 </p>
                             </div>
                         </div>
-                        <div className="single-features partners-box-container">
+                        <div className="single-box-grid mod-dark single-features">
                             <div className="single-features-img partners-box">
                             <img src={require('../../static/images/partners/7.png')}/>
 

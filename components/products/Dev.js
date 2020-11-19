@@ -8,7 +8,7 @@ class Cta extends Component {
         return (
             <section className="repair-cta-area">
                 <div className="container">
-                    <div className="grid-row product-block">
+                    <div className="grid-row product-block template-two">
                         <div className="cta-repair-img">
                             <ReactWOW delay='0.6s' animation='fadeInUp'>
                                 <img src={require('../../static/images/products/1.png')} alt="image" />

@@ -6,8 +6,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     @media (max-width: $mobile-max) {
-        padding-top: 54px;
-        padding-bottom: 54px;
+        padding: 54px 0;
     }
 
     .section-title {
@@ -45,17 +44,11 @@
             max-width: 715px;
             margin: 0 auto;
         }
-        img {
-
-        } 
     }
 
     &--gov {
         h2 {
             color: $primary-dark-color;
-        }
-        .single-repair-box {
-            background-color: $white-color;
         }
         .row {
             @media (max-width: $mobile-max) {
@@ -199,10 +192,3 @@
     }
     
 } 
-
-.single-features.partners-box-container {
-    background-color: $primary-color !important;
-    h3 {
-        color: $light-color !important;
-    }
-}

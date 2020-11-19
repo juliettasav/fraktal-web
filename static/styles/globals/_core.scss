@@ -31,38 +31,88 @@ body {
     padding: 0;
 }
 
+section {
+    display:  flex;
+    align-items: center;
+    @media (max-width: $mobile-max) {
+        min-height: 100vh;
+    }
+}
 
 .row-grid {
     display: grid;
     &.main-banner-grid {
         grid-template-columns: 1fr 1fr;
-        gap: 80px;
+        gap: 40px;
     }
 
     &.intro-grid {
         grid-template-columns: 1fr 1fr;
-        gap: 80px;
+        gap: 40px;
         @media (max-width: $mobile-max) {
-            gap: 16px;
+            gap: 20px;
         }
     }
 
-    &.why-choose-grid {
+    &.three-items-grid {
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 49px; 
+        gap: 40px; 
           
         @media (max-width: $mobile-max) {
-            gap: 28px;
+            gap: 20px;
         }
     }
     @media (max-width: 1270px) {
         grid-template-columns: 1fr 1fr !important;
         gap: 0px;
     } 
-    @media (max-width: $mobile-max) {
+    @media (max-width: $tablet-small) {
         grid-template-columns: 1fr !important;
         gap: 0px;
-    } 
+    }
+    
+    & .single-box-grid {
+        position: relative;
+        min-height: 500px;
+        transition: 0.5s;
+        margin-bottom: 30px;
+        @media (max-width: $tablet-small) {
+            min-height: unset;
+            padding-bottom: 20px;
+        }
+
+        @media (max-width: $mobile-max) {
+            width: 100%;
+            height: auto;
+            padding-left: 0;
+            margin: 0;
+        }
+        &.mod-small {
+            min-height: 340px;
+            @media (max-width: $tablet-small) {
+                min-height: unset;
+            }
+            @media (max-width: $mobile-max) {
+                height: auto;
+            }
+        }
+
+        &.mod-light {
+            background: $white-color;
+
+            h1, h2, h3, h4, h5, p, span {
+                color: $primary-dark-color;
+            }
+        }
+
+        &.mod-dark {
+            background-color: $primary-color;
+
+            h1, h2, h3, h4, h5, p, span {
+                color: $light-color;
+            }
+        }
+    }
     
     
 }

@@ -149,25 +149,25 @@ class Feedback extends React.Component {
                 </div>
 
                 <div className="shape1">
-                    <img src={require("../../static/images/shape1.png")} alt="shape" />
+                    {/* <img src={require("../../static/images/shape1.png")} alt="shape" /> */}
                 </div>
                 <div className="shape2 rotateme">
-                    <img src={require("../../static/images/shape2.svg")} alt="shape" />
+                    {/* <img src={require("../../static/images/shape2.svg")} alt="shape" /> */}
                 </div>
                 <div className="shape4">
-                    <img src={require("../../static/images/shape4.svg")} alt="shape" />
+                    {/* <img src={require("../../static/images/shape4.svg")} alt="shape" /> */}
                 </div>
                 <div className="shape5">
-                    <img src={require("../../static/images/shape5.png")} alt="shape" />
+                    {/* <img src={require("../../static/images/shape5.png")} alt="shape" /> */}
                 </div>
                 <div className="shape6 rotateme">
-                    <img src={require("../../static/images/shape4.svg")} alt="shape" />
+                    {/* <img src={require("../../static/images/shape4.svg")} alt="shape" /> */}
                 </div>
                 <div className="shape7">
-                    <img src={require("../../static/images/shape4.svg")} alt="shape" />
+                    {/* <img src={require("../../static/images/shape4.svg")} alt="shape" /> */}
                 </div>
                 <div className="shape8 rotateme">
-                    <img src={require("../../static/images/shape2.svg")} alt="shape" />
+                    {/* <img src={require("../../static/images/shape2.svg")} alt="shape" /> */}
                 </div>
             </section>
         );

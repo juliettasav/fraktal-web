@@ -14,8 +14,8 @@ class WhyChoose extends Component {
                     </div>
                     
 
-                    <div className="row-grid why-choose-grid">
-                        <div className="single-features">
+                    <div className="row-grid three-items-grid">
+                        <div className="single-box-grid mod-light single-features">
                             <div className="single-features-img">
                                 <img src={require('../../static/images/home/4.png')}/>
                             </div>
@@ -27,7 +27,7 @@ class WhyChoose extends Component {
                             </div>
                         </div>
 
-                        <div className="single-features">
+                        <div className="single-box-grid mod-light single-features">
                             <div className="single-features-img">
                                 <img src={require('../../static/images/home/5.png')}/>
                             </div>
@@ -39,7 +39,7 @@ class WhyChoose extends Component {
                             </div>
                         </div>
 
-                        <div className="single-features">
+                        <div className="single-box-grid mod-light single-features">
                             <div className="single-features-img">
                                 <img src={require('../../static/images/home/6.png')}/>
                             </div>
